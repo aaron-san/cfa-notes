@@ -6,7 +6,7 @@
   force = true
   from = "/app/*"
   status = 200
-  to = "/.netlify/functions/app/:splat"
+  to = "/./app/:splat"
 
 
 # [build]
