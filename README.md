@@ -11,3 +11,14 @@ git branch -M main
 git remote add origin https://github.com/aaron-san/cfa-notes.git
 git push -u origin main
 ```
+
+## Deployment
+
+``bash
+npm i -g vercel
+vercel
+
+```
+Select "Continue with GitHub"
+
+```
