@@ -1,0 +1,27 @@
+{
+  "name": "cfa-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon app",
+    "watch-tailwind": "npx tailwindcss -i ./input.css -o ./public/styles/output.css --watch",
+    "dev": "npm-run-all -p -r server watch-tailwind",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

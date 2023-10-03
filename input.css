@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+ol ol {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: "→ ";
+  list-style-position: inside;
+}
+ul ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ul,
+ol li {
+  /* border-left: 1px solid #ccc; */
+  padding-left: 20px;
+}
+
+/* li::marker {
+  color: red;
+} */
+/* ul li::before {
+  /* content: "&#8680;"; */
+/* display: inline-block; */
+/* margin-right: 0.2rem; */
+/* } */
+
+h1,
+h2,
+h3 {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: xx-large;
+}
+h2 {
+  display: inline-block;
+  font-size: x-large;
+  font-weight: bolder;
+  /* border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white; */
+  /* border-bottom: 2px solid white; */
+  /* border-top-left-radius: 0.5rem; */
+  /* border-top-right-radius: 0.5rem; */
+  margin: 1rem 0 0.5rem 0;
+  padding: 8px;
+}
+h3 {
+  font-size: large;
+}
+
+span.katex-html {
+  text-align: left;
+}

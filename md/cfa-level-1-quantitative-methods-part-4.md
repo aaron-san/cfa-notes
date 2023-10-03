@@ -1,0 +1,77 @@
+---
+title: "CFA Level 1: Quantitative Methods - Part 4"
+date: "November 28, 2022"
+cover_image: "/images/posts/cfa-level-1-quantitative-methods.png"
+categories:
+  - CFA Level 1
+tags:
+  - Quantitative Methods
+excerpt: "Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more."
+---
+
+## Technical Analysis
+
+- Assumptions:
+  _ Value is determined by supply and demand
+  _ Supply and demand is driven by both rational and irrational behavior \* Prices move in trends that persist for long periods
+
+Causes of changes in supply and demand are difficult to determine
+
+## Main challenge to technical analysis is the EMH
+
+- Fundamentalists look for reasons why prices should change and realize the change when they find a reason for it to change
+  EMH theory contends that prices adjust quickly to new information
+  Technical analysts contend that prices adjust slowly to new information
+
+Almost without exception, EMH studies using autocorrelation and runs tests have found no evidence that prices move in trends.
+Strategies
+Contrarian - most investors are wrong, so do the opposite
+Follow the smart money - "jumping on the bandwagon"
+Indictors
+Momentum indicators - focus on direction of market
+Price- and volume-based indicators - focus on market data
+
+## Contrarian Rules
+
+1. Cash position of mutual funds - need for liquidity (mutual fund ratio = mutual fund cash / total fund assets; a ratio > 11% suggests MF managers are bearish; a ratio < 4% suggests MF managers are bullish)
+2. Investor credit balances in brokerage accounts - need for liquidity (credit balances are uninvested cash)
+3. Opinions of investment advisory services - relative view of analysts
+4. Over-the-counter vs. NYSE volume - Over-the-counter trading is more speculative
+5. CBOE put/call ratio - puts outstanding/calls outstanding
+   5.) Stock index futures - observe expected price growth
+
+Smart Money Rules
+Confidence index = quality bond yields/average bond yields
+In periods of confidence, investors sell high-quality bonds (increasing their yields) and buy lower-quality bonds (decreasing their yields), decreasing the yield spread
+In periods of pessimism, investors buy high-quality bonds (decreasing their yields) and sell lower-quality bonds (increasing their yields), increasing the yield spread
+T-bill-Eurodollar yield spread - measures international crises and use of U.S. safe havens
+Debit balances in brokerage accounts (margin debt)
+Momentum Indicators
+Breadth of market
+Stocks above their 200-day moving average
+Stock Price and Volume Techniques
+Dow Theory - stock prices move in trends
+Importance of volume - Price changes on low volume tell us little. Price changes on high volume tell us whether suppliers or demanders are driving the change.
+Support and resistance levels
+Price Channels
+Relative Strength (RS) - RS = stock price / market index value
+Underlying technical analysis are the following assumptions:
+
+1. Values, and thus prices, are determined by supply and demand.
+2. Supply and demand are driven by both rational and irrational behavior.
+3. Security prices move in trends that persist over long periods.
+4. While the causes of changes in supply and demand are difficult to determine, the actual shifts in supply and demand can be observed in market price behavior.
+   The major challenge to technical analysis is the efficient market hypothesis (EMH).
+
+Fundemantalists believe they can forecast value changes by analyzing earnings and other publicly available data.
+Fundamentalists believe prices adjust quickly.
+EMH advocates believe the price adjustment to new information happens almost instantaneously.
+Fundamentalists, through their research, look for changes in the basis of value, which eventually leads to change in the supply and demand for the stock.
+Technicians look for evidence of changes in supply and demand through market signals and indicators.
+
+<hr>
+
+<a id="nav__prev" href="../cfa-level-1-quantitative-methods-part-2">Previous</a>
+
+<a id="nav__next" href="../cfa-study-topics">Topics List</a>
+<br>

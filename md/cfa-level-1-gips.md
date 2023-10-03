@@ -1,0 +1,79 @@
+---
+title: "CFA Level 1 GIPS"
+date: "November 22, 2022"
+excerpt: ""
+cover_image: ""
+categories:
+- GIPS
+tags:
+- CFA Level 1
+---
+
+##  Global Investment Performance Standards (GIPS&reg;)		
+	
+### Overview 
+
+* GIPS&reg; apply to investment management firms in order to benefit their current and prospective clients
+* FIRMS MUST be defined as an investment firm, subsidiary, or division held out to clients or PROSPECTIVE CLIENTS as a DISTINCT BUSINESS ENTITY.
+* Should include all fee- and non-fee paying accounts in performance presentation			
+* Must present 5 years of GIPS-compliant information or less if in business for less than 5 years				
+* Must assign portfolios to composites before the returns are known
+* Composite returns must be a asset-weighted average of component returns
+* Firms may include performance figures for periods prior to January 1, 2006, that were compliant with their applicable Country Version of GIPS&reg; (CVG), together with GIPS-compliant performance figures for periods after that date
+* When local law conflicts with GIPS, must comply with local law and report conflict in report
+* When the firm has discretion over the selection of sub-advisors, the firm must disclose portfolios managed by subadvisors in its composites														
+* Brief presentation is acceptable, as long as details are offered to all investors, upon request
+* Total firm assets includes total market value of discretionary and non-discretionary assets, including fee-paying nad non-fee paying accounts												
+* Composites must include all fee-paying, discretionary portfolios
+* A composite includes all discretionary, fee-paying portfolios that are managed according to the same strategy, objective, or mandate. Non-discretionary portfolios are not included. The firm must choose the composite in which each portfolio will be included on an ex-ante basis (prior to any investment results) according to predetermined criteria, so that the firm cannot selectively include only the best-performing portfolios in a composite.
+
+### Key Characteristics		
+
+* Definition of "the firm" (unique business unit)
+* Fair representation and full disclosure
+* Input data must be accurate				
+* No partial compliance		
+* Follow local law when it conflicts with GIPS, but disclose conflict
+
+### Requirements of GIPS&reg;			
+
+* Must provide a compliant presentation to all prospects
+* Must provide, to clients requesting it, a compliant presentation and a composite description for any composite included on the firm's list
+* For joint marketing, clearly distinguish non-compliant firms from compliant firms	
+* If a firm changes its organization, historical composite results cannot be changed	
+* List discontinued composites for at least 5 years
+* Must document, in writing, policies and procedures the firms uses to comply with GIPS.
+* When regulations in a GIPS-compliant firm's home country conflict with GIPS&reg;, the firm must foollow any applicable country-specific regulation and disclose the conflict in the GIPS-compliant presentation			
+														
+### Compliance Statement	
+
+* "[company name] has prepared and presented this report in compliance with the Global Investment Performance Standards (GIPS&reg;)."													
+
+### Major Sections of GIPS&reg;		
+
+1. Fundamentals of Compliance				
+2. Input Data
+3. Calculation methodology			
+4. Composite construction			
+5. Disclosures	
+6. Presentation and reporting				
+7. Real estate - applies to most real estate investments, regardless of the degree of leverage or the degree of management by the firm														
+8. Private equity
+														
+### Compliance with GIPS		
+
+* Verification is not required				
+* Verification can be performed by an independent 3rd party only	* Must be in whole compliance with GIPS&reg; to claim compliance
+* Cannot claim partial compliance
+* Verification must be applied on a firm-wide basis; there is no such thing as verification of results for a single composite or portion of the firm's performance. A verification report must be provided upon request, only. Verification must be performed by an independent third party, which does not have to be a public accounting firm.
+* Presenting GIPS-compliant performance only since the firm's inception is acceptable. Five years is the minimum if the firm has been in existence five years or more. 						
+* The firm must add annual performance results each year going forward up to a minimum of ten years of performance history.
+
+
+<hr>
+
+<a id="nav__prev" href="../cfa-study-topics">Topics List</a>
+
+<!-- <a id="nav__next" href="../cfa-level-1-ethical-and-professional-standards-part-1">Back</a> -->
+
+<br>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("header") %>
+  <body
+    class="max-w-6xl mx-auto bg-gradient-to-r from-slate-700 via-slate-700 to-slate-600 text-slate-100 mt-[100px]"
+  >
+    <div class="my-4">
+      <a
+        class="bg-slate-500 hover:bg-slate-400 text-slate-100 hover:text-slate-200 border border-slate-200 rounded-2xl px-2 py-1"
+        href="<%= frontmatter.categories %>"
+        ><%= frontmatter.categories %></a
+      >
+    </div>
+    <div class="underline my-8">
+      <a href="/new-entry">Check similar posts</a>
+    </div>
+
+    <%= frontmatter.title %>
+    <div class="shadow-md shadow-white p-8"><%- text %></div>
+
+    <%- include("footer") %>
+  </body>
+</html>
