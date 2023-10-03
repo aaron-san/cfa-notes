@@ -70,8 +70,8 @@ app.use((req, res) => {
   res.status(404).render("404");
 });
 
+export const handler = serverless(app);
+
 http.createServer(app).listen(3000, () => {
   console.log("Guestbook app started on port 3000.");
 });
-
-export const handler = serverless(app);

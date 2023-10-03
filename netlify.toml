@@ -4,9 +4,9 @@
   node_bundler = "esbuild"
 [[redirects]]
   force = true
-  from = "/posts/*"
+  from = "/app/*"
   status = 200
-  to = "/.netlify/functions/posts/:splat"
+  to = "/.netlify/functions/app/:splat"
 
 
 # [build]
