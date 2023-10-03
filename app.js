@@ -3,6 +3,7 @@ const path = require("path");
 const express = require("express");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
+import serverless from "serverless-http";
 
 const md = require("markdown-it")();
 const mk = require("@iktakahiro/markdown-it-katex");
@@ -72,3 +73,5 @@ app.use((req, res) => {
 http.createServer(app).listen(3000, () => {
   console.log("Guestbook app started on port 3000.");
 });
+
+export const handler = serverless(app);
