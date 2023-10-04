@@ -14,6 +14,7 @@ git push -u origin main
 
 heroku login
 heroku open --app cfa-notes (open app in browser)
+heroku logs --tail --app cfa-notes
 
 ## Deployment
 

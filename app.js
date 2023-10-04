@@ -1,4 +1,4 @@
-require("dotenv").config(); // Load ENV Variables
+// require("dotenv").config(); // Load ENV Variables
 const http = require("http");
 const path = require("path");
 const express = require("express");
@@ -78,8 +78,8 @@ app.use((req, res) => {
 
 // module.exports.handler = serverless(app);
 
-const PORT = process.env.PORT || 3000;
-app.listen(app.get("port"), () => {
+// const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log(`Guestbook app started on port ${PORT}.`);
   // console.log(`Guestbook app started on port ${app.get("port")}.`);
 });
