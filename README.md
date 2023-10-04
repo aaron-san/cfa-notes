@@ -12,6 +12,9 @@ git remote add origin https://github.com/aaron-san/cfa-notes.git
 git push -u origin main
 ```
 
+heroku login
+heroku open --app cfa-notes (open app in browser)
+
 ## Deployment
 
 ??????? (Unsuccessful with Netlify and Vercel)
