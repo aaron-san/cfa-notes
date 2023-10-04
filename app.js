@@ -12,6 +12,7 @@ md.use(mk);
 
 const app = express();
 
+// app.set("port", process.env.PORT || 3000);
 const postsRouter = require("./postsRouter.js");
 app.use("/posts", postsRouter);
 
@@ -77,6 +78,8 @@ app.use((req, res) => {
 
 // module.exports.handler = serverless(app);
 
-http.createServer(app).listen(process.env.PORT, () => {
-  console.log(`Guestbook app started on port ${process.env.PORT}.`);
+const PORT = process.env.PORT || 3000;
+app.listen(app.get("port"), () => {
+  console.log(`Guestbook app started on port ${PORT}.`);
+  // console.log(`Guestbook app started on port ${app.get("port")}.`);
 });

@@ -2,12 +2,12 @@
   "name": "cfa-notes",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "server": "nodemon server",
+    "server": "nodemon app",
     "watch-tailwind": "npx tailwindcss -i ./input.css -o ./public/styles/output.css --watch",
-    "dev": "npm-run-all -p -r server watch-tailwind",
-    "start": "node server",
+    "dev": "npm-run-all -p -r app watch-tailwind",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "vercel --prod"
   },
