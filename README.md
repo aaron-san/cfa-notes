@@ -18,7 +18,7 @@ heroku logs --tail --app cfa-notes
 
 ## Deployment
 
-??????? (Unsuccessful with Netlify and Vercel)
+??????? (Unsuccessful with Netlify and Vercel, Try Heroku)
 Make sure directory structure is standard and research again
 
 ``bash
@@ -36,3 +36,6 @@ Select "Continue with GitHub"
 - ejs => our templating engine
 - dotenv => will allow us to use a `.env` file to define environmental variables we can access via the `process.env` object
 - morgan => logs details about requests to our server, mainly to help us debug
+
+npx rimraf node_modules
+rimraf node_modules (after npm i -g rimraf)
