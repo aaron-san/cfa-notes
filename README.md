@@ -18,14 +18,12 @@ heroku logs --tail --app cfa-notes
 
 ## Deployment
 
-??????? (Unsuccessful with Netlify and Vercel, Try Heroku)
+### 👇 Create a Heroku account
 
-``bash
-
-```
-Select "Continue with GitHub"
-
-```
+1. Register and add payment information 💳
+2. Link to Github repository
+3. If you have dotenv variables in your app, make sure dotenv is a dependency in the _packages.json_ file, ⚠️ **_not_** a dev-dependency. In the Heroku project dashboard, go to **Setting** tab. Select **Config Vars**. Add config variables as key-value pairs (e.g., PORT=3000 in .env file ➡️ KEY: PORT, VALUE: 3000 in Heroku Config Vars).
+4. Add Procfile to project root directory. A Procfile is a file with no extension and should contain `web:npm start`
 
 - express => web framework for create server and writing routes
 - mongoose => ODM for connecting to and sending queries to a mongo database
@@ -46,9 +44,3 @@ npm cache clean --force
 # 👇️ install packages
 
 npm install
-
-# 👇 Create a Heroku account
-
-1. Register and add payment information 💳
-2. Link to Github repository
-3. If you have dotenv variables in your app, make sure dotenv is a dependency in the _packages.json_ file, ⚠️ **_not_** a dev-dependency. In the Heroku project dashboard, go to **Setting** tab. Select **Config Vars**. Add config variables as key-value pairs (e.g., PORT=3000 in .env file ➡️ KEY: PORT, VALUE: 3000).
