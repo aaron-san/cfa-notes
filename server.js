@@ -1,9 +1,10 @@
+require("dotenv").config(); // Load ENV Variables
 const http = require("http");
 const path = require("path");
 const express = require("express");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
-import serverless from "serverless-http";
+// const serverless = require("serverless-http");
 
 const md = require("markdown-it")();
 const mk = require("@iktakahiro/markdown-it-katex");
@@ -11,7 +12,7 @@ md.use(mk);
 
 const app = express();
 
-const postsRouter = require("../../postsRouter.js");
+const postsRouter = require("./postsRouter.js");
 app.use("/posts", postsRouter);
 
 app.use(express.static("public"));
@@ -30,11 +31,15 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("pages/index");
+});
+
+app.get("/about", (req, res) => {
+  res.render("pages/about");
 });
 
 app.get("/new-entry", (req, res) => {
-  res.render("new-entry");
+  res.render("pages/new-entry");
 });
 
 // app.get("/post/:post", (req, res) => {
@@ -67,11 +72,11 @@ app.post("/new-entry", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).render("404");
+  res.status(404).render("pages/404");
 });
 
-export const handler = serverless(app);
+// module.exports.handler = serverless(app);
 
-http.createServer(app).listen(3000, () => {
-  console.log("Guestbook app started on port 3000.");
+http.createServer(app).listen(process.env.PORT, () => {
+  console.log(`Guestbook app started on port ${process.env.PORT}.`);
 });

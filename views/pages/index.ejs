@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head") %>
+  </head>
+  <body class="container">
+    <header
+      class="absolute left-0 top-0 w-full text-slate-200 shadow-md p-4 bg-gradient-to-tr from-slate-700 via-slate-600 to-slate-500"
+    >
+      <%- include("../partials/header") %>
+    </header>
+    <h1 class="text-red-600 underline">
+      Express Guestbook
+      <a href="/new-entry" class="btn btn-primary pull-right"
+        >Write in the guestbook</a
+      >
+    </h1>
+
+    <% if (entries.length) { %> <% entries.forEach((entry) => { %>
+    <div class="">
+      <div class="">
+        <div class=""><%= entry.published %></div>
+      </div>
+      <div><%= entry.title %></div>
+      <div class=""><%= entry.content %></div>
+    </div>
+    <% }) %> <% } else { %> No entries!
+    <a href="/new-entry">Add one!</a> <% } %> <%- include("../partials/footer")
+    %>
+  </body>
+</html>
