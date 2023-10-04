@@ -19,11 +19,8 @@ heroku logs --tail --app cfa-notes
 ## Deployment
 
 ??????? (Unsuccessful with Netlify and Vercel, Try Heroku)
-Make sure directory structure is standard and research again
 
 ``bash
-npm i -g vercel
-vercel
 
 ```
 Select "Continue with GitHub"
@@ -37,5 +34,21 @@ Select "Continue with GitHub"
 - dotenv => will allow us to use a `.env` file to define environmental variables we can access via the `process.env` object
 - morgan => logs details about requests to our server, mainly to help us debug
 
+# Remove node_modules
+
 npx rimraf node_modules
 rimraf node_modules (after npm i -g rimraf)
+
+# 👇️ clean npm cache
+
+npm cache clean --force
+
+# 👇️ install packages
+
+npm install
+
+# 👇 Create a Heroku account
+
+1. Register and add payment information 💳
+2. Link to Github repository
+3. If you have dotenv variables in your app, make sure dotenv is a dependency in the _packages.json_ file, ⚠️ **_not_** a dev-dependency. In the Heroku project dashboard, go to **Setting** tab. Select **Config Vars**. Add config variables as key-value pairs (e.g., PORT=3000 in .env file ➡️ KEY: PORT, VALUE: 3000).
