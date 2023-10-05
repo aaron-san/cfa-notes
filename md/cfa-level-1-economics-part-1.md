@@ -8,6 +8,8 @@ categories:
 tags:
   - Economics
 thumbnail: ""
+forward_link: "CFA Level 1: Economics (part 1)"
+back_link: ""
 ---
 
 ## Supply and Demand
@@ -33,27 +35,27 @@ thumbnail: ""
 
 ### Price Elasticity of Demand
 
-- `$\mathrm {\large {E_{p} = \frac{\text{}\Delta \text{Quantity demanded}} {\text{}\Delta Price} = \frac{\Delta Q_{d} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$`
-
-<!-- ... we have $x\_1 = 132$ and $x\_2 = 370$ and so ... -->
+$$\mathrm {\large {E_{p} = \frac{\Delta \text{Quantity demanded}} {\Delta Price} = \frac{\Delta Q_{d} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$$
 
 - Concerned with absolute value
 
 ## Factors that influence Elasticity of Demand
 
 - Current price
-- Closeness and number of substitutes \* Proportion of income spent on the goods
+- Closeness and number of substitutes
+- Proportion of income spent on the goods
 - Time elapsed since price change (search for substitutes)
 
 ### Cross Elasticity of Demand
 
-- $\mathrm {\large {E_{c} = \frac{\text{%}\Delta \text{Quantity demanded}} {\text{%} \Delta \text{Price of substitute or complement}}}}$
+$$\mathrm {\large {E_{c} = \frac{\Delta \text{Quantity demanded}} {\Delta \text{Price of substitute or complement}}}}$$
+
 - Value is positive for a substitute
 - Value is negative for a complement
 
 ### Income Elasticity of Demand
 
-- $\mathrm {\large {E_{i} = \frac{\text{%}\Delta \text{Quantity Demanded}} {\text{%} \Delta Income}}}$
+$$\mathrm {\large {E_{i} = \frac{\Delta \text{Quantity Demanded}} { \Delta Income}}}$$
 
 - Value is greater than 1 (normal good, income elastic)
 - Value is between 0 and 1 (normal good, income inelastic)
@@ -61,7 +63,8 @@ thumbnail: ""
 
 ### Price Elasticity of Supply
 
-- $\mathrm {\large {E_{p} = \frac{\text{%}\Delta \text{Quantity Supplied}} {\text{%} \Delta Price} = \frac{\Delta Q_{s} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$
+$$\mathrm {\large {E_{p} = \frac{\Delta Quantity Supplied} { \Delta Price} = \frac{\Delta Q_{s} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$$
+
 - Concerned with absolute value
 
 ### Factors that influence Elasticity of Supply
@@ -76,7 +79,8 @@ thumbnail: ""
 
 ### Gross Domestic Product (GDP)
 
-- GDP = C + I + G + EX
+$$ GDP = C + I + G + EX $$
+
 - GDP equals the value of the total goods and services produced within a country over a given period of time
 - GDP can be measured in current or inflation-adjusted (constant) prices (real GDP)
 - Taxing for government spending stifles private investment and consumption

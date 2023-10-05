@@ -5,27 +5,45 @@
   </head>
 
   <body
-    class="max-w-6xl mx-auto bg-gradient-to-r from-slate-700 via-slate-700 to-slate-600 text-slate-100 mt-[100px]"
+    class="bg-gradient-to-r from-slate-700 via-slate-700 to-slate-600 text-slate-100 mt-[100px]"
   >
-    <header
-      class="absolute left-0 top-0 w-full text-slate-200 shadow-md p-4 bg-gradient-to-tr from-slate-700 via-slate-600 to-slate-500"
-    >
-      <%- include("../partials/header") %>
-    </header>
-    <div class="my-4">
-      <a
-        class="bg-slate-500 hover:bg-slate-400 text-slate-100 hover:text-slate-200 border border-slate-200 rounded-2xl px-2 py-1"
-        href="<%= frontmatter.categories %>"
-        ><%= frontmatter.categories %></a
+    <article class="max-w-5xl mx-auto">
+      <header
+        class="absolute left-0 top-0 w-full text-slate-200 shadow-md p-4 bg-gradient-to-tr from-slate-700 via-slate-600 to-slate-500"
       >
-    </div>
-    <div class="underline my-8">
+        <%- include("../partials/header") %>
+      </header>
+      <div class="my-4">
+        <a
+          class="bg-slate-500 hover:bg-slate-400 text-slate-100 hover:text-slate-200 border border-slate-200 rounded-2xl px-2 py-1"
+          href="<%= frontmatter.categories %>"
+          ><%= frontmatter.categories %></a
+        >
+      </div>
+      <!-- <div class="underline my-8">
       <a href="/new-entry">Check similar posts</a>
-    </div>
+    </div> -->
 
-    <%= frontmatter.title %>
-    <div class="shadow-md shadow-white p-8"><%- text %></div>
-
-    <%- include("../partials/footer") %>
+      <%= frontmatter.title %>
+      <!-- Content -->
+      <div class="border-l-slate-200 py-8"><%- text %></div>
+      <!-- Links -->
+      <div class="flex justify-center mt-4 gap-8">
+        <% if(locals.frontmatter) { %>
+        <button
+          class="bg-slate-200 hover:opacity-90 text-slate-800 shadow-sm hover:shadow-white border border-slate-200 px-6 py-2 rounded-lg"
+        >
+          <a href="<%= frontmatter.back_link %>"> Back </a>
+        </button>
+        <% } %> <% if(locals.frontmatter) { %>
+        <button
+          class="bg-slate-200 hover:opacity-90 text-slate-800 shadow-sm hover:shadow-white border border-slate-200 px-6 py-2 rounded-lg"
+        >
+          <a href="<%= frontmatter.forward_link %>"> Next </a>
+          <% } %>
+        </button>
+      </div>
+    </article>
+    <div><%- include("../partials/footer") %></div>
   </body>
 </html>

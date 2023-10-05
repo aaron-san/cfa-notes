@@ -4,63 +4,61 @@
     <%- include("../partials/head") %>
   </head>
   <body
-    class="max-w-6xl mx-auto bg-gradient-to-r from-slate-700 via-slate-700 to-slate-600 text-slate-100 mt-[100px]"
+    class="bg-gradient-to-r from-slate-700 via-slate-700 to-slate-600 text-slate-100 mt-[100px]"
   >
     <header
       class="absolute left-0 top-0 w-full text-slate-200 shadow-md p-4 bg-gradient-to-tr from-slate-700 via-slate-600 to-slate-500"
     >
       <%- include("../partials/header") %>
     </header>
-    <div class="my-4">
-      <!-- <h1 class="text-red-600 underline">
-      Express Guestbook
+    <!-- 
       <a href="/new-entry" class="btn btn-primary pull-right"
         >Write in the guestbook</a
       >
     </h1> -->
 
-      <section class="w-full bg-[url('/assets/finance-bloomberg.jpg')] bg-no-repeat p-4 rounded-md">
-    
+    <section class="rounded-md max-w-5xl mx-auto my-4">
+      <!-- <section class="w-full bg-[url('/assets/finance-bloomberg.jpg')] bg-no-repeat p-4 rounded-md"> -->
 
-    <h1>CFA Level 1</h1>
-    <article
-      class="flex flex-wrap border border-slate-200 rounded-md p-6 gap-4 text-2xl mb-8 bg-cover"
-    >
-      <div
-        class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+      <h1>CFA Level 1</h1>
+      <article
+        class="flex flex-wrap border border-slate-200 rounded-md p-6 gap-4 text-2xl mb-8 bg-cover"
       >
-        <a href="/posts/cfa-level-1-gips">GIPS</a>
-      </div>
-      <div
-        class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
-      >
-        <a href="/posts/cfa-level-1-equities">Equities</a>
-      </div>
-      <div
-        class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
-      >
-        <a href="/posts/cfa-level-1-alternative-investments-part-1"
-          >Alternative Investments</a
+        <div
+          class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
         >
-      </div>
-      <div
-        class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+          <a href="/posts/cfa-level-1-gips">GIPS</a>
+        </div>
+        <div
+          class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+        >
+          <a href="/posts/cfa-level-1-equities">Equities</a>
+        </div>
+        <div
+          class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+        >
+          <a href="/posts/cfa-level-1-alternative-investments-part-1"
+            >Alternative Investments</a
+          >
+        </div>
+        <div
+          class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+        >
+          <a href="/posts/cfa-level-1-economics-part-1">Economics</a>
+        </div>
+      </article>
+
+      <h1>CFA Level 2</h1>
+      <article
+        class="flex flex-wrap border border-slate-200 rounded-md p-6 gap-4 text-2xl"
       >
-        <a href="/posts/cfa-level-1-economics-part-1">Economics</a>
-      </div>
-    </article>
-  
-    <h1>CFA Level 2</h1>
-    <article
-      class="flex flex-wrap border border-slate-200 rounded-md p-6 gap-4 text-2xl"
-    >
-      <div
-        class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
-      >
-        <a href="/posts/cfa-level-2-fixed-income-part-1">Fixed Income</a>
-      </div>
-    </article>
-  </section>
+        <div
+          class="px-2 py-1 bg-slate-600 hover:opacity-90 text-slate-200 rounded-md cursor-pointer border border-slate-200 hover:translate-y-[1px]"
+        >
+          <a href="/posts/cfa-level-2-fixed-income-part-1">Fixed Income</a>
+        </div>
+      </article>
+    </section>
     <!-- <% if (entries.length) { %> <% entries.forEach((entry) => { %>
     <div class="">
       <div class="">
@@ -71,6 +69,6 @@
     </div> 
     <% }) %> <% } else { %> No entries!
     <a href="/new-entry">Add one!</a> <% } %>   -->
-    <%- include("../partials/footer") %>
+    <div><%- include("../partials/footer") %></div>
   </body>
 </html>

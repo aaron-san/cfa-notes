@@ -35,6 +35,10 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
+app.get("/downloads", (req, res) => {
+  res.render("pages/downloads");
+});
+
 app.get("/about", (req, res) => {
   res.render("pages/about");
 });
