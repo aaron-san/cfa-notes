@@ -27,14 +27,14 @@ export async function generateStaticParams() {
   });
 }
 
-export default async function Post({ params }: { params: { slug: string[] } }) {
+export default async function Post({ params }: { params: { slug: string } }) {
   const { slug } = params;
 
   if (!slug) {
     throw new Error("Slug is missing.");
   }
 
-  const slugPath = slug.join("/"); // Convert array back to a path
+  const slugPath = [...slug].join("/"); // Convert array back to a path
 
   const filePath = path.join(contentDirectory, `${slugPath}.mdx`);
 
