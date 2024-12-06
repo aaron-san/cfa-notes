@@ -27,14 +27,16 @@ export async function generateStaticParams() {
   });
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+type tParams = Promise<{ slug: string[] }>;
+
+export default async function Post({ params }: { params: tParams }) {
   const { slug } = await params;
 
   if (!slug) {
     throw new Error("Slug is missing.");
   }
 
-  const slugPath = [...slug].join("/"); // Convert array back to a path
+  const slugPath = slug.join("/"); // Convert array back to a path
 
   const filePath = path.join(contentDirectory, `${slugPath}.mdx`);
 
