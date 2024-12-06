@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   if (!slug) {
     throw new Error("Slug is missing.");

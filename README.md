@@ -1,3 +1,5 @@
+npm i --legacy-peer-deps
+
 # MDX support
 
 npm install @next/mdx @mdx-js/loader @mdx-js/react
