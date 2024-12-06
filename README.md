@@ -1,3 +1,15 @@
+# MDX support
+
+npm install @next/mdx @mdx-js/loader @mdx-js/react
+
+# Syntax highlighting with Prism
+
+npm install prismjs
+
+# KaTeX for math rendering
+
+npm install katex
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
