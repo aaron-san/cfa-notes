@@ -1,4 +1,4 @@
-// import Link from "next/link";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -47,8 +47,7 @@ export default async function Post({ params }: { params: tParams }) {
   const fileContents = fs.readFileSync(filePath, "utf8");
 
   const { data: metadata, content } = matter(fileContents);
-  const { title } = metadata;
-  // const { title, backUrl, nextUrl } = metadata;
+  const { title, backUrl, nextUrl } = metadata;
 
   const mdxSource = await serialize(content, {
     mdxOptions: {
@@ -59,8 +58,37 @@ export default async function Post({ params }: { params: tParams }) {
 
   return (
     <>
-      <h1>{title}</h1>
+      <div className="relative">
+        <div className="absolute top-0 left-0 z-40">
+          <button className="px-4 py-1 border-2 border-slate-500 rounded-r-[30px] hover:bg-slate-200 active:scale-[98%] text-slate-600 bg-slate-100">
+            <Link href="/posts">All Posts</Link>
+          </button>
+        </div>
+        <div className="absolute left-[62px] -top-1 w-[34px] h-[42px] bg-slate-100 z-30 hidden md:inline"></div>
+        <div className="absolute left-[65px] -top-1 w-[40px] h-[42px] rounded-r-[29px] bg-slate-100  z-20 border-2 border-slate-500 hidden md:inline"></div>
+        <div className="absolute left-[82px] px-4 py-1 border-2 border-slate-500 rounded-r-[30px]   bg-cyan-200 text-slate-600 z-10 pl-10 hidden md:inline">
+          {title}
+        </div>
+      </div>
+
+      <h1 className="mt-12">{title}</h1>
+      {/* Pass the serialized MDX to the client component */}
       <ClientMDXRenderer compiledSource={mdxSource} />
+      <div className="flex justify-center gap-4 max-w-4xl mt-8 mb-12 container mx-auto">
+        {backUrl && (
+          <button className="pl-8 pr-6 py-2 border border-slate-500 rounded-l-full hover:bg-slate-200 active:scale-[98%]">
+            <Link href={backUrl}>Back</Link>
+          </button>
+        )}
+        <button className="px-6 py-2 border border-slate-500 hover:bg-slate-200 active:scale-[98%]">
+          <Link href="/posts">All Topics</Link>
+        </button>
+        {nextUrl && (
+          <button className="pl-6 pr-8 py-2 border border-slate-500 rounded-r-full hover:bg-slate-200 active:scale-[98%]">
+            {nextUrl && <Link href={nextUrl}>Next</Link>}
+          </button>
+        )}
+      </div>
     </>
   );
 }

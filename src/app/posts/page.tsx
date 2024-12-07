@@ -33,55 +33,66 @@ const PostsHome = () => {
 
   return (
     <div className="">
-      <h1>All Topics</h1>
-      <h2>CFA Level 1</h2>
-      <div className="flex gap-4">
-        {cfaOneSlugs.map((slugArr) => {
-          const { slug } = slugArr;
-          return (
-            <button
-              key={slug.join("/")}
-              className="border border-slate-400 rounded px-4 py-2"
-            >
-              <Link href={"posts/cfa-level-1/" + slug.join("/")}>
-                {slug.join("/")}
-              </Link>
-            </button>
-          );
-        })}
+      <div className="mb-2 text-xl text-slate-500">All Topics</div>
+      <div className="p-4 shadow-md rounded my-2">
+        <h2 className="mb-2">CFA Level 1</h2>
+        <div className="flex gap-2 flex-wrap">
+          {cfaOneSlugs.map((slugArr) => {
+            const { slug } = slugArr;
+            return (
+              <button
+                key={slug.join("/")}
+                className="border border-slate-400 rounded px-4 py-2"
+              >
+                <Link href={"posts/cfa-level-1/" + slug.join("/")}>
+                  {slug
+                    .join("/")
+                    .split("-")
+                    .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
+                    .join(" ")}
+                </Link>
+              </button>
+            );
+          })}
+        </div>
       </div>
-      <h2>CFA Level 2</h2>
-      <div>
-        {cfaTwoSlugs.map((slugArr) => {
-          const { slug } = slugArr;
-          return (
-            <button
-              key={slug.join("/")}
-              className="border border-slate-400 rounded px-4 py-2"
-            >
-              <Link href={"posts/cfa-level-2/" + slug.join("/")}>
-                {slug.join("/")}
-              </Link>
-            </button>
-          );
-        })}
+      <div className="p-4 shadow-md rounded my-2">
+        <h2 className="mb-2">CFA Level 2</h2>
+        <div className="flex gap-2 flex-wrap">
+          {cfaTwoSlugs.map((slugArr) => {
+            const { slug } = slugArr;
+            return (
+              <button
+                key={slug.join("/")}
+                className="border border-slate-400 rounded px-4 py-2"
+              >
+                <Link href={"posts/cfa-level-2/" + slug.join("/")}>
+                  {slug.join("/")}
+                </Link>
+              </button>
+            );
+          })}
+        </div>
       </div>
-      <h2>CFA Level 3</h2>
-      <ul>
-        {cfaThreeSlugs.map((slugArr) => {
-          const { slug } = slugArr;
-          return (
-            <button
-              key={slug.join("/")}
-              className="border border-slate-400 rounded px-4 py-2"
-            >
-              <Link href={"posts/cfa-level-3/" + slug.join("/")}>
-                {slug.join("/")}
-              </Link>
-            </button>
-          );
-        })}
-      </ul>
+
+      <div className="p-4 shadow-md rounded my-2">
+        <h2 className="mb-2">CFA Level 3</h2>
+        <div className="flex gap-2 flex-wrap">
+          {cfaThreeSlugs.map((slugArr) => {
+            const { slug } = slugArr;
+            return (
+              <button
+                key={slug.join("/")}
+                className="border border-slate-400 rounded px-4 py-2"
+              >
+                <Link href={"posts/cfa-level-3/" + slug.join("/")}>
+                  {slug.join("/")}
+                </Link>
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
