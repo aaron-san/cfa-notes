@@ -12,21 +12,21 @@ const nextConfig: import("next").NextConfig = {
   experimental: {
     mdxRs: true, // Enable MDX support
   },
-  // webpack(config) {
-  //   config.module.rules.push({
-  //     test: /\.mdx$/,
-  //     use: [
-  //       {
-  //         loader: "next-mdx-remote/loader",
-  //         options: {
-  //           rehypePlugins: [rehypeHighlight, rehypeKatex],
-  //           remarkPlugins: [remarkMath],
-  //         },
-  //       },
-  //     ],
-  //   });
-  //   return config;
-  // },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.mdx$/,
+      use: [
+        {
+          loader: "next-mdx-remote/loader",
+          options: {
+            rehypePlugins: [rehypeHighlight, rehypeKatex],
+            remarkPlugins: [remarkMath],
+          },
+        },
+      ],
+    });
+    return config;
+  },
 };
 
 const withMDX = createMDX({
