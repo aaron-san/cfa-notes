@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="w-full h-12 bg-slate-900 border-b-2 border-slate-100/50 fixed z-50">
-      <nav className="flex mx-auto justify-between mb-10 container px-2 md:px-8">
+      <nav className="flex mx-auto justify-between mb-10 container px-4 md:px-8">
         <div className="flex items-center text md:text-2xl font-bolder hover:underline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">
           <Link href="/">Free Analyst Notes</Link>
         </div>
