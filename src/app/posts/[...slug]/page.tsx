@@ -67,12 +67,12 @@ export default async function Post({ params }: { params: tParams }) {
         </div>
         <div className="absolute left-[62px] -top-2 w-[34px] h-[48px] bg-slate-100 z-30"></div>
         <div className="absolute left-[65px] -top-1 w-[40px] h-[42px] rounded-r-[29px] bg-slate-100  z-20 border-2 border-slate-500"></div>
-        <div className="absolute left-[82px] pr-2 py-1 border-2 border-slate-500 rounded-r-[30px]   bg-cyan-200 text-slate-600 z-10 pl-8 text-nowrap overflow-x-scroll max-w-[240px] md:max-w-[600px] lg:max-w-none">
+        <div className="absolute left-[82px] pr-2 py-1 border-2 border-slate-500 rounded-r-[30px]   bg-cyan-200 text-slate-600 z-10 pl-8 text-nowrap max-w-[240px] md:max-w-[600px] lg:max-w-none">
           {getSubstring(title)}
         </div>
       </div>
 
-      <p className="mt-[70px] mb-4 text-slate-500 border border-slate-500 rounded px-2 py-1 text-sm">
+      <p className="mt-[70px] mb-4 text-slate-500 border border-slate-500 rounded px-2 py-1 text-sm md:w-fit">
         {title}
       </p>
       {/* Pass the serialized MDX to the client component */}

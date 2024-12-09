@@ -67,7 +67,7 @@ const PostsHome = () => {
             return (
               hasPart && (
                 <button
-                  key={slug.join("/")}
+                  key={slugJoined}
                   className="border border-slate-400 rounded px-4 py-2"
                 >
                   <Link href={"posts/cfa-level-2/" + slugJoined}>
@@ -90,7 +90,7 @@ const PostsHome = () => {
             return (
               hasPart && (
                 <button
-                  key={slug.join("/")}
+                  key={slugJoined}
                   className="border border-slate-400 rounded px-4 py-2"
                 >
                   <Link href={"posts/cfa-level-3/" + slugJoined}>
