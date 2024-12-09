@@ -104,5 +104,5 @@ ol {
 
 /* Code snippets */
 .katex-html {
-  overflow: auto;
+  overflow-y: auto;
 }
