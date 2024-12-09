@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import { getCleanedSlug } from "../utils/utils";
 
 const getSlugs = (contentDirectory: string) => {
   const files = fs
@@ -39,19 +40,19 @@ const PostsHome = () => {
         <div className="flex gap-2 flex-wrap">
           {cfaOneSlugs.map((slugArr) => {
             const { slug } = slugArr;
+            const slugJoined = slug.join("/");
+            const hasPart = slugJoined.match(/-[^2-9]{1}$/i);
             return (
-              <button
-                key={slug.join("/")}
-                className="border border-slate-400 rounded px-4 py-2"
-              >
-                <Link href={"posts/cfa-level-1/" + slug.join("/")}>
-                  {slug
-                    .join("/")
-                    .split("-")
-                    .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
-                    .join(" ")}
-                </Link>
-              </button>
+              hasPart && (
+                <button
+                  key={slugJoined}
+                  className="border border-slate-400 rounded px-4 py-2"
+                >
+                  <Link href={"posts/cfa-level-1/" + slugJoined}>
+                    {getCleanedSlug(slugJoined)}
+                  </Link>
+                </button>
+              )
             );
           })}
         </div>
@@ -61,15 +62,19 @@ const PostsHome = () => {
         <div className="flex gap-2 flex-wrap">
           {cfaTwoSlugs.map((slugArr) => {
             const { slug } = slugArr;
+            const slugJoined = slug.join("/");
+            const hasPart = slugJoined.match(/-[^2-9]{1}$/i);
             return (
-              <button
-                key={slug.join("/")}
-                className="border border-slate-400 rounded px-4 py-2"
-              >
-                <Link href={"posts/cfa-level-2/" + slug.join("/")}>
-                  {slug.join("/")}
-                </Link>
-              </button>
+              hasPart && (
+                <button
+                  key={slug.join("/")}
+                  className="border border-slate-400 rounded px-4 py-2"
+                >
+                  <Link href={"posts/cfa-level-2/" + slugJoined}>
+                    {getCleanedSlug(slugJoined)}
+                  </Link>
+                </button>
+              )
             );
           })}
         </div>
@@ -80,15 +85,19 @@ const PostsHome = () => {
         <div className="flex gap-2 flex-wrap">
           {cfaThreeSlugs.map((slugArr) => {
             const { slug } = slugArr;
+            const slugJoined = slug.join("/");
+            const hasPart = slugJoined.match(/-[^2-9]{1}$/i);
             return (
-              <button
-                key={slug.join("/")}
-                className="border border-slate-400 rounded px-4 py-2"
-              >
-                <Link href={"posts/cfa-level-3/" + slug.join("/")}>
-                  {slug.join("/")}
-                </Link>
-              </button>
+              hasPart && (
+                <button
+                  key={slug.join("/")}
+                  className="border border-slate-400 rounded px-4 py-2"
+                >
+                  <Link href={"posts/cfa-level-3/" + slugJoined}>
+                    {getCleanedSlug(slugJoined)}
+                  </Link>
+                </button>
+              )
             );
           })}
         </div>

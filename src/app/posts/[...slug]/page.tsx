@@ -7,6 +7,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import ClientMDXRenderer from "../../components/ClientMDXRenderer";
 import rehypeHighlight from "rehype-highlight";
+import { getSubstring } from "../../utils/utils";
 
 const contentDirectory = path.join(process.cwd(), "src/app/content");
 
@@ -64,14 +65,16 @@ export default async function Post({ params }: { params: tParams }) {
             <Link href="/posts">All Posts</Link>
           </button>
         </div>
-        <div className="absolute left-[62px] -top-1 w-[34px] h-[42px] bg-slate-100 z-30 hidden md:inline"></div>
-        <div className="absolute left-[65px] -top-1 w-[40px] h-[42px] rounded-r-[29px] bg-slate-100  z-20 border-2 border-slate-500 hidden md:inline"></div>
-        <div className="absolute left-[82px] px-4 py-1 border-2 border-slate-500 rounded-r-[30px]   bg-cyan-200 text-slate-600 z-10 pl-10 hidden md:inline">
-          {title}
+        <div className="absolute left-[62px] -top-2 w-[34px] h-[48px] bg-slate-100 z-30"></div>
+        <div className="absolute left-[65px] -top-1 w-[40px] h-[42px] rounded-r-[29px] bg-slate-100  z-20 border-2 border-slate-500"></div>
+        <div className="absolute left-[82px] pr-2 py-1 border-2 border-slate-500 rounded-r-[30px]   bg-cyan-200 text-slate-600 z-10 pl-8 text-nowrap overflow-x-scroll max-w-[240px] md:max-w-[600px] lg:max-w-none">
+          {getSubstring(title)}
         </div>
       </div>
 
-      <h1 className="mt-12">{title}</h1>
+      <p className="mt-[70px] mb-4 text-slate-500 border border-slate-500 rounded px-2 py-1 text-sm">
+        {title}
+      </p>
       {/* Pass the serialized MDX to the client component */}
       <ClientMDXRenderer compiledSource={mdxSource} />
       <div className="flex justify-center gap-4 max-w-4xl mt-8 mb-12 container mx-auto">
