@@ -1,39 +1,21 @@
+// https://github.com/hashicorp/next-mdx-remote
 import React from "react";
 import Link from "next/link";
 import path from "path";
 import matter from "gray-matter";
-// import { serialize } from "next-mdx-remote/serialize";
-// import remarkMath from "remark-math";
-// import rehypeKatex from "rehype-katex";
-// import ClientMDXRenderer from "../../components/ClientMDXRenderer";
-// import rehypeHighlight from "rehype-highlight";
+import { serialize } from "next-mdx-remote/serialize";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import ClientMDXRenderer from "../../components/ClientMDXRenderer";
+import rehypeHighlight from "rehype-highlight";
 import { getSubstring } from "../../utils/utils";
-// import { write as vWrite } from "to-vfile";
-// import {read as vRead, write as vWrite} from "to-vfile"
-// import { MDXRemote } from "next-mdx-remote/rsc";
-import { compileMDX } from "next-mdx-remote/rsc";
-// // new
+
 import { readFile, readdir, lstat } from "node:fs/promises";
 import Note from "../../components/Note";
-// import remarkFrontmatter from "remark-frontmatter";
-// import remarkMdxFrontmatter from "remark-mdx-frontmatter";
-// import { compile } from "@mdx-js/mdx";
-// import { write } from "fs";
-// import { compile, run } from "@mdx-js/mdx";
-// import * as runtime from "react/jsx-runtime";
-
-// const runtime = {
-//   Fragment: React.Fragment,
-//   jsx: React.createElement,
-//   jsxs: React.createElement,
-// };
+import remarkFrontmatter from "remark-frontmatter";
+import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
 const contentDirectory = path.join(process.cwd(), "src/app/content");
-
-// // type FileEntry = {
-// //   name: string;
-// //   isDirectory: () => boolean;
-// // };
 
 type Slug = {
   slug: string[];
@@ -43,7 +25,6 @@ type Slug = {
 export async function generateStaticParams() {
   const files = await readdir(contentDirectory, { withFileTypes: true });
   const processedFiles: Slug[] = [];
-  // const getSlugs = async (files: FileEntry[]): Promise<Slug> => {
   for (const entry of files) {
     const stats = await lstat(path.join(entry.parentPath, entry.name));
     // if directory
@@ -72,8 +53,6 @@ type tParams = Promise<{ slug: string[] }>;
 export default async function Post({ params }: { params: tParams }) {
   const { slug } = await params;
   const slugPath = slug.join("/"); // Combine the slug array into a path
-  // const slugPath = await params.slug.join("/"); // Combine the slug array into a path
-  // console.log(await params);
   const filePath = path.join(contentDirectory, `${slugPath}.mdx`);
   const stats = await lstat(filePath);
   if (!stats.isFile()) {
@@ -82,29 +61,26 @@ export default async function Post({ params }: { params: tParams }) {
 
   const fileContents = await readFile(filePath, "utf8");
   const { data: metadata } = matter(fileContents);
-  // const { data: metadata, content } = matter(fileContents);
   const { title, backUrl, nextUrl } = metadata;
-  // const title = "Good title";
-  // const backUrl = "backUrl";
-  // const nextUrl = "nextUrl";
 
-  // const compiled = await compile(fileContents, {
-  //   jsx: true,
-  //   rehypePlugins: [rehypeHighlight, rehypeKatex],
-  //   remarkPlugins: [
-  //     remarkMath,
-  //     remarkFrontmatter,
-  //     [remarkMdxFrontmatter, { name: "frontmatter" }],
-  //   ],
-  // });
-
-  const { content, frontmatter } = await compileMDX({
-    source: fileContents,
-    options: { parseFrontmatter: true },
-    components: { Note },
+  const mdxSource = await serialize(fileContents, {
+    parseFrontmatter: true,
+    mdxOptions: {
+      rehypePlugins: [rehypeHighlight, rehypeKatex],
+      remarkPlugins: [
+        remarkMath,
+        remarkFrontmatter,
+        [remarkMdxFrontmatter, { name: "frontmatter" }],
+      ],
+    },
   });
-  console.log(frontmatter);
 
+  // let { title, backUrl, nextUrl } = mdxSource.frontmatter;
+  // title = String(title);
+  // backUrl = String(backUrl);
+  // nextUrl = String(nextUrl);
+
+  const components = { Note };
   return (
     <>
       <div className="relative">
@@ -123,9 +99,7 @@ export default async function Post({ params }: { params: tParams }) {
         {title}
       </p>
       {/* Pass the serialized MDX to the client component */}
-      {/* <ClientMDXRenderer compiledSource={mdxSource} /> */}
-      {/* <MDXRemote source={fileContents} /> */}
-      {content}
+      <ClientMDXRenderer compiledSource={mdxSource} components={components} />
       <div className="flex justify-center gap-4 max-w-4xl mt-8 mb-12 container mx-auto">
         {backUrl && (
           <button className="pl-8 pr-6 py-2 border border-slate-500 rounded-l-full hover:bg-slate-200 active:scale-[98%]">

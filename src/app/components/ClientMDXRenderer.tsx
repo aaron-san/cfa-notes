@@ -2,10 +2,22 @@
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
-export default function ClientMDXRenderer({
-  compiledSource,
-}: {
+type ComponentsMap = {
+  Note: React.ComponentType<{ children: React.ReactNode }>;
+  Highlight: React.ComponentType<{ text: string }>;
+  // Add other components here
+};
+
+type ClientMDXRendererProps = {
   compiledSource: MDXRemoteSerializeResult;
-}) {
-  return <MDXRemote {...compiledSource} />;
-}
+  components?: Partial<ComponentsMap>; // Use Partial if not all components are always provided
+};
+
+const ClientMDXRenderer: React.FC<ClientMDXRendererProps> = ({
+  compiledSource,
+  components,
+}) => {
+  return <MDXRemote {...compiledSource} components={components} />;
+};
+
+export default ClientMDXRenderer;
