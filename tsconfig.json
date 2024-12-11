@@ -29,5 +29,6 @@
     ".next/types/**/*.ts",
     "src/app/posts/[slug]"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "typeRoots": ["./types", "./node_modules/@types"]
 }

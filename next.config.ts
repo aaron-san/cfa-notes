@@ -10,23 +10,23 @@ const nextConfig: import("next").NextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   experimental: {
-    mdxRs: true, // Enable MDX support
+    mdxRs: true, // Enable MDX support,
   },
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.mdx$/,
-      use: [
-        {
-          loader: "next-mdx-remote/loader",
-          options: {
-            rehypePlugins: [rehypeHighlight, rehypeKatex],
-            remarkPlugins: [remarkMath],
-          },
-        },
-      ],
-    });
-    return config;
-  },
+  // webpack(config) {
+  //   config.module.rules.push({
+  //     test: /\.mdx$/,
+  //     use: [
+  //       {
+  //         loader: "next-mdx-remote/loader",
+  //         options: {
+  //           rehypePlugins: [rehypeHighlight, rehypeKatex],
+  //           remarkPlugins: [remarkMath],
+  //         },
+  //       },
+  //     ],
+  //   });
+  //   return config;
+  // },
 };
 
 const withMDX = createMDX({
