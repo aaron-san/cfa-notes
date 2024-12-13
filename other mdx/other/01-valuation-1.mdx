@@ -1,0 +1,152 @@
+---
+title: "Valuation (Part 1)"
+nextUrl: "01-valuation-2"
+---
+
+# Valuation (Part 1)
+
+- Every asset has an intrinsic value.
+- One limitation of focusing on dividends is that many companies have shifted from dividends to stock buyback a their mechanism for returning cash to stockholders.
+- Cumulative cash returned to stockholders:
+- Augmented dividends = Dividends + Stock buybacks
+- Free cash flow to equity = “potential dividends”
+- Investment in Long-Term Assets:
+
+```math
+\small\text{Net Capital Expenditure = Capital Expenditure – Depreciation}
+```
+
+- Investment in Short-Term Assets:
+
+* FCFE (a.k.a. “Potential Dividend”)
+
+```math
+\small\text{FCFE = Net Income + Depreciation – Capital Expenditures - Change in Non-cash Working Capital
+  – (Principal Repaid – New Debt Issues)}
+```
+
+- Adding the net capital expenditures to the change in non-cash working capital yields the
+  total reinvestment. This reinvestment reduces cash flow to equity investors, but it provides a payoff in terms of future growth.
+
+```math
+\small\text{Total Reinvestment = Net Capital Expenditures - Change in Non-cash Working Capital}
+```
+
+- A more conservative version of cash flows to equity, which Warren Buffett calls “owners' earnings,” ignores the net cash flow from debt.
+
+```math
+\small\text{FCFF = After-tax Operating Income - (Net Capital Expenditure + Change in Non-cash Working Capital)}
+```
+
+```math
+\small\text{Reinvestment Rate = (Net Capital Expenditure - Change in Non-cash Working Capital)/ After-tax Operating Income}
+```
+
+```math
+\small\text{FCFE = After-tax Operating Income} \times \small\text{(1 – Reinvestment Rate)}
+```
+
+- The reinvestment rate can exceed 100%, if the firm is reinvesting more that it is earning, or it can also be less than zero, for firms that are divesting assets and shrinking capital.
+
+```math
+\small\text{FCFF = Operating Income After Taxes - Net Capital Expenditures - Change in Non-cash Working Capital}
+```
+
+- When valuing the business, you look at the risk in a firm's operations. When valuing equity, you look at the risk in the equity investment in this business, which is partly determined by the risk of the business the firm is in and partly by its choice on how much debt to use to fund that business.
+
+## Risk-free rate:
+
+- we usually use 10- or 30-year government bonds rates as risk-free rates, implicitly assuming that the governments won’t default.
+- 10-year Treasury bond rate
+  Equity risk premium:
+- the premium that investors demand on an annual basis for investing in stocks instead of risk-free investments
+- should be a function of how much risk is perceived in stocks and how concerned they are about that risk
+- Between 1928 and 2010, stocks generated 4.31% more on an annual basis than treasury bonds.
+- An alternative is to back out a forward-looking premium (called an implied equity risk premium) from current stock price levels and expected future cash flows.
+
+* Relative risk or beta:
+  - Generally estimate beta based on historical movement relative to the market (the slope of a regression of returns on the stock against a market index)
+  - These betas are always backward-looking and noisy (since they are estimated with error)
+  - One solution is to replace the regression beta with a sector-average beta, if the firm operates in only one business or a weighted average if it operates in several businesses.
+  - The sector beta is more precise than an individual regression beta because averaging across many betas results in averaging out your mistakes.
+
+### Betas By Sector/Industry
+
+p. 45
+
+<table>
+  <thead>
+    <tr>
+      <td>Business sector/industry</td>
+      <td>Sector Beta</td>
+      <td>Proportion of firm (%)</td>
+      <td>Estimated value to Firm ($)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Industrial &amp; Transportation</td>
+      <td>0.82</td>
+      <td>27%</td>
+      <td>$8,265</td>
+    </tr>
+    <tr>
+      <td>HealthCare</td>
+      <td>1.4</td>
+      <td>24%</td>
+      <td>$7,206</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>3M as a firm</td>
+      <td>1.29</td>
+      <td>100%</td>
+      <td>$30,146</td>
+    </tr>
+  </tbody>
+  <tfooter className="border-t border-slate-500">
+    <tr className="text-sm text-slate-400">
+      Footer
+      {/* <td>Industrial &amp; Transportation</td> */}
+    </tr>
+  </tfooter>
+</table>
+
+```math
+\small\text{Cost of equity = Risk-free rate + Beta * ERP}
+```
+
+## Default Spreads
+
+- Lenders add a _default spread_ to the riskless rate when they lend money to a firm
+- Estimating a default:
+  1. Estimate a bond rating:
+     1. Use the bond rating of a company (S&P or Moody's, etc.) or,
+     2. Estimate a synthetic bond rating using operating income to interest expenses (interest coverage ratio)
+  2. Look at publicly traded bonds with estimated rating
+
+```math
+Interest coverage ratio = \frac{Operating income}{Interest expenses}
+
+```
+
+For example, a high coverage ratio might lead to a rating of AAA which corresponds to a default spread of 0.80 percent
+
+## Marginal tax Rate
+
+- Interest costs save taxes at the margin so the marginal tax rate applies (not average tax rate)
+
+```math
+After-tax cost of debt = (Risk-free rate + Default spread) \times (1 - Marginal tax rate)
+
+```
+
+- Use market weights for debt and equity, not book values
+- For public companies, number of shares \* share price = market value of equity
+- Most firms have some debt that is not traded and many analysts fall back on book value as a proxy
+- Decide if these weights will change or remain stable
