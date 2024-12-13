@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./styles/globals.css";
-// import "highlight.js/styles/atom-one-dark.css";
+import "../styles/globals.css";
+
 import "highlight.js/styles/stackoverflow-light.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import "highlight.js/styles/a11y-dark.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
   description: "Notes for the CFA tests",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;

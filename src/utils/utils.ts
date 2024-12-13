@@ -27,7 +27,7 @@ export const getFilePaths = async (dir: string): Promise<string[]> => {
   const files = await fs.readdir(dir);
   let filePaths: string[] = [];
 
-  console.log("Files: ", files);
+  // console.log("Files: ", files);
 
   for (const file of files) {
     const filePath = path.join(dir, file);
