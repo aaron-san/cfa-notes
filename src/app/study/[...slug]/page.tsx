@@ -15,11 +15,12 @@ interface Frontmatter {
 export default async function StudyPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
+  const slugJoined = slug.join(path.sep);
   const content = await fs.readFile(
-    path.join(process.cwd(), "src/app/cfa-level-1", `${slug}.mdx`),
+    path.join(process.cwd(), "src/app/notes", `${slugJoined}.mdx`),
     "utf-8"
   );
 
@@ -38,7 +39,7 @@ export default async function StudyPage({
   });
 
   return (
-    <div>
+    <div className="mt-10">
       <h1>{data.frontmatter.title}</h1>
       {data.content}
     </div>

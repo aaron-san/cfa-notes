@@ -1,61 +1,53 @@
-import { compileMDX } from "next-mdx-remote/rsc";
-import { promises as fs } from "fs";
-import path from "path";
+// import { compileMDX } from "next-mdx-remote/rsc";
+// import { promises as fs } from "fs";
+// import path from "path";
 // import remarkFrontMatter from "remark-frontmatter";
 import type { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "CFA Notes",
 };
 
 // import Image from "next/image";
-interface Frontmatter {
-  title: string;
-}
+// interface Frontmatter {
+//   title: string;
+// }
 
 export default async function Home() {
-  // const content = await fs.readFile(
-  //   path.join(process.cwd(), "src/app/cfa-level-1", `${slug}.mdx`),
-  //   "utf-8"
+  // const filenames = await fs.readdir(
+  //   path.join(process.cwd(), "src/app/notes")
+  // );
+  // const titles = await Promise.all(
+  //   filenames.map(async (filename) => {
+  //     // Get the full path of the file
+  //     const fullPath = path.join(
+  //       process.cwd(),
+  //       "src/app/cfa-level-1",
+  //       filename
+  //     );
+
+  //     // Check if the path is a directory or a file
+  //     const stat = await fs.stat(fullPath);
+  //     if (stat.isDirectory()) {
+  //       return null; // Skip directories
+  //     }
+  //     const content = await fs.readFile(fullPath, "utf-8");
+
+  //     // Process the MDX content and frontmatter
+  //     const { frontmatter } = await compileMDX<Frontmatter>({
+  //       source: content,
+  //       options: {
+  //         parseFrontmatter: true,
+  //       },
+  //     });
+
+  //     return { filename, slug: filename.replace(".mdx", ""), ...frontmatter };
+  //   })
   // );
 
-  const filenames = await fs.readdir(
-    path.join(process.cwd(), "src/app/cfa-level-1")
-  );
-  const titles = await Promise.all(
-    filenames.map(async (filename) => {
-      // Get the full path of the file
-      const fullPath = path.join(
-        process.cwd(),
-        "src/app/cfa-level-1",
-        filename
-      );
-
-      // Check if the path is a directory or a file
-      const stat = await fs.stat(fullPath);
-      if (stat.isDirectory()) {
-        return null; // Skip directories
-      }
-
-      // Read the content of the file
-      const content = await fs.readFile(fullPath, "utf-8");
-
-      // Process the MDX content and frontmatter
-      const { frontmatter } = await compileMDX<Frontmatter>({
-        source: content,
-        options: {
-          parseFrontmatter: true,
-        },
-      });
-
-      // Return the data if it's a valid file
-      return { filename, slug: filename.replace(".mdx", ""), ...frontmatter };
-    })
-  );
-
-  // Filter out any `null` values (which represent skipped directories)
-  const validTitles = titles.filter((title) => title !== null);
+  // // Filter out any `null` values (which represent skipped directories)
+  // const validTitles = titles.filter((title) => title !== null);
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -66,14 +58,14 @@ export default async function Home() {
           exams. Study for free here or purchase a full printable cheatsheet.
         </div>
 
-        {validTitles.map(({ title, slug }) => {
+        {/* {validTitles.map(({ title, slug }) => {
           return (
             <div key={title + slug}>
               <div>{title}</div>
               <Link href={`study/${slug}`}>{slug}</Link>
             </div>
           );
-        })}
+        })} */}
         {/* <Image
           className="dark:invert"
           src="/next.svg"

@@ -4,42 +4,54 @@ import path from "path";
 // import remarkFrontMatter from "remark-frontmatter";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCleanedSlug } from "@/src/utils/utils";
+// import next from "next";
+// import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "CFA Notes",
 };
 
-// import Image from "next/image";
 interface Frontmatter {
   title: string;
 }
 
 export default async function Study() {
-  // const content = await fs.readFile(
-  //   path.join(process.cwd(), "src/app/cfa-level-1", `${slug}.mdx`),
-  //   "utf-8"
-  // );
+  const contentDir = path.join(process.cwd(), "src/app/notes");
 
-  const filenames = await fs.readdir(
-    path.join(process.cwd(), "src/app/cfa-level-1")
-  );
-  const titles = await Promise.all(
-    filenames.map(async (filename) => {
-      // Get the full path of the file
-      const fullPath = path.join(
-        process.cwd(),
-        "src/app/cfa-level-1",
-        filename
-      );
-
-      // Check if the path is a directory or a file
+  const getFileNames = async (dir: string) => {
+    let fileNames: string[] = [];
+    const content = await fs.readdir(dir);
+    // console.log(content);
+    for (const x of content) {
+      const fullPath = path.join(dir, x);
       const stat = await fs.stat(fullPath);
       if (stat.isDirectory()) {
-        return null; // Skip directories
+        const nestedFileNames = await getFileNames(fullPath);
+        fileNames = [...fileNames, ...nestedFileNames];
+      } else if (stat.isFile()) {
+        fileNames = [...fileNames, fullPath];
       }
+    }
 
-      // Read the content of the file
-      const content = await fs.readFile(fullPath, "utf-8");
+    return fileNames;
+  };
+
+  const filenames = await getFileNames(contentDir);
+  // console.log("Filenames: ", filenames);
+  interface Titles {
+    filename: string;
+    // label: string;
+    slugX: string;
+    frontmatter?: Frontmatter;
+  }
+  let titleArr: Titles[] = [];
+
+  const getTitles = async () => {
+    for (const filename of filenames) {
+      // const { folder, label } = filename;
+
+      const content = await fs.readFile(filename, "utf-8");
 
       // Process the MDX content and frontmatter
       const { frontmatter } = await compileMDX<Frontmatter>({
@@ -49,28 +61,54 @@ export default async function Study() {
         },
       });
 
-      // Return the data if it's a valid file
-      return { filename, slug: filename.replace(".mdx", ""), ...frontmatter };
-    })
-  );
+      titleArr = [
+        ...titleArr,
+        {
+          filename,
+          slugX: filename.replace(contentDir, "").replace(".mdx", ""),
+          ...frontmatter,
+        },
+      ];
+    }
+    return titleArr;
+  };
 
-  // Filter out any `null` values (which represent skipped directories)
-  const validTitles = titles.filter((title) => title !== null);
+  const titles = await getTitles();
+  const folders = titles.map((x) => {
+    const endId = x.slugX.lastIndexOf(path.sep);
+    return x.slugX.slice(1, endId);
+  });
+  const groups = [...new Set(folders)];
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-start min-h-screen p-8 pb-20 gap-1 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>CFA Level 1 Topics</h1>
+        <h1>Study Topics</h1>
         <div>
           We offer comprehensive cheat sheets for all three levels of the CFA
           exams. Study for free here or purchase a full printable cheatsheet.
         </div>
 
-        {validTitles.map(({ title, slug }) => {
+        {groups.map((group: string) => {
           return (
-            <div key={title + slug}>
-              <div>{title}</div>
-              <Link href={`study/${slug}`}>{slug}</Link>
+            <div key={group}>
+              <h2>{group}</h2>
+              <div className="flex flex-wrap gap-1 justify-start">
+                {titles
+                  .filter(({ slugX }) => slugX.match(new RegExp(group)))
+                  .map(({ filename, slugX }) => {
+                    return (
+                      <button
+                        className="px-4 flex-auto py-1 max-w-1/4 border border-slate-700 text-slate-700 shadow rounded hover:bg-slate-200"
+                        key={filename + slugX}
+                      >
+                        <Link href={path.join("study", slugX)}>
+                          {getCleanedSlug(slugX)}
+                        </Link>
+                      </button>
+                    );
+                  })}
+              </div>
             </div>
           );
         })}

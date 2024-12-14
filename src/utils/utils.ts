@@ -8,6 +8,9 @@ export const getSubstring = (title: string) => {
 
 export const getCleanedSlug = (slug: string) => {
   return slug
+    .split(path.sep)
+    .slice(-1)
+    .toString()
     .split("-")
     .map((x) => (x ? `${x[0].toUpperCase()}${x.slice(1)}` : "Default title"))
     .join(" ")
@@ -41,6 +44,5 @@ export const getFilePaths = async (dir: string): Promise<string[]> => {
       filePaths.push(filePath);
     }
   }
-  console.log("File paths: ", filePaths);
   return filePaths;
 };
