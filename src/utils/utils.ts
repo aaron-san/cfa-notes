@@ -12,7 +12,11 @@ export const getCleanedSlug = (slug: string) => {
     .slice(-1)
     .toString()
     .split("-")
-    .map((x) => (x ? `${x[0].toUpperCase()}${x.slice(1)}` : "Default title"))
+    .map((x) => {
+      return x.match(/gips/i)
+        ? `${x.toUpperCase()}`
+        : `${x[0].toUpperCase()}${x.slice(1)}`;
+    })
     .join(" ")
     .replace(/ 1$/, "")
     .replace(/^[0-9]{1,3} /, "");

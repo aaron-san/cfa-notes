@@ -73,12 +73,18 @@ export default async function Study() {
     return titleArr;
   };
 
-  const titles = await getTitles();
+  const titles = (await getTitles()).filter(
+    (title) => !title.slugX.match(/[2-9]$/)
+  );
+
   const folders = titles.map((x) => {
     const endId = x.slugX.lastIndexOf(path.sep);
     return x.slugX.slice(1, endId);
   });
-  const groups = [...new Set(folders)];
+  const groupsToExclude = ["other", "valuation"];
+  const groups = [...new Set(folders)].filter(
+    (group) => !groupsToExclude.includes(group)
+  );
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-start min-h-screen p-8 pb-20 gap-1 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -92,14 +98,20 @@ export default async function Study() {
         {groups.map((group: string) => {
           return (
             <div key={group}>
-              <h2>{group}</h2>
+              <h2>
+                {group
+                  .split("-")
+                  .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
+                  .map((x) => `${x.replace(/cfa/gi, "CFA")}`)
+                  .join(" ")}
+              </h2>
               <div className="flex flex-wrap gap-1 justify-start">
                 {titles
                   .filter(({ slugX }) => slugX.match(new RegExp(group)))
                   .map(({ filename, slugX }) => {
                     return (
                       <button
-                        className="px-4 flex-auto py-1 max-w-1/4 border border-slate-700 text-slate-700 shadow rounded hover:bg-slate-200"
+                        className="px-4 flex-auto py-2 max-w-1/4 border border-slate-700 text-slate-700 shadow rounded hover:bg-slate-200 text-xl"
                         key={filename + slugX}
                       >
                         <Link href={path.join("study", slugX)}>

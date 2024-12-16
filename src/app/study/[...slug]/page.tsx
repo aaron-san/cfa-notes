@@ -5,11 +5,15 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import remarkFrontMatter from "remark-frontmatter";
+import Link from "next/link";
 
 import Note from "../../components/Note";
+import Caution from "../../components/Caution";
 
 interface Frontmatter {
   title: string;
+  nextUrl?: string;
+  backUrl?: string;
 }
 
 export default async function StudyPage({
@@ -35,13 +39,53 @@ export default async function StudyPage({
     },
     components: {
       Note,
+      Caution,
     },
   });
 
+  const { title, nextUrl, backUrl } = data.frontmatter;
+
+  const getTitleParts = (title: string) => {
+    const groupPart = title.substring(0, title.indexOf(":") + 1);
+    const titlePart = title.substring(
+      title.indexOf(":") + 1,
+      title.indexOf("(")
+    );
+    const partPart = title.substring(title.indexOf("("), title.length + 1);
+
+    return { groupPart, titlePart, partPart };
+  };
+
+  const titleParts = getTitleParts(title);
+  const { groupPart, titlePart, partPart } = titleParts;
+
   return (
-    <div className="mt-10">
-      <h1>{data.frontmatter.title}</h1>
+    <div className="mt-20">
+      <div className="mb-4">
+        <div className="text-blue-600">{groupPart}</div>
+        <span className="text-5xl">{titlePart}</span>
+        <span className="text-lg text-slate-700 py-[10px]">{partPart}</span>
+      </div>
+      <hr />
+      <div className="my-4"></div>
       {data.content}
+      <div className="mx-auto flex gap-1 justify-center">
+        {backUrl && (
+          <button className="px-4 py-2 text-lg border border-slate-500 hover:bg-slate-200 rounded-l-xl">
+            <Link href={backUrl}>Back</Link>
+          </button>
+        )}
+
+        <button className="px-4 py-2 text-lg border border-slate-500 hover:bg-slate-200">
+          <Link href={"/study"}>All Topics</Link>
+        </button>
+
+        {nextUrl && (
+          <button className="px-4 py-2 text-lg border border-slate-500 rounded-r-xl hover:bg-slate-200">
+            <Link href={nextUrl}>Next</Link>
+          </button>
+        )}
+      </div>
     </div>
   );
 }
