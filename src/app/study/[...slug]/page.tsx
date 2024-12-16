@@ -63,8 +63,10 @@ export default async function StudyPage({
     <div className="mt-20">
       <div className="mb-4">
         <div className="text-blue-600">{groupPart}</div>
-        <span className="text-5xl">{titlePart}</span>
-        <span className="text-lg text-slate-700 py-[10px]">{partPart}</span>
+        <div className="text-5xl">
+          {titlePart} {partPart}
+        </div>
+        {/* <div className="text-lg text-slate-700 pb-[10px]">{partPart}</div> */}
       </div>
       <hr />
       <div className="my-4"></div>

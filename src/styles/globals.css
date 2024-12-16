@@ -108,7 +108,7 @@ ol {
 /* Code snippets */
 .katex-html {
   padding: 1rem;
-  width: fit-content;
+  /* width: fit-content; */
   margin-left: 1rem;
   overflow: auto;
   border: 1px solid rgba(20, 20, 20, 0.5) !important;
