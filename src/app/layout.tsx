@@ -43,7 +43,7 @@ export default function Layout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-slate-600 to-slate-100`}
       >
         <Header />
-        <main className="container mx-auto bg-slate-100 md:px-8 px-2 lg:lg:px-20 pt-10 pb-4 min-h-[calc(100vh-3rem)]">
+        <main className="container mx-auto bg-slate-100 md:px-8 px-4 lg:lg:px-20 pt-10 pb-4 min-h-[calc(100vh-3rem)]">
           {children}
         </main>
         <Footer />
