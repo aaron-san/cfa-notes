@@ -88,11 +88,11 @@ export default async function Study() {
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-start min-h-screen p-8 pb-20 gap-1 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start">
         <h1>Study Topics</h1>
-        <div>
-          We offer comprehensive cheat sheets for all three levels of the CFA
-          exams. Study for free here or purchase a full printable cheatsheet.
+        <div className="tracking-wider">
+          Get cheat sheets for all three levels of the CFA exams. Study for free
+          here or purchase a full printable cheatsheet.
         </div>
 
         {groups.map((group: string) => {
@@ -111,7 +111,7 @@ export default async function Study() {
                   .map(({ filename, slugX }) => {
                     return (
                       <button
-                        className="px-4 flex-auto py-2 max-w-1/4 border border-slate-700 text-slate-700 shadow rounded hover:bg-slate-200 text-xl"
+                        className="px-4 flex-auto py-2 border border-slate-700 text-slate-700 shadow rounded hover:bg-slate-100 text-xl bg-white"
                         key={filename + slugX}
                       >
                         <Link href={path.join("study", slugX)}>
