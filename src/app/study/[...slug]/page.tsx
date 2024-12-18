@@ -62,12 +62,12 @@ export default async function StudyPage({
 
   return (
     <article className="mt-20">
-      <div className="mb-2">
+      <div className="mb-1">
         <div className="text-blue-600">{groupPart}</div>
         <div className="text-5xl">{titlePart}</div>
-        <div className="text-lg text-slate-700 pb-[10px]">{partPart}</div>
+        <div className="text-lg text-slate-700 pb-[6px]">{partPart}</div>
       </div>
-      <hr />
+      {/* <hr /> */}
       {tags && (
         <div className="mb-8 flex gap-1">
           {tags.map((tag) => {
