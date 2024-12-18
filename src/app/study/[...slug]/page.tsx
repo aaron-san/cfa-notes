@@ -14,6 +14,7 @@ interface Frontmatter {
   title: string;
   nextUrl?: string;
   backUrl?: string;
+  tags?: string[];
 }
 
 export default async function StudyPage({
@@ -43,7 +44,7 @@ export default async function StudyPage({
     },
   });
 
-  const { title, nextUrl, backUrl } = data.frontmatter;
+  const { title, nextUrl, backUrl, tags } = data.frontmatter;
 
   const getTitleParts = (title: string) => {
     const groupPart = title.substring(0, title.indexOf(":") + 1);
@@ -60,13 +61,27 @@ export default async function StudyPage({
   const { groupPart, titlePart, partPart } = titleParts;
 
   return (
-    <div className="mt-20">
-      <div className="mb-4">
+    <article className="mt-20">
+      <div className="mb-2">
         <div className="text-blue-600">{groupPart}</div>
         <div className="text-5xl">{titlePart}</div>
         <div className="text-lg text-slate-700 pb-[10px]">{partPart}</div>
       </div>
       <hr />
+      {tags && (
+        <div className="mb-8 flex gap-1">
+          {tags.map((tag) => {
+            return (
+              <div
+                key={tag}
+                className="bg-sky-700 border-2 border-sky-200 text-sky-200 px-3 py-1 rounded-2xl text-sm"
+              >
+                {tag}
+              </div>
+            );
+          })}
+        </div>
+      )}
       <div className="my-4"></div>
       {data.content}
       <div className="mx-auto flex gap-1 justify-center">
@@ -86,6 +101,7 @@ export default async function StudyPage({
           </button>
         )}
       </div>
-    </div>
+      <h2>Categories</h2>
+    </article>
   );
 }
