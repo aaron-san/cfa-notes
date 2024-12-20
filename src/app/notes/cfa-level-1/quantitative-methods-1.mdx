@@ -1,0 +1,118 @@
+---
+title: "CFA Level 1: Quantitative Methods (part 1)"
+slug: ""
+description: ""
+lastmod: "`r Sys.time()`"
+categories:
+  - CFA Level 1
+tags:
+  - ["Quantitative Methods", "Probability"]
+summary: ""
+thumbnail: ""
+nextUrl: "quantative-methods-2"
+---
+
+## Data Types
+
+- Nominal - categorize, but do not rank
+- Ordinal - categorize and rank
+- Interval - difference between scale values equal
+- Ratio - abolute zero
+
+_"N-O-I-R" (French for "black")_
+
+## Descriptive Statistics
+
+- Involves describing data based on particular metrics
+
+## Inferential Statistics
+
+- Involves making inferences about populations based on samples
+- Statistical Inference (forecasts, estimates.)
+- Estimation
+- Hypothesis Testing
+
+## Distributions
+
+{/* ![img] */}
+Normal curve with excess kurtosis
+
+### Leptokurtic Distribution
+
+- More peaked, fatter tails (pinch the normal distribution)
+- More peaked than normal distribution (excess Kurtosis > 0)
+
+### Platykurtic Distribution
+
+- Less peaked, compressed tails (press down on normal distribution)
+- Less peaked than normal distribution (excess Kurtosis < 0) \* Smaller tails
+
+## Returns
+
+### Arithmetic Mean vs. Geometric Mean
+
+- The arithmetic mean is the best estimate of a single period's return.
+- The geometric mean is the best estimate of future multi-year annual compound returns.
+
+### Money-Weighted Return
+
+- IRR on a series of cash flows
+
+### Time-weighted return
+
+1. Price the portfolio immediately prior to any significant addition or withdrawal of funds. Break the overall evaluation period into subperiods based on the dates of cash inflows and outflows.
+2. Calculate the holding period return on the portfolio for each subperiod.
+3. Link or compound holding period returns to obtain an annual rate of return for the year (the time-weighted rate of return for the year). If the investment is for more thant one year, take the geometric mean of the annual returns to obtain the time-weighted rate of return over that measurement period.
+
+<Note>Assume dividends are _not_ reinvested!</Note>
+
+## Money Market
+
+- The market for short-term debt (t-bills, commercial paper, etc.)
+- T-bills are quoted on a bank-discount basis.
+
+### Bank-Discount Yield
+
+- Pure discount securities such as T-bills are quoted differently than government bonds
+
+```math
+\mathrm {\small {R_{BD} = \frac{\text{D}} {\text{F}} \times \frac{360} {t}}}
+```
+
+- Based on face value, not investment price _ Based on 360-day year _ Assumes simple interest
+- Variables: + D = discount + F = face value
+  - t = days to maturity
+
+### Holding Period Return
+
+```math
+\mathrm {\small {HPY = \frac{P_{1} - P_{0} + D_{1}} {P_{0}}}}
+```
+
+- Based on any length of time
+- Based on one cash payment during life
+- Purchase price and sale price must include Accrued Interest (for bonds)
+- Accrued interest = Annual Coupon/2\*time held by seller/total time in payment period
+
+### Effective Annual Yield
+
+{/* - $\mathrm {\large {EAY = (1 + HPY)^{365 / t} - 1}}$ */}
+
+### Money-Market Yield (CD equivalent yield)
+
+{/* - $\mathrm {\large {r_{mm} = \frac{360 \ (r_{BD})} {360 - (r_{BD})t} = r_{BD} \frac{F} {P_0}} = HPY \frac{360} {t}}$ */}
+
+- Computed on the purchase price, not Face Value
+
+### Bond-Equivalent Yield
+
+{/* - $\mathrm {\large {BEY = \text{semiannual IRR} \times 2}}$ */}
+
+### Time-Weighted Rate of Return
+
+- Note: Dividends are assumed to be contributed by fund manager
+- Note: Dividends are assumed to be held by investor (not reinvested)
+
+## Position of a Percentile
+
+{/* - $\mathrm {\large {L_y =  \frac{(n+1) \cdot y} {100}}}$ */}

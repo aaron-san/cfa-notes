@@ -63,7 +63,7 @@ export default async function StudyPage({
   return (
     <article className="mt-20">
       <div className="mb-1">
-        <div className="text-blue-600">{groupPart}</div>
+        <div className="text-sky-700">{groupPart}</div>
         <div className="text-5xl">{titlePart}</div>
         <div className="text-lg text-slate-700 pb-[6px]">{partPart}</div>
       </div>
@@ -74,7 +74,7 @@ export default async function StudyPage({
             return (
               <div
                 key={tag}
-                className="bg-sky-700 border-2 border-sky-200 text-sky-200 px-3 py-1 rounded-2xl text-sm"
+                className="bg-sky-600 text-sky-50 px-3 py-1 rounded-2xl text-sm"
               >
                 {tag}
               </div>
