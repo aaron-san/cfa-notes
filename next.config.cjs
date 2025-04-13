@@ -1,4 +1,3 @@
-// filepath: c:\Users\aaron\Desktop\Web Projects\Next\cfa-notes\next.config.js
 const createMDX = require("@next/mdx");
 const rehypeHighlight = require("rehype-highlight");
 const rehypeKatex = require("rehype-katex");
@@ -23,9 +22,9 @@ const withMDX = createMDX({
 
 module.exports = withMDX({
   ...nextConfig,
-  output: "export",
+  output: "export", // Enables static export
   assetPrefix: isProd ? "/cfa-notes/" : "",
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
   },
 });

@@ -1,4 +1,5 @@
-// import type { MDXComponents } from "@mdx-js/react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import type { ComponentType, ReactNode } from "react";
 
 export type MDXComponents = {
