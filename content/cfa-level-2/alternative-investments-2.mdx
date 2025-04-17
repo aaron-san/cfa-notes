@@ -1,0 +1,129 @@
+---
+title: "CFA Level 2: Alternative Investments (part 2)"
+slug: alternative-investments-2
+description: ""
+lastmod: "`r Sys.time()`"
+categories:
+  - CFA Level 2
+tags:
+  - Alternative Investments
+output:
+  blogdown::html_page:
+    toc: true
+summary: "Alternative investments cover real estate, commodities, hedge funds, private equity, and more. Each of these has its own unique risk and reward features."
+thumbnail: "/post/cfa-level-2-alternative-investments-part-1_files/barley.jpg"
+backUrl: "alternative-investments-1"
+---
+
+## The Basic Venture Capital Method
+
+- Step 1: Determine the post-money valuation ("POST")
+
+```math
+\mathrm {\small {POST =  \frac{\text {Exit Value}} {(1 + r)^t}}}
+
+```
+
+- The only positive cash flow (capital gain, no dividends) in this model occurs at the time of exit (typically an IPO or acquisition)
+- The Exit Value is an estimate of the value of a company at the time of an exit event, be it an IPO or an acquisition
+
+```math
+\mathrm {\small {\text {Exit Value} = \text{Earnings Multiple} \times \text{Estimate of terminal earnings}}}
+
+```
+
+```math
+\mathrm {\small {\text {Exit Value} = \text{PV(expected future cash flows)}}}
+```
+
+- Exit Value measures the value of the company in the case of _success_
+
+- Step 2: Determine the pre-money valuation ("PRE")
+
+```math
+\mathrm {\small {\text {PRE} = \text{POST - Investment}}}
+```
+
+- Step 3: Determine the ownership fraction for the investor (f)
+
+```math
+\mathrm {\small {f =  \frac{\text {Investment}} {POST}}}
+```
+
+- Step 4: Determine the number of investor shares ("y")
+- Step 5: Determine the price per share
+
+## Investing in Commodities
+
+### Commodity Futures Trading Commission (CFTC)
+
+- U.S. regulator of futures trading
+- Long-only investment in commodities is usually obtained via collateralized long positions in commodity futures, forwards, or swaps.
+
+### Contango (Normal Contango)
+
+- Futures price > Spot price Futures price > E(Spot price)
+
+### Backwardation (Normal Backwardation)
+
+- Spot price > Futures price E(Spot price) > Futures price
+
+## Commodity Futures Returns
+
+1. Collateral yield - the return on cash used as margin to take long derivatives exposure
+2. Roll yield - the return from rolling forward the maturity of the derivatives position by closing out a current position and entering a new contract.
+   - The long position experiences positive roll yields when markets are in backwardation; the long investor can buy the the commodity below the current spot price from a hedger.
+3. Spot yield - the return on the spot asset
+
+## Commodity prices decline for the following reasons (shifts in demand/supply):
+
+1. Introduction of new supplies and new production technology
+2. Subsitutiton of one commodity for another when prices rise 3. Reduction in the use of certain commodities in technological processes
+
+## Supply and Demand
+
+- Most of the fluctuation in commodity prices comes from changes in demand. Changes in supply are usually smaller and slower to respond.
+
+Today's commodities market is no longer dominated by hedgers and natural backwardation and can move towards backwardation or contango.
+
+At the maturity date of the futures contract, the investor can either take physical delivery of the commodity or roll the futures contract, which means buying another contract with a new maturity date.
+
+The risk-return profile of commmodities over the past 25 years is similar to that of U.S. equities.
+
+Commodities tend to have a negative correlation with equities and therefore provide some diversification benefits.
+
+Portfolio optimization techniques suggest that portfolios should contain about 15-25% of commodities.
+
+## Performance of Hedge Funds
+
+### Maximum Drawdown
+
+- The largest percentage decrease in investment value from peak to valley that has ever occurred for a fund within a specified time period.
+
+### Measures left-tail risk
+
+#### Value at Risk (VAR)
+
+- The minimum loss that would be expected over a period of time as well as the probability of occurrence
+- Assumes hedge fund returns are normally distributed (uses zstat and p-value)
+- Assumes that component risks are additive
+
+### Other Risk Measures
+
+1. Loss Standard Deviation - standard deviation that focuses on the left side of the return distribution
+2. Downside Deviation - similar to loss standard deviation, but specifies a minimum acceptable return (used in the Sortino Ratio)
+
+## Hedge Fund Risks
+
+1. Fraud Risk
+2. Operational Risk
+3. Investment Risk
+
+## Maximum Drawdown
+
+- A measure of the largest loss that can be experienced.
+
+## Value At Risk
+
+- A measure of the largest loss that can be experienced AND the associated probability of the loss event \* Assumes hedge fund returns are normally distributed
+- Assumes hedge fund risks are additive

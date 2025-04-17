@@ -1,0 +1,224 @@
+---
+title: "CFA Level 1: Quantitative Methods (part 3)"
+slug: "quantitative-methods-part-3"
+description: ""
+lastmod: ""
+categories:
+  - CFA Level 1
+tags:
+  - Quantitative Methods
+output:
+  blogdown::html_page:
+    toc: true
+summary: "Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more."
+thumbnail: ""
+backUrl: "quantitative-methods-part-2"
+nextUrl: "quantitative-methods-part-4"
+---
+
+## Statistical Inference
+
+- Hypothesis Testing (testing validity of parameters)
+  Estimation (estimation of parameters)
+
+## Sampling Bias
+
+### Data Mining
+
+- **Out-of-Sample Test:** using a sample that does not overlap the time period of the variable under consideration
+- **Intergenerational Data Mining:** Involves repeatedly using data generated from prior researchers until a pattern is discovered
+- A **data-mining bias** occurs when variables are added to an analysis that don't have any predictive value (i.e., no causal relationship).
+
+### Sample Selection Bias
+
+- Using only data that is available
+
+### Survivorship Bias
+
+- Excluding data that is discontinued
+- Sometimes databases remove firms just because there will be no future updates to the data. When the data is removed, the overall performance of the entire data set is increased.
+
+## Look-ahead Bias
+
+- Using data that is not currently available to every market participant
+
+## Time-period Bias
+
+- Using data that is inherently influenced by a specific time-period that skews the results
+
+## Estimators ("U-E-C")
+
+- Unbiased ("U")
+  - The expected value of the estimator equals the value of the parameter
+- Efficient ("E")
+  - The variance of the estimator is the least of all other estimators of the parameter
+- Consistent ("C")
+  - The probability that the estimator equals the parameter increases with increasing sample size
+
+## Skewed Distribution
+
+|            |                      |
+| :--------- | :------------------: |
+| None       | Mode = Median = Mean |
+| Left Skew  | Mode > Median > Mean |
+| Right Skew | Mode < Median < Mean |
+
+|  Z   | Confidence |  Z  | Confidence |
+| :--: | :--------: | :-: | :--------: |
+| 1.65 |    90%     |  1  |    68%     |
+| 1.96 |    95%     |  2  |    95%     |
+| 2.58 |    99%     |  3  |    99%     |
+
+## Confidence Interval
+
+- Probabilistic interpretation:
+  - _"\_\_% of the resulting confidence intervals will, in the long run, contain the population parameter."_
+- Practical interpretation:
+  - _"We are \_\_% confident the given confidence interval contains the population parameter."_
+
+## Total Probability Rule
+
+```math
+\mathrm {\small {P(A) = P(A|B) \cdot P(B) + P(A|C) \cdot P(C) }}
+```
+
+## Addition Rule of Probability
+
+```math
+\mathrm {\small {P(A \cup B) = P(A) + P(B) - P(A \cap B)}}
+```
+
+## Multiplication Rule of Probability
+
+```math
+\mathrm {\small {P(A \cap B) = P(A) \cdot P(B)}}
+```
+
+## Steps in Hypothesis Testing
+
+1. State hypothesis
+2. Decide the test statistics and probability distribution
+3. Choose a significance level
+4. Choose a decision rule
+5. Collect data and calculate the test statistic
+6. Make a statistical decision
+7. Make an economic decision
+
+## Power of a Test
+
+- If the null hypothesis is false and is rejected, then a correct decision was made. If the null hypothesis is false but is not rejected, an error was made and the probability of making this error is the **power** of a test.
+- In other words, the **power** is the probability of rejecting a false null hypothesis
+
+```math
+\mathrm {\small {Power = 1 - \beta = 1 - P(\text {Type II error}) }}
+```
+
+## Labeling
+
+- How many ways can k labels can be assigned to n items?
+- The number of items that receive label 1 is n1, where n1 + n2 + n3 + ... + nk = n
+
+```math
+\mathrm {\small {\frac{n!} {n_1! \space \cdot \space n_2! \space \cdot \space ... \space \cdot \space n_k!}}}
+```
+
+## Test for Population Mean (Z-stat)
+
+- Assumptions:
+  - Known variance (or unknown if n `\geq` 30)
+  - Normal distribution (or non-normal if n $\geq$ 30)
+
+## Test for Population Mean (T-Stat)
+
+- Assumptions:
+
+  - Unknown variance AND either:
+    1. sample is large (n $\geq$ 30) or...
+    2. sample is small, but the population is at least approximately normally distributed
+
+## Test of Mean Differences (T Statistic)
+
+- Assumptions:
+  _ Normally distributed populations
+  _ Unknown population variances
+
+## Test for Difference Between Means (t-stat)
+
+### Method 1
+
+- Assumptions:
+  - Normally distributed populations,
+  - Independent populations
+  - Population variances unknown, but assumed equal
+
+```math
+mathrm {\small {t = \frac{ (x_1 - x_2) - (\mu_1 - \mu_2) } {\sqrt{\left( \frac{s_p^2}{n_1}+\frac{s_p^2}{n_2} \right)} } }}
+```
+
+```math
+\mathrm {\small {df = n1 + n2 - 2}}$
+```
+
+```math
+\mathrm {\small {s_p^2 = \frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 } { n_1 + n_2 - 2} } }
+```
+
+### Method 2
+
+- Assumptions:
+  - Normally distributed populations
+  - Independent populations
+  - Unequal and unknown population variances
+
+```math
+\mathrm {\small {t = \frac{ (x_1 - x_2) - (\mu_1 - \mu_2) } {\sqrt{\left( \frac{s_1^2}{n_1}+\frac{s_2^2}{n_2} \right)} } }}
+```
+
+```math
+\mathrm {\small {df = \frac{\left( \frac{ s_1^2 } {n_1} + \frac{ s_2^2 } {n_2}\right)^2} {\frac{\left(s_1^2 / n_1 \right)^2} {n_1} + \frac{\left(s_2^2 / n_2 \right)^2} {n_2} }}}
+```
+
+In majority of cases, the T-test is used!
+
+### Test for significant difference in two means
+
+- Assumptions:
+  - Normally distributed populations
+  - Dependent populations
+
+```math
+\mathrm {\small {t = \frac{ \bar d - d_{zs} } { s_{\bar d} / \sqrt n }}}
+```
+
+Note: Stocks are generally considered to be dependent (both rely on market returns)
+Test Statistic
+When sampling from a: Small Sample Large Sample
+{/* n<30 n>30 */}
+Normal distribution, known variance z z
+Normal distribution, unknown variance t t or z
+Nonnormal distribution, known variance not available z Central Limit Theorem
+Nonnormal distribution, unknown variance not available t or z Central Limit Theorem
+Types of Risk
+Default risk - risk that a security will lose value due to a firm's default
+Liquidity risk - risk of receiving less than the fair value for an asset if it must be sold quickly
+Maturity risk - risk of higher volatility of longer maturity instruments (particularly with bonds)
+RRORbond = real risk-free rate + inflation premium + default risk premium + liquidity premium + maturity premium
+
+## Test for Variance (1 population - $??^2$)
+
+- Assumptions:
+- Normally distributed population
+  $??^2$ distribution approaches the normal distribution as the sample size increases
+
+## Test for Equality of Variances (2 populations - F-dist)
+
+- Assumptions:
+  - Normally distributed populations
+  - Independent distributions
+    Rejection region is in the right tail of the F-distribution (if s21 is the greater sample variance)
+
+## Power of a Test
+
+```math
+\mathrm {\small {1-P(Type II Error)}}
+```
