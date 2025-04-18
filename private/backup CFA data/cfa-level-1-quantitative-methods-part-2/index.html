@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CFA Level 1: Quantitative Methods (part 2) - Free Analyst Notes</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="CFA Level 1: Quantitative Methods (part 2)" />
+<meta property="og:description" content="Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/cfa-level-1-quantitative-methods-part-2/" /><meta property="article:section" content="post" />
+
+<meta property="article:modified_time" content="2021-09-02T21:47:07&#43;00:00" />
+
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Free Analyst Notes" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Free Analyst Notes</div>
+					<div class="logo__tagline">CFA Study Notes</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="true" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/cfa-study-topics/">
+				
+				<span class="menu__text">CFA Study Topics</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About Hugo</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+	
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">CFA Level 1: Quantitative Methods (part 2)</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-02T21:47:07Z">September 02, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cfa-level-1/" rel="category">CFA Level 1</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			
+<script src="//rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#probability">Probability</a>
+<ul>
+<li><a href="#empirical-probability">Empirical Probability</a></li>
+<li><a href="#subjective-probability">Subjective Probability</a></li>
+<li><a href="#a-priori-probability">A Priori Probability</a></li>
+<li><a href="#time-series---across-time">Time-Series - across time</a></li>
+<li><a href="#cross-sectional---among-units-at-a-given-point-in-time">Cross-Sectional - among units at a given point in time</a></li>
+</ul></li>
+<li><a href="#basis-point">Basis Point</a></li>
+<li><a href="#combination">Combination</a></li>
+<li><a href="#shortfall-risk">Shortfall Risk</a></li>
+<li><a href="#safety-first-rule">Safety-First Rule</a></li>
+<li><a href="#continuously-compounded-return">Continuously Compounded Return</a></li>
+<li><a href="#independent-and-identically-distributed-iid">Independent and Identically Distributed (IID)</a></li>
+<li><a href="#annualizing">Annualizing</a></li>
+<li><a href="#volatility">Volatility</a></li>
+<li><a href="#monte-carlo-simulation">Monte Carlo Simulation</a></li>
+<li><a href="#asian-call-option">Asian Call Option</a></li>
+<li><a href="#hedging-horizon">Hedging Horizon</a></li>
+<li><a href="#lookback-call-option">Lookback Call Option</a></li>
+</ul>
+</div>
+
+<div id="probability" class="section level2">
+<h2>Probability</h2>
+<div id="empirical-probability" class="section level3">
+<h3>Empirical Probability</h3>
+<ul>
+<li>Based on historical outcomes<br />
+</li>
+<li>For accuracy, relationships must be stable through time</li>
+</ul>
+</div>
+<div id="subjective-probability" class="section level3">
+<h3>Subjective Probability</h3>
+<ul>
+<li>Based on personal judgment</li>
+</ul>
+</div>
+<div id="a-priori-probability" class="section level3">
+<h3>A Priori Probability</h3>
+<ul>
+<li>Based on logical analysis, reasoning</li>
+<li>Based on counting methods and equally-likely potential outcomes</li>
+</ul>
+</div>
+<div id="time-series---across-time" class="section level3">
+<h3>Time-Series - across time</h3>
+</div>
+<div id="cross-sectional---among-units-at-a-given-point-in-time" class="section level3">
+<h3>Cross-Sectional - among units at a given point in time</h3>
+<p>Expected Operating Costs: Operating Costs (Y-hat) = fixed costs (y-intercept) + variable costs/unit(slope)*Number of units produced</p>
+</div>
+</div>
+<div id="basis-point" class="section level2">
+<h2>Basis Point</h2>
+<ul>
+<li>100 basis points = 1%</li>
+</ul>
+<p>**Divide by “n-1” for samples</p>
+<p>Variance of Portfolio<br />
+Correlation Coefficient<br />
+* A measure of “linear” comovement<br />
+* A standardized measure of covariance<br />
+* Correlation ranges between -1 and +1</p>
+<p>Labeling<br />
+Multinomial Formula<br />
+Number of ways to label k items out of n items with n1 of the first type, n2 of the second type, etc.</p>
+</div>
+<div id="combination" class="section level2">
+<h2>Combination</h2>
+<ul>
+<li>A special type of the multinomial with 2 labels (binomial model)</li>
+</ul>
+</div>
+<div id="shortfall-risk" class="section level2">
+<h2>Shortfall Risk</h2>
+<ul>
+<li>Risk that a return will fall below a specified target level</li>
+</ul>
+</div>
+<div id="safety-first-rule" class="section level2">
+<h2>Safety-First Rule</h2>
+<pre><code>                                        * $\mathrm {\large {SF = \frac{E(R_{p}) - R_{L}} {\sigma _{p}}}}$       </code></pre>
+<ul>
+<li>If returns are normally distributed, the safety-first optimal portfolio maximizes the safety-first ratio (SF).<br />
+</li>
+<li>The farther from the limiting return, the greater the spread between E(RP) and RL.</li>
+</ul>
+<p>Price Relative
+* One way to express returns is to take the ratio of the price in a given year (t+1) and divide it by the price in the previous year (t).
+* <span class="math inline">\(\mathrm {\large \frac{S_{t+1}} {S_{t}} = 1 + R_{t, t+1}}\)</span></p>
+</div>
+<div id="continuously-compounded-return" class="section level2">
+<h2>Continuously Compounded Return</h2>
+<ul>
+<li><span class="math inline">\(\mathrm {\large r_{t, t+1} = ln(\frac{S_{t+1}} {S_{t}}) = ln(1 + R_{t, t+1})}\)</span></li>
+</ul>
+</div>
+<div id="independent-and-identically-distributed-iid" class="section level2">
+<h2>Independent and Identically Distributed (IID)</h2>
+<ul>
+<li>Key assumption for asset returns
++ <strong><em>Independence</em></strong> - investors cannot use past returns to predict future returns (i.e. weak-form market efficiency)
++ <strong><em>Identical Distribution</em></strong> - mean and variance do not change with time</li>
+</ul>
+</div>
+<div id="annualizing" class="section level2">
+<h2>Annualizing</h2>
+<ul>
+<li>Annualizing of stock returns is often done on the basis of a 250 days in a year, the approximate number of days markets are open for trading.</li>
+</ul>
+</div>
+<div id="volatility" class="section level2">
+<h2>Volatility</h2>
+<ul>
+<li>Although in statistics, <em>volatility</em> refers to the square of standard deviation, <em>volatility</em> is often used to refer to the standard deviation.</li>
+</ul>
+</div>
+<div id="monte-carlo-simulation" class="section level2">
+<h2>Monte Carlo Simulation</h2>
+<ul>
+<li>A simulation of potential outcomes that can be cross-sectional or conducted across time<br />
+</li>
+<li>Used to assess risk<br />
+</li>
+<li>Consists of multiple simulations of outcome using predetermined probability distributions</li>
+<li>Each simulation trial involves a drawing of random values</li>
+<li>Uses time increments and general assumptions about risk factors (growth, volatility, etc.)<br />
+</li>
+<li>Cannot provide the insight that analytic methods can</li>
+</ul>
+</div>
+<div id="asian-call-option" class="section level2">
+<h2>Asian Call Option</h2>
+<ul>
+<li>European-style option with value at maturity equal to the difference between the stock price at maturity and the average stock price during the life of the option, or $0, whichever is greater.</li>
+<li><span class="math inline">\(\mathrm {\large Value_{T} = Max(0, S_{T} - \bar{S})}\)</span></li>
+</ul>
+</div>
+<div id="hedging-horizon" class="section level2">
+<h2>Hedging Horizon</h2>
+<ul>
+<li>Time span over which the hedging position will be maintained</li>
+</ul>
+</div>
+<div id="lookback-call-option" class="section level2">
+<h2>Lookback Call Option</h2>
+<ul>
+<li>A call option with value at maturity equal to the stock value at maturity less the minimum value of the stock during the lift of the option prior to maturity, or zero, whichever is greater.</li>
+</ul>
+<hr>
+<p><a id="nav__prev" href="../cfa-level-1-quantitative-methods-part-1">Previous</a></p>
+<p><a id="nav__next" href="../cfa-level-1-quantitative-methods-part-3">Next</a></p>
+<p><br></p>
+</div>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/quantitative-methods/" rel="tag">Quantitative Methods</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/cfa-level-1/">CFA Level 1</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/cfa-level-2/">CFA Level 2</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/ethical-and-professional-standards/">Ethical and Professional Standards</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/gips/">GIPS</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/r/">R</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/alternative-investments/" title="Alternative Investments">Alternative Investments</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-1/" title="CFA Level 1">CFA Level 1</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-2/" title="CFA Level 2">CFA Level 2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-3/" title="CFA Level 3">CFA Level 3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/economics/" title="Economics">Economics</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/equities/" title="Equities">Equities</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fixed-income/" title="Fixed income">Fixed income</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/plot/" title="plot">plot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/quantitative-methods/" title="Quantitative Methods">Quantitative Methods</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/r-markdown/" title="R Markdown">R Markdown</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/regression/" title="regression">regression</a>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-2-alternative-investments-part-1/">CFA Level 2: Alternative Investments (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-quantitative-methods-part-2/">CFA Level 1: Quantitative Methods (part 2)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-quantitative-methods-part-1/">CFA Level 1: Quantitative Methods (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-2-fixed-income-part-1/">CFA Level 2: Fixed Income (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-alternative-investments-part-1/">CFA Level 1: Alternative Investments (part 1)</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Free Analyst Notes.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+
+
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+</body>
+</html>

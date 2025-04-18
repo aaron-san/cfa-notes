@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CFA Level 1: Equities - Free Analyst Notes</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="CFA Level 1: Equities" />
+<meta property="og:description" content="The CFA Level 1 exam covers the topic of Equities which includes market orders, indexes, market structure, and more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/cfa-level-1-equities/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-09-02T00:00:00&#43;00:00" />
+
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Free Analyst Notes" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Free Analyst Notes</div>
+					<div class="logo__tagline">CFA Study Notes</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="true" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/cfa-study-topics/">
+				
+				<span class="menu__text">CFA Study Topics</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About Hugo</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+	
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">CFA Level 1: Equities</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-02T00:00:00Z">September 02, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cfa-level-1/" rel="category">CFA Level 1</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			
+<script src="//rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#equities"><em>Equities</em></a>
+<ul>
+<li><a href="#types-of-orders">Types of Orders</a></li>
+<li><a href="#financing">Financing</a></li>
+<li><a href="#underwriting">Underwriting</a></li>
+<li><a href="#markets">Markets</a></li>
+<li><a href="#efficient-market-hypothesis">Efficient Market Hypothesis</a></li>
+<li><a href="#abnormal-rate-of-return">Abnormal rate of return</a></li>
+<li><a href="#tests-for-market-efficiency">Tests for Market Efficiency</a></li>
+<li><a href="#tests-for-independence">Tests for independence</a></li>
+<li><a href="#return-prediction-studies">Return prediction studies</a></li>
+<li><a href="#strong-form-efficiency">Strong-form Efficiency</a></li>
+<li><a href="#market-anamolies-public-information---tests-for-semi-strong-emh">Market Anamolies (public information - tests for Semi-strong EMH)</a></li>
+<li><a href="#reasons-why-markets-should-be-efficient">Reasons Why Markets Should be Efficient</a></li>
+<li><a href="#emh-conclusions">EMH Conclusions</a></li>
+<li><a href="#role-of-portfolio-managers-in-a-perfectly-efficient-market">Role of Portfolio Managers (in a perfectly efficient market)</a></li>
+<li><a href="#exchange-traded-funds-etfs">Exchange Traded Funds (ETFs)</a></li>
+<li><a href="#issuing-etfs">Issuing ETFs</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="equities" class="section level2">
+<h2><em>Equities</em></h2>
+<div id="types-of-orders" class="section level3">
+<h3>Types of Orders</h3>
+<ul>
+<li><strong>Market Orders</strong> - Buy or sell orders that are executed at the current price (guarantees execution, but not price)</li>
+<li><strong>Limit Orders</strong> - Buy or sell orders when the stock price passes a desirable limit (guarantees price or better, but not execution)
+<ul>
+<li><strong>Limit Buy</strong> - purchase a stock if and when it can be bout at-or-below a certain price</li>
+<li><strong>Limit Sell</strong> - sell a stock if and when it rises above a certain price
+<strong><em>Note:</em></strong> A collection of limit orders is called the limit order book.</li>
+</ul></li>
+<li><strong>Stop Orders</strong> - buy or sell orders when the stock price passes an undesirable limit
+<ul>
+<li><strong>Stop-Loss</strong> - sell a stock if its price falls below a certain price (guarantees execution, but not price)<br />
+</li>
+<li><strong>Stop-Buy</strong> - purchase a stock if its price rises above a certain price<br />
+<em>Caution:</em> Stops are not a guarantee of getting the desired entry/exit points.</li>
+</ul></li>
+</ul>
+</div>
+<div id="financing" class="section level3">
+<h3>Financing</h3>
+<ul>
+<li><strong>Internal Financing</strong>
+<ul>
+<li>Customer Deposits<br />
+</li>
+<li>Retained Earnings<br />
+</li>
+</ul></li>
+<li><strong>External Financing</strong>
+<ul>
+<li>Short-term debt</li>
+<li>Long-term debt<br />
+</li>
+<li>Common stock<br />
+</li>
+<li>Preferred stock</li>
+</ul></li>
+</ul>
+</div>
+<div id="underwriting" class="section level3">
+<h3>Underwriting</h3>
+<ul>
+<li><strong>Rule 415 (Shelf Registrations)</strong>
+<ul>
+<li>Allows large firms to register security issues and then sell them piecemeal during the following two years<br />
+</li>
+<li>Benefits: Flexibility, Lower registration fees, better competitive bids from underwriting firms</li>
+</ul></li>
+<li><strong>Underwriting Services</strong>
+<ul>
+<li>Origination<br />
+</li>
+<li>Risk-bearing<br />
+</li>
+<li>Distribution<br />
+</li>
+</ul></li>
+<li><strong>Underwriting of bonds</strong>
+<ul>
+<li>Competiitive bid<br />
+</li>
+<li>Negotiated sales (most common)<br />
+</li>
+<li>Private placements<br />
+</li>
+</ul></li>
+<li><strong>Underwriting Equity</strong>
+<ul>
+<li>Negotiated Sales<br />
+</li>
+<li>Competitive Bid<br />
+</li>
+<li>Best-efforts</li>
+</ul></li>
+</ul>
+</div>
+<div id="markets" class="section level3">
+<h3>Markets</h3>
+<ul>
+<li><strong>Call Market</strong>
+<ul>
+<li>A market in which all bids and asks are gathered and the stock is traded at a single price that attempts to satisfy most of the orders (“clears the market”)</li>
+</ul></li>
+<li><strong>Continuous Market</strong>
+<ul>
+<li>A market in which stocks are traded at any time the market is open<br />
+<strong><em>Note:</em></strong> Stocks are priced either by auction or by dealers<br />
+### Short Selling<br />
+</li>
+</ul></li>
+<li><strong>Benefits of short selling</strong>
+<ul>
+<li>Price Discovery<br />
+</li>
+<li>Liquidity</li>
+<li>Short sellers discover many financial frauds.</li>
+</ul></li>
+</ul>
+<p><strong><em>Note:</em></strong> Stocks with more shorting activity tend to have poor investment fundamentals, such as low cash flow, earnings, and book value relative to price. Research suggests that short sellers distinguish between stocks with temporarily poor fundamentals and those with persistently poor fundamentals, indicating they influence prices accurately, on average.<br />
+### Indexes/Indices</p>
+<div id="constructing-an-index" class="section level4">
+<h4>Constructing an Index</h4>
+<ol style="list-style-type: decimal">
+<li>Sample</li>
+<li>Weighting Sample Members</li>
+<li>Computational Procedure</li>
+</ol>
+</div>
+<div id="price-weighted-index" class="section level4">
+<h4>Price-Weighted Index</h4>
+<ul>
+<li>Simple average of component prices with divisor that is adjusted for stock splits and changes in index stock representation</li>
+</ul>
+</div>
+<div id="market-weighted-index" class="section level4">
+<h4>Market-Weighted Index</h4>
+<ul>
+<li>“Capitalization-weighted” index value<br />
+<span class="math inline">\(\mathrm {\large {\text{Index value} = \sum_{i=1}^n \frac{P_{i}} {D_{adj}}}}\)</span></li>
+<li><strong>Note:</strong> Index returns typically focus on capital gains only!<br />
+</li>
+<li>A portfolio with equal number of shares of each stock in a price-weighted index will match the performance of the index assuming there are no stock splits, stock dividends or changes to the structure of the index.</li>
+</ul>
+</div>
+</div>
+<div id="efficient-market-hypothesis" class="section level3">
+<h3>Efficient Market Hypothesis</h3>
+<ul>
+<li><strong>Weak form Efficiency</strong> - prices reflect all currently available market information (historical sequence of prices, rates of return, trading volume data, etc.)</li>
+<li><strong>Semi-strong form Efficiency</strong> - prices reflect all public market and non-market information<br />
+</li>
+<li><strong>Strong form Efficiency</strong> - price reflect all public and private market and non-market information (“perfect markets”)</li>
+</ul>
+</div>
+<div id="abnormal-rate-of-return" class="section level3">
+<h3>Abnormal rate of return</h3>
+<ul>
+<li>Abnormal return = Actual return - expected, risk-adjusted rate of return</li>
+</ul>
+</div>
+<div id="tests-for-market-efficiency" class="section level3">
+<h3>Tests for Market Efficiency</h3>
+<ul>
+<li>Efficiency means informationally efficient, not operationally efficient.</li>
+<li>Weak-form Efficiency (threatens technical analysis)</li>
+<li>Test for ability to use historical price and volume information to earn abnormal returns (autocorrelation tests: ++—++++—)</li>
+</ul>
+</div>
+<div id="tests-for-independence" class="section level3">
+<h3>Tests for independence</h3>
+<ul>
+<li>Trading rule tests<br />
+</li>
+<li>Semi-Strong form Efficiency (threatens fundamental analysis)<br />
+Test for ability to use public market and non-market information to earn abnormal returns (Abnormal returns should add to zero in long run)</li>
+</ul>
+</div>
+<div id="return-prediction-studies" class="section level3">
+<h3>Return prediction studies</h3>
+<ul>
+<li>Event studies<br />
+</li>
+<li>Time-series tests</li>
+<li>Cross-sectional tests (Security market line)</li>
+</ul>
+</div>
+<div id="strong-form-efficiency" class="section level3">
+<h3>Strong-form Efficiency</h3>
+<ul>
+<li>Inside traders appear to earn above-average profits</li>
+<li>Specialists, with sole access to the limit order book, appear to earn above-average profits<br />
+</li>
+<li>Security analysts, as reported in Value Line and the WSJ, strongly influence prices within 2 days<br />
+</li>
+<li>Professional money managers underperform a buy-and-hold policy, after considering management fees and trading costs</li>
+</ul>
+</div>
+<div id="market-anamolies-public-information---tests-for-semi-strong-emh" class="section level3">
+<h3>Market Anamolies (public information - tests for Semi-strong EMH)</h3>
+<ul>
+<li>Black suggests that most anomalies result from “data mining”</li>
+<li>Earnings surprises to predict returns
+<ul>
+<li>Quarterly earnings surprises are not priced as fast as semistrong EMH would suggest</li>
+</ul></li>
+<li>Calendar studies
+<ul>
+<li>Unexpected returns are observed in January, beginning of week, end of weeks, etc.</li>
+</ul></li>
+<li>Price-earnings (P/E) ratio
+<ul>
+<li>Stock with low P/E ratios have experienced above-market returns, while stock with high P/E ratios have experienced below-market returns</li>
+</ul></li>
+<li>Small firm effect
+<ul>
+<li>Small firms consistently earned higher risk-adjusted returns than large firms, maybe due to inability of CAPM to correctly capture small-firm risk</li>
+</ul></li>
+<li>Neglected firms effect
+<ul>
+<li>Companies with few analysts following them appear to have above-average returns</li>
+</ul></li>
+<li>Book value/Market value ratios
+<ul>
+<li>The greater the BV/MV ratio, the higher the risk-adjusted rate of return</li>
+</ul></li>
+</ul>
+</div>
+<div id="reasons-why-markets-should-be-efficient" class="section level3">
+<h3>Reasons Why Markets Should be Efficient</h3>
+<ul>
+<li>Large number of independent, profit-maximizing investors engaged in valuation</li>
+<li>New information comes to the market randomly</li>
+<li>Traders will adjust prices rapidly</li>
+</ul>
+</div>
+<div id="emh-conclusions" class="section level3">
+<h3>EMH Conclusions</h3>
+<ul>
+<li><strong>Weak-form efficiency</strong> - Empirical evidence supports the Weak-form EMH
+<ul>
+<li>Simple trading rules using historical price and volume data cannot be used to consistently produce superior returns after adjusting for transaction costs and taxes</li>
+</ul></li>
+<li><strong>Semi-strong form efficiency</strong> - Empirical evidence mostly supports the Semi-strong EMH
+<ul>
+<li>Event studies support and time-series and Cross-sectional studies contradict Semi-strong form EMH<br />
+</li>
+</ul></li>
+<li><strong>Strong-form efficiency</strong> - Empirical evidence does not support the Strong-form EMH
+<ul>
+<li>Corporate insiders and market specialists have superior inside information and can consistently earn abnormal profits * The EMH predicts that most fundamental analysis is futile</li>
+</ul></li>
+<li>Only analysts with unique insight receive superior returns</li>
+</ul>
+</div>
+<div id="role-of-portfolio-managers-in-a-perfectly-efficient-market" class="section level3">
+<h3>Role of Portfolio Managers (in a perfectly efficient market)</h3>
+<ol style="list-style-type: decimal">
+<li>Identify risk/return objectives</li>
+<li>Develop a well-diversified portfolio</li>
+<li>Reduce transaction costs</li>
+<li>Develop capital market expectations</li>
+<li>Implement and update investment strategy</li>
+</ol>
+<p><strong><em>Note:</em></strong> The proper way to guage manager performance is to compare portfolio return to the return on a randomly selected buy-and-hold strategy of stocks within the same risk class.</p>
+<p><strong><em>Note:</em></strong> When the dividend yield (D/P, payout ratio) and the bond default spread are high, risk is generally high and investors expect or require a high return on stocks and bonds</p>
+</div>
+<div id="exchange-traded-funds-etfs" class="section level3">
+<h3>Exchange Traded Funds (ETFs)</h3>
+<ul>
+<li>An exchange-traded fund, or ETF, is a type of closed-end mutual fund that pools assets in order to meet certain identified objectives, often matching the return of a particular index (e.g., S&amp;P 500 Index, Russell 2000 Index, or an index representing a sector, such as gold or oil). Unlike a conventional, or open-end, mutual fund, ETFs trade throughout the day, with market arbitrage providing some level of confidence that the value of the ETF over time will track the performance of the relevant index.</li>
+<li>An ETF is simply a basket of securities that are publicly traded in the marketplace.</li>
+<li>Throughout the day, there is an “INAV,” or intra-day net-asset-value, which tracks the value of an ETF on a 15-second basis and is based on the underlying constituents.</li>
+<li>Because INAV values can have issues, market makers and ETF sponsors maintain a separate, real-time price on their ETF.</li>
+<li>The real driver of liquidity in an ETF is the liquidity of the underlying assets that the ETF holds.</li>
+<li>Market makers, specifically authorized participants (APs), can arbitrage differences between the net-asset-value (NAV) of an ETF and the value of the underlying ETF holdings.</li>
+<li>At every given point in the day, an AP is calculating the cost to buy the basket of securities that form an ETF, and the cost of selling a basket of securities that form an ETF. They compare these two “theoretical” portfolios to the live net asset value of the ETF.</li>
+<li>The market maker can simply redeem an ETF unit</li>
+<li>If market makers or APs are “surprised” by a large incoming trade order, they may think an arbitrageur is trying to get the best of them, and that perhaps something is wrong with a stock in the basket or with their own internal NAV calculations of which they are not yet aware, and reflexively widen the spread.</li>
+</ul>
+</div>
+<div id="issuing-etfs" class="section level3">
+<h3>Issuing ETFs</h3>
+<ol style="list-style-type: decimal">
+<li>SEC approval is required to issue ETFs, which takes many months, sometimes years</li>
+<li>Alternatives to new SEC approval:<br />
+</li>
+</ol>
+<ul>
+<li>Manage a portfolio of a company that already has SEC issuance clearance.</li>
+<li>Buy company with ETF issuance clearance.</li>
+</ul>
+<hr>
+<p><a id="nav__prev" href="../cfa-study-topics">Topics List</a></p>
+<!-- <a id="nav__next" href="../cfa-level-1-quantitative-methods-part-2">Next</a> -->
+<p><br></p>
+</div>
+</div>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/equities/" rel="tag">Equities</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/cfa-level-1/">CFA Level 1</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/cfa-level-2/">CFA Level 2</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/ethical-and-professional-standards/">Ethical and Professional Standards</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/gips/">GIPS</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/r/">R</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/alternative-investments/" title="Alternative Investments">Alternative Investments</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-1/" title="CFA Level 1">CFA Level 1</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-2/" title="CFA Level 2">CFA Level 2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cfa-level-3/" title="CFA Level 3">CFA Level 3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/economics/" title="Economics">Economics</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/equities/" title="Equities">Equities</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fixed-income/" title="Fixed income">Fixed income</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/plot/" title="plot">plot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/quantitative-methods/" title="Quantitative Methods">Quantitative Methods</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/r-markdown/" title="R Markdown">R Markdown</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/regression/" title="regression">regression</a>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-2-alternative-investments-part-1/">CFA Level 2: Alternative Investments (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-quantitative-methods-part-2/">CFA Level 1: Quantitative Methods (part 2)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-quantitative-methods-part-1/">CFA Level 1: Quantitative Methods (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-2-fixed-income-part-1/">CFA Level 2: Fixed Income (part 1)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cfa-level-1-alternative-investments-part-1/">CFA Level 1: Alternative Investments (part 1)</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Free Analyst Notes.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+
+
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+</body>
+</html>
