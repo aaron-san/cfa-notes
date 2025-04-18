@@ -6,8 +6,8 @@ import { mdxComponents } from "../../../mdx-components";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import matter from "gray-matter";
+import Link from "next/link";
 
-// ✅ New base directory
 const blogDir = path.join(process.cwd(), "content");
 
 export async function generateStaticParams() {
@@ -56,9 +56,29 @@ export default async function BlogPost({
   });
 
   return (
-    <article className="prose mx-auto p-6">
-      <h1>{frontmatter.title}</h1>
+    <article className="prose dark:prose-invert max-w-3xl mx-auto px-6 pt-20">
+      <h1>{frontmatter.title ?? "Untitled"}</h1>
       {MDXContent}
+      <hr />
+      {/* <div className="flex justify-between items-center mt-4">
+        {frontmatter.backUrl && (
+          <Link
+            href={`/${frontmatter.backUrl}`}
+            className="text-blue-500 hover:underline"
+          >
+            Back
+          </Link>
+        )}
+
+        {frontmatter.nextUrl && (
+          <Link
+            href={`/${frontmatter.nextUrl}`}
+            className="text-blue-500 hover:underline"
+          >
+            Next
+          </Link>
+        )}
+      </div> */}
     </article>
   );
 }

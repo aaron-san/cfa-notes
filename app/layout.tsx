@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import "katex/dist/katex.min.css";
 import "../styles/globals.css";
+import PageHeader from "@/components/PageHeader";
+import PageFooter from "@/components/PageFooter";
 
 // export const metadata = {
 //   title: `CFA Notes`,
@@ -17,7 +19,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="description" content="Description of your app" />
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
-      <body className="text-red-400">{children}</body>
+      <body className="text-red-400">
+        <PageHeader />
+        {children}
+        <PageFooter />
+      </body>
     </html>
   );
 }
