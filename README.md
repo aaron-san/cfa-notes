@@ -67,9 +67,41 @@ cd ..
 git checkout --orphan gh-pages (initial branch creation)
 or
 git checkout gh-pages (when gh-pages branch already exists)
-$ cp -r out/\* .
-New-Item .nojekyll -ItemType File
+xcopy out\*.\* . /s /e /y
+echo. > .nojekyll
 git add .
 git commit -m "🚀 Deploy static site"
 git push origin HEAD:gh-pages --force
+git checkout main
+
+# Save current work
+
+git checkout main
+git add .
+git commit -m "💾 Save work before deploy"
+
+# Switch to a temporary branch
+
+git checkout --orphan gh-pages
+
+# Clear the index (everything)
+
+git reset --hard
+
+# Copy the out/ content to root of gh-pages
+
+cp -r out/\* .
+
+# Add .nojekyll if not already
+
+touch .nojekyll
+
+# Commit and push to gh-pages
+
+git add .
+git commit -m "🚀 Deploy static site"
+git push origin HEAD:gh-pages --force
+
+# Switch back to main
+
 git checkout main

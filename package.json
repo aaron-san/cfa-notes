@@ -11,6 +11,8 @@
     "serve": "npx serve out --single --base /cfa-notes",
     "clean-dev": "riraf .next && next dev",
     "build": "next build",
+    "nojekyll-1": "echo. > ./out/.nojekyll && echo 'https://aaron-san.github.io/cfa-notes > ./out/CNAME'",
+    "nojekyll": "echo. > ./out/.nojekyll",
     "clean-build": "rimraf .next out pnpm-lock.yaml  && npm run build",
     "tree": "tree -I \"node_modules|.git|.next\" -L 3 > tree.txt",
     "deploy": "gh-pages -d out"

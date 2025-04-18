@@ -8,7 +8,11 @@ import PageFooter from "@/components/PageFooter";
 //   description: `Learn more about the CFA Exam`,
 // };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       {/* <Head>

@@ -15,9 +15,7 @@ const config = {
   experimental: {
     mdxRs: false,
   },
-  // basePath: isProd ? "/cfa-notes" : "",
-  // assetPrefix: isProd ? "/cfa-notes/" : "",
-  assetPrefix: isProd ? "/cfa-notes/" : "",
+  assetPrefix: isProd ? "/" : "",
 };
 
 export default withMDX({
