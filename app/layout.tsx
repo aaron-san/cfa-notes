@@ -1,6 +1,5 @@
-import { ReactNode } from "react";
 import "katex/dist/katex.min.css";
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import PageHeader from "@/components/PageHeader";
 import PageFooter from "@/components/PageFooter";
 
@@ -9,7 +8,7 @@ import PageFooter from "@/components/PageFooter";
 //   description: `Learn more about the CFA Exam`,
 // };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       {/* <Head>
@@ -19,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="description" content="Description of your app" />
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
-      <body className="text-red-400">
+      <body className="text-blue-700">
         <PageHeader />
         {children}
         <PageFooter />

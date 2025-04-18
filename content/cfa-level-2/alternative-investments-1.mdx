@@ -19,9 +19,7 @@ nextUrl: "alternative-investments-2"
 
 ### Capitalization Rate
 
-```math
-\mathrm {\small {Cap rate = r_{NOI} - g_{NOI}}}
-```
+<Math>{"\\mathrm {\\small {Cap rate = r_{NOI} - g_{NOI}}}"}</Math>
 
 ### Measuring the Cap Rate
 
@@ -33,30 +31,32 @@ nextUrl: "alternative-investments-2"
 
 - The built-up method depends on macroeconomic factors, and is generally used when comparables are not present. The built-up method doesn't consider the method of financing.
 
-```math
-\mathrm {\small {C_0 = pure rate + liquidity premium + recapture premium + risk premium}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {C_0 = pure rate + liquidity premium + recapture premium + risk premium}}"
+  }
+</Math>
 
 2. Band-of-Invesment Method (BOI)
    The BOI utilizes a WACC as an estimate of the market capitalization rate. It is appropriate for properties that utilize both debt and equity financing. In the BOI method, we adjust the capitalization rate by adding a sinking fund factor.
 
 ### Sinking Fund Factor
 
-```math
-\mathrm {\small {SFF = PMT(i/12, n\times12, PV = 0, FV = -1)}}
-```
+<Math>
+  {"\\mathrm {\\small {SFF = PMT(i/12, n\\times12, PV = 0, FV = -1)}}"}
+</Math>
 
 ### Annual Mortgage Cost = annual YTM + SFF (%)
 
-```math
-\mathrm {\small {C_0 = WACC = (mortgage weight x mortgage cost) + (equity weight x equity cost)}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {C_0 = WACC = (mortgage weight x mortgage cost) + (equity weight x equity cost)}}"
+  }
+</Math>
 
 ### Equity Reversion After Taxes (ERAT)
 
-```math
-\mathrm {ERAT = Net selling price - Mortgage balance - Taxes}
-```
+<Math>{"\\mathrm {ERAT = Net selling price - Mortgage balance - Taxes}"}</Math>
 
 ## Recaptured Depreciation
 
@@ -101,8 +101,10 @@ Private Equity Investor - outside investors who makes an investment in a fund of
 
 1. If the probability of failure in any given year is expected to remain constant, use...
 
-```math
-\mathrm {\small {r_{adj} =  \frac{1 + r_{unadj}} {1 - Pr(failure)} - 1}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {r_{adj} =  \\frac{1 + r_{unadj}} {1 - Pr(failure)} - 1}}"
+  }
+</Math>
 
 2. If the probability of failure in any given year is expected to change each year, adjust each year's expected cash flows to reflect the Probability of failure ($0 cash flow, Pr(failure)) or adjust the expected exit value.

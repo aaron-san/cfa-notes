@@ -1,13 +1,14 @@
 import withMDX from "@next/mdx";
 
 // const isProd = process.env.NODE_ENV === "production";
-
+// console.log(isProd);
 // console.log("✅ Using next.config (ESM)");
 // throw new Error("🧪 Testing config load");
 
 const config = {
-  pageExtensions: ["ts", "tsx", "mdx"],
+  pageExtensions: ["js", "mjs", "ts", "tsx", "mdx"],
   output: "export", // Enables static HTML export
+  swcMinify: true,
   images: {
     unoptimized: true,
   },

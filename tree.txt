@@ -7,6 +7,7 @@
 |   `-- page.tsx
 |-- components
 |   |-- Caution.tsx
+|   |-- Math.tsx
 |   |-- Note.tsx
 |   |-- PageFooter.tsx
 |   |-- PageHeader.tsx
@@ -30,7 +31,6 @@
 |   |-- cfa-level-2
 |   |   |-- alternative-investments-1.mdx
 |   |   |-- alternative-investments-2.mdx
-|   |   |-- ethics-1.mdx
 |   |   |-- fixed-income-1.mdx
 |   |   `-- fixed-income-2.mdx
 |   `-- cfa-level-3
@@ -44,6 +44,18 @@
 |-- mdx-components.ts
 |-- next-env.d.ts
 |-- next.config.mjs
+|-- out
+|   |-- 404.html
+|   |-- _next
+|   |   |-- 2iJH0REPE4HAmKYenGLfV
+|   |   `-- static
+|   |-- blog
+|   |   |-- cfa-level-1
+|   |   |-- cfa-level-2
+|   |   `-- cfa-level-3
+|   |-- favicon.ico
+|   |-- index.html
+|   `-- index.txt
 |-- package.json
 |-- postcss.config.cjs
 |-- private
@@ -97,4 +109,4 @@
 |-- tsconfig.json
 `-- types
 
-36 directories, 61 files
+44 directories, 65 files

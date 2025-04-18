@@ -56,11 +56,11 @@ export default async function BlogPost({
   });
 
   return (
-    <article className="prose dark:prose-invert max-w-3xl mx-auto px-6 pt-20">
+    <article className="prose max-w-3xl mx-auto px-6 pt-20">
       <h1>{frontmatter.title ?? "Untitled"}</h1>
       {MDXContent}
       <hr />
-      {/* <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-between items-center mt-4">
         {frontmatter.backUrl && (
           <Link
             href={`/${frontmatter.backUrl}`}
@@ -78,7 +78,7 @@ export default async function BlogPost({
             Next
           </Link>
         )}
-      </div> */}
+      </div>
     </article>
   );
 }

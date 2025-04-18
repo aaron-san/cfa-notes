@@ -2,7 +2,6 @@
 title: "CFA Level 1: Quantitative Methods (part 3)"
 slug: "quantitative-methods-part-3"
 description: ""
-lastmod: ""
 categories:
   - CFA Level 1
 tags:
@@ -12,8 +11,8 @@ output:
     toc: true
 summary: "Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more."
 thumbnail: ""
-backUrl: "quantitative-methods-part-2"
-nextUrl: "quantitative-methods-part-4"
+backUrl: "blog/cfa-level-1/quantitative-methods-part-2"
+nextUrl: "blog/cfa-level-1/quantitative-methods-part-4"
 ---
 
 ## Statistical Inference
@@ -78,21 +77,17 @@ nextUrl: "quantitative-methods-part-4"
 
 ## Total Probability Rule
 
-```math
-\mathrm {\small {P(A) = P(A|B) \cdot P(B) + P(A|C) \cdot P(C) }}
-```
+<Math>
+  {"\\mathrm {\\small {P(A) = P(A|B) \\cdot P(B) + P(A|C) \\cdot P(C) }}"}
+</Math>
 
 ## Addition Rule of Probability
 
-```math
-\mathrm {\small {P(A \cup B) = P(A) + P(B) - P(A \cap B)}}
-```
+<Math>{"\\mathrm {\\small {P(A \\cup B) = P(A) + P(B) - P(A \\cap B)}}"}</Math>
 
 ## Multiplication Rule of Probability
 
-```math
-\mathrm {\small {P(A \cap B) = P(A) \cdot P(B)}}
-```
+<Math>{"\\mathrm {\\small {P(A \\cap B) = P(A) \\cdot P(B)}}"}</Math>
 
 ## Steps in Hypothesis Testing
 
@@ -109,18 +104,20 @@ nextUrl: "quantitative-methods-part-4"
 - If the null hypothesis is false and is rejected, then a correct decision was made. If the null hypothesis is false but is not rejected, an error was made and the probability of making this error is the **power** of a test.
 - In other words, the **power** is the probability of rejecting a false null hypothesis
 
-```math
-\mathrm {\small {Power = 1 - \beta = 1 - P(\text {Type II error}) }}
-```
+<Math>
+  {"\\mathrm {\\small {Power = 1 - \\beta = 1 - P(\\text {Type II error}) }}"}
+</Math>
 
 ## Labeling
 
 - How many ways can k labels can be assigned to n items?
 - The number of items that receive label 1 is n1, where n1 + n2 + n3 + ... + nk = n
 
-```math
-\mathrm {\small {\frac{n!} {n_1! \space \cdot \space n_2! \space \cdot \space ... \space \cdot \space n_k!}}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {\\frac{n!} {n_1! \\space \\cdot \\space n_2! \\space \\cdot \\space ... \\space \\cdot \\space n_k!}}}"
+  }
+</Math>
 
 ## Test for Population Mean (Z-stat)
 
@@ -151,17 +148,19 @@ nextUrl: "quantitative-methods-part-4"
   - Independent populations
   - Population variances unknown, but assumed equal
 
-```math
-mathrm {\small {t = \frac{ (x_1 - x_2) - (\mu_1 - \mu_2) } {\sqrt{\left( \frac{s_p^2}{n_1}+\frac{s_p^2}{n_2} \right)} } }}
-```
+<Math>
+  {
+    "mathrm {\\small {t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_p^2}{n_1}+\\frac{s_p^2}{n_2} \\right)} } }}"
+  }
+</Math>
 
-```math
-\mathrm {\small {df = n1 + n2 - 2}}$
-```
+<Math>{"\\mathrm {\\small {df = n1 + n2 - 2}}"}</Math>
 
-```math
-\mathrm {\small {s_p^2 = \frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 } { n_1 + n_2 - 2} } }
-```
+<Math>
+  {
+    "\\mathrm {\\small {s_p^2 = \\frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 } { n_1 + n_2 - 2} } }"
+  }
+</Math>
 
 ### Method 2
 
@@ -170,13 +169,17 @@ mathrm {\small {t = \frac{ (x_1 - x_2) - (\mu_1 - \mu_2) } {\sqrt{\left( \frac{s
   - Independent populations
   - Unequal and unknown population variances
 
-```math
-\mathrm {\small {t = \frac{ (x_1 - x_2) - (\mu_1 - \mu_2) } {\sqrt{\left( \frac{s_1^2}{n_1}+\frac{s_2^2}{n_2} \right)} } }}
-```
+<Math>
+  {
+    "\\mathrm {\\small {t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2} \\right)} } }}"
+  }
+</Math>
 
-```math
-\mathrm {\small {df = \frac{\left( \frac{ s_1^2 } {n_1} + \frac{ s_2^2 } {n_2}\right)^2} {\frac{\left(s_1^2 / n_1 \right)^2} {n_1} + \frac{\left(s_2^2 / n_2 \right)^2} {n_2} }}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {df = \\frac{\\left( \\frac{ s_1^2 } {n_1} + \frac{ s_2^2 } {n_2}\right)^2} {\frac{left(s_1^2 / n_1 \right)^2} {n_1} + \\frac{\\left(s_2^2 / n_2 \\right)^2} {n_2} }}}"
+  }
+</Math>
 
 In majority of cases, the T-test is used!
 
@@ -186,9 +189,11 @@ In majority of cases, the T-test is used!
   - Normally distributed populations
   - Dependent populations
 
-```math
-\mathrm {\small {t = \frac{ \bar d - d_{zs} } { s_{\bar d} / \sqrt n }}}
-```
+<Math>
+  {
+    "\\mathrm {\\small {t = \\frac{ \\bar d - d_{zs} } { s_{\\bar d} / \\sqrt n }}}"
+  }
+</Math>
 
 Note: Stocks are generally considered to be dependent (both rely on market returns)
 Test Statistic
@@ -219,6 +224,4 @@ RRORbond = real risk-free rate + inflation premium + default risk premium + liqu
 
 ## Power of a Test
 
-```math
-\mathrm {\small {1-P(Type II Error)}}
-```
+<Math>{"\\mathrm {\\small {1-P(Type II Error)}}"}</Math>

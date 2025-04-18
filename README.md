@@ -58,3 +58,8 @@ git reset --hard
 git commit --allow-empty -m "Initialize gh-pages branch"
 git push origin gh-pages
 git checkout main
+
+pnpm run clean-build
+cd out
+New-Item .nojekyll -ItemType File
+cd ..
