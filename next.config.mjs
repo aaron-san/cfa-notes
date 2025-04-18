@@ -15,7 +15,7 @@ const config = {
   experimental: {
     mdxRs: false,
   },
-  assetPrefix: isProd ? "/" : "",
+  // assetPrefix: isProd ? "/" : "",
 };
 
 export default withMDX({
