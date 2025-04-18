@@ -63,3 +63,13 @@ pnpm run clean-build
 cd out
 New-Item .nojekyll -ItemType File
 cd ..
+
+git checkout --orphan gh-pages (initial branch creation)
+or
+git checkout gh-pages (when gh-pages branch already exists)
+$ cp -r out/\* .
+New-Item .nojekyll -ItemType File
+git add .
+git commit -m "🚀 Deploy static site"
+git push origin HEAD:gh-pages --force
+git checkout main
