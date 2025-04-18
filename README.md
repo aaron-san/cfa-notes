@@ -67,7 +67,7 @@ cd ..
 git checkout --orphan gh-pages (initial branch creation)
 or
 git checkout gh-pages (when gh-pages branch already exists)
-$ cp -r out/\* .
+xcopy out\*.* . /s /e /y
 New-Item .nojekyll -ItemType File
 git add .
 git commit -m "🚀 Deploy static site"
