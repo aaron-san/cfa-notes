@@ -29,7 +29,6 @@ h1 {
 h2 {
   margin-top: 1rem;
   font-size: 1.4rem;
-  color: #079ab4;
 }
 
 h3 {
@@ -63,7 +62,7 @@ ol {
   padding-left: 2rem;
 }
 
-.note {
+/* .note {
   color: dodgerblue;
   border: 1px solid dodgerblue;
   border-radius: 5px;
@@ -71,13 +70,13 @@ ol {
   padding: 10px 20px;
   width: fit-content;
   margin-bottom: 10px;
-}
+} */
 
-.noteWord {
+/* .noteWord {
   font-weight: bolder;
-}
+} */
 
-.caution {
+/* .caution {
   color: firebrick;
   font-weight: bolder;
   border: 1px solid firebrick;
@@ -85,18 +84,21 @@ ol {
   background: rgba(250, 42, 42, 0.1);
   padding: 10px 20px;
   width: fit-content;
-}
+} */
 
 /* Code snippets */
 .katex-html {
   padding: 1rem;
   background: white;
   /* width: fit-content; */
-  margin-left: 1rem;
+  margin: 0 auto;
   overflow: auto;
   border: 1px solid rgba(20, 20, 20, 0.5) !important;
   border-radius: 4px;
   z-index: -10;
+  color: lightgray;
+  background-color: rgb(100,116,139);
+  width: fit-content;
 }
 
 .hljs.language-js {

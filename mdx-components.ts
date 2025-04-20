@@ -7,7 +7,6 @@ import Math from "./components/Math";
 
 // You don’t need a `useMDXComponents` function if you're not modifying anything.
 export const mdxComponents: MDXComponents = {
-  // Example component:
   Note,
   Caution,
   PageHeader,

@@ -7,31 +7,15 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import matter from "gray-matter";
 import Link from "next/link";
+import { getSlugs } from "@/app/lib/utils";
 
 const blogDir = path.join(process.cwd(), "content");
 
 export async function generateStaticParams() {
-  const walk = (dir: string): { slug: string[] }[] => {
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
-    return entries.flatMap((entry) => {
-      const fullPath = path.join(dir, entry.name);
-
-      if (entry.isDirectory()) return walk(fullPath);
-
-      if (entry.isFile() && entry.name.endsWith(".mdx")) {
-        const relativePath = path.relative(blogDir, fullPath);
-        const slug = relativePath.replace(/\.mdx$/, "").split(path.sep);
-        return [{ slug }];
-      }
-
-      return [];
-    });
-  };
-
-  return walk(blogDir);
+  return getSlugs(blogDir);
 }
 
-export default async function BlogPost({
+export default async function BogPost({
   params,
 }: {
   params: { slug: string[] };
@@ -56,15 +40,15 @@ export default async function BlogPost({
   });
 
   return (
-    <article className="prose max-w-3xl mx-auto px-6 pt-20">
+    <article className="dark:text-slate-100 max-w-3xl mx-auto px-6">
       <h1>{frontmatter.title ?? "Untitled"}</h1>
       {MDXContent}
       <hr />
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-around gap-4 items-center my-4">
         {frontmatter.backUrl && (
           <Link
             href={`/${frontmatter.backUrl}`}
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 hover:underline shadow rounded-r-md rounded-l-3xl py-1 pl-8 pr-4 bg-slate-300"
           >
             Back
           </Link>
@@ -73,7 +57,7 @@ export default async function BlogPost({
         {frontmatter.nextUrl && (
           <Link
             href={`/${frontmatter.nextUrl}`}
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 hover:underline shadow rounded-l-md rounded-r-2xl py-1 pr-8 pl-4 bg-slate-300"
           >
             Next
           </Link>

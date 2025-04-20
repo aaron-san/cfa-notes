@@ -2,20 +2,19 @@
   "name": "cfa-notes",
   "homepage": "https://aaron-san.github.io/cfa-notes",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "scripts": {
+    "tree": "tree -I \"node_modules|.git|.next\" -L 3 > tree.txt",
     "verify": "npm install --package-lock-only && npm audit && npm outdated",
     "clean": "rimraf .next out pnpm-lock.yaml node_modules",
     "dev": "next dev",
-    "serve": "npx serve out --single --base /cfa-notes",
+    "serve": "node server/serve.js",
     "clean-dev": "riraf .next && next dev",
-    "build": "next build",
     "nojekyll-1": "echo. > ./out/.nojekyll && echo 'https://aaron-san.github.io/cfa-notes > ./out/CNAME'",
     "nojekyll": "echo. > ./out/.nojekyll",
-    "clean-build": "rimraf .next out pnpm-lock.yaml  && npm run build",
-    "tree": "tree -I \"node_modules|.git|.next\" -L 3 > tree.txt",
-    "deploy": "gh-pages -d out --dotfiles --git git"
+    "build": "next build",
+    "clean-build": "rimraf .next out pnpm-lock.yaml && npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -41,6 +40,7 @@
     "eslint": "^9.24.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
   }
