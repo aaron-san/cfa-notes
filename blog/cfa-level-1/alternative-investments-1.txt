@@ -1,5 +1,5 @@
-1:HL["/cfa-notes/_next/static/css/4325c2028125dda3.css","style",{"crossOrigin":""}]
-0:["Hl57Gj_SybsoUqLblEH3H",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/alternative-investments-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"alternative-investments-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/4325c2028125dda3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/cfa-notes/_next/static/css/30b106d6ff0ae6a0.css","style",{"crossOrigin":""}]
+0:["nJiCI2VcUtHYZ0ThokQgK",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/alternative-investments-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"alternative-investments-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/30b106d6ff0ae6a0.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-473bf7bba74ef91d.js","797","static/chunks/app/blog/%5B...slug%5D/page-fe5a8575442a3811.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]

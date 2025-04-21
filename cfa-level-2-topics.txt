@@ -1,5 +1,5 @@
-1:HL["/cfa-notes/_next/static/css/4325c2028125dda3.css","style",{"crossOrigin":""}]
-0:["Hl57Gj_SybsoUqLblEH3H",[[["",{"children":["cfa-level-2-topics",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/4325c2028125dda3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/cfa-notes/_next/static/css/30b106d6ff0ae6a0.css","style",{"crossOrigin":""}]
+0:["nJiCI2VcUtHYZ0ThokQgK",[[["",{"children":["cfa-level-2-topics",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/30b106d6ff0ae6a0.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-473bf7bba74ef91d.js","467","static/chunks/app/cfa-level-2-topics/page-f352d4ba8342a685.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
