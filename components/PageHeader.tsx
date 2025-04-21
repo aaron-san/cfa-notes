@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const PageHeader = () => {
   return (
-    <header className="fixed w-full h-12 bg-slate-900 border-b-2 border-slate-100/50">
-      <nav className="flex mx-auto justify-between mb-10 container px-4 md:px-8">
-        <div className="flex items-center text md:text-2xl font-bolder hover:underline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">
+    <header className="z-20 fixed flex items-center bg-slate-900 border-slate-100/50 border-b-2 w-full h-12">
+      <nav className="flex justify-between items-center mx-auto px-4 md:px-8 container">
+        <div className="flex items-center bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200 font-bolder font-extrabold text-transparent md:text-2xl hover:underline text">
           <Link href="/">Free Analyst Notes</Link>
         </div>
-        <ul className="flex gap-2 text-slate-500 list-none uppercase font-bold">
-          <li className="hover:text-slate-400">
+        <ul className="flex gap-2 font-bold text-slate-500 list-none">
+          {/* <li className="hover:text-slate-400">
             <Link href="/study">Study</Link>
-          </li>
-          <li className="hover:text-slate-400">
+          </li> */}
+          <li className="mt-0 hover:text-slate-400">
             <Link href="../About">About</Link>
           </li>
         </ul>

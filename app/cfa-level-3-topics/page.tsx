@@ -1,7 +1,6 @@
 import path from "path";
-import { getSlugs } from "@/app/lib/utils";
+import { getSlugs, getCleanedSlug } from "@/app/lib/utils";
 import Link from "next/link";
-
 const blogDir = path.join(process.cwd(), "content", "cfa-level-3");
 
 export default function BlogIndex() {
@@ -9,14 +8,17 @@ export default function BlogIndex() {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">CFA Level 3 Notes</h1>
-      <ul className="space-y-2 list-disc list-inside">
+      <h1 className="mb-4 font-bold text-2xl">CFA Level 3 Notes</h1>
+      <ul className="flex flex-wrap justify-start gap-2 list-none">
         {slugs.map(({ slug }) => {
           const href = `/blog/${slug.join("/")}`;
           return (
             <li key={href}>
-              <Link href={href} className="text-blue-600 hover:underline">
-                {slug[1]}
+              <Link
+                href={href}
+                className="bg-slate-200 px-4 py-2 rounded text-slate-800 hover:underline"
+              >
+                {getCleanedSlug(slug)}
               </Link>
             </li>
           );

@@ -21,6 +21,7 @@ const config: Config = {
   },
   plugins: [
     require("@tailwindcss/typography"),
+    // require("tailwind-scrollbar-hide"),
     // require("@tailwindcss/aspect-ratio"),
     // require("tailwindcss-debug-screens"),
   ],

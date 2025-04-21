@@ -22,17 +22,21 @@ body {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 1rem;
+  color: rgb(240, 240, 240);
 }
 
 h2 {
-  margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  /* margin-top: 4rem; */
+  margin: 20px 20px 0 20px;
+  color: rgb(80, 120, 220);
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 h1,
@@ -49,7 +53,7 @@ h5 {
 ul li,
 ol,
 li {
-  margin: 10px 0;
+  margin: 0.5rem 0 0 0;
 }
 
 ul {
@@ -97,8 +101,23 @@ ol {
   border-radius: 4px;
   z-index: -10;
   color: lightgray;
-  background-color: rgb(100,116,139);
+  background-color: rgb(100, 116, 139);
   width: fit-content;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.katex-display::-webkit-scrollbar {
+  display: none;
 }
 
 .hljs.language-js {

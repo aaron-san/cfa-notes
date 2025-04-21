@@ -48,7 +48,7 @@ export default async function BogPost({
         {frontmatter.backUrl && (
           <Link
             href={`/${frontmatter.backUrl}`}
-            className="text-blue-500 hover:underline shadow rounded-r-md rounded-l-3xl py-1 pl-8 pr-4 bg-slate-300"
+            className="text-slate-800 hover:bg-slate-200 shadow rounded-r-md rounded-l-[20px] py-1 pl-6 pr-4 bg-slate-300 font-bold"
           >
             Back
           </Link>
@@ -57,7 +57,7 @@ export default async function BogPost({
         {frontmatter.nextUrl && (
           <Link
             href={`/${frontmatter.nextUrl}`}
-            className="text-blue-500 hover:underline shadow rounded-l-md rounded-r-2xl py-1 pr-8 pl-4 bg-slate-300"
+            className="text-slate-800 hover:bg-slate-200 shadow rounded-l-md rounded-r-[20px] py-1 pr-6 pl-4 bg-slate-300 font-bold"
           >
             Next
           </Link>
