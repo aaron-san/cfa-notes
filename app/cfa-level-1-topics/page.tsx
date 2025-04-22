@@ -10,19 +10,21 @@ export default function BlogIndex() {
     <div className="p-6">
       <h1 className="mb-4 font-bold text-2xl">CFA Level 1 Notes</h1>
       <ul className="flex flex-wrap justify-start gap-2 list-none">
-        {slugs.map(({ slug }) => {
-          const href = `/blog/${slug.join("/")}`;
-          return (
-            <li key={href}>
-              <Link
-                href={href}
-                className="bg-slate-200 px-4 py-2 rounded text-slate-800 hover:underline"
-              >
-                {getCleanedSlug(slug)}
-              </Link>
-            </li>
-          );
-        })}
+        {slugs
+          .filter((slug) => !slug.slug[1].match(/-[2-9][0-9]?$/))
+          .map(({ slug }) => {
+            const href = `/blog/${slug.join("/")}`;
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="dark:bg-slate-600 dark:hover:bg-slate-500 px-4 py-2 rounded dark:text-slate-100 list-none"
+                >
+                  {getCleanedSlug(slug)}
+                </Link>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );

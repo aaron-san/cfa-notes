@@ -40,15 +40,24 @@ export default async function BogPost({
   });
 
   return (
-    <article className="dark:text-slate-100 max-w-3xl mx-auto px-6">
-      <h1>{frontmatter.title ?? "Untitled"}</h1>
+    <article className="mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100">
+      <div className="mb-4 border-slate-100/20 border-b w-fit">
+        <h1>{frontmatter.title ?? "Untitled"}</h1>
+        <div className="flex gap-2 pb-3">
+          {frontmatter.tags.map((tag: string) => (
+            <div className="bg-slate-600 px-2 py-1 rounded-full text-slate-300 text-xs">
+              {tag}
+            </div>
+          ))}
+        </div>
+      </div>
       {MDXContent}
       <hr />
-      <div className="flex justify-around gap-4 items-center my-4">
+      <div className="flex justify-around items-center gap-4 my-4">
         {frontmatter.backUrl && (
           <Link
             href={`/${frontmatter.backUrl}`}
-            className="text-slate-800 hover:bg-slate-200 shadow rounded-r-md rounded-l-[20px] py-1 pl-6 pr-4 bg-slate-300 font-bold"
+            className="bg-slate-300 hover:bg-slate-200 shadow py-1 pr-4 pl-6 rounded-r-md rounded-l-[20px] font-bold text-slate-800"
           >
             Back
           </Link>
@@ -57,7 +66,7 @@ export default async function BogPost({
         {frontmatter.nextUrl && (
           <Link
             href={`/${frontmatter.nextUrl}`}
-            className="text-slate-800 hover:bg-slate-200 shadow rounded-l-md rounded-r-[20px] py-1 pr-6 pl-4 bg-slate-300 font-bold"
+            className="bg-slate-300 hover:bg-slate-200 shadow py-1 pr-6 pl-4 rounded-r-[20px] rounded-l-md font-bold text-slate-800"
           >
             Next
           </Link>

@@ -21,9 +21,13 @@ export const getSlugs = (dir: string): { slug: string[] }[] => {
 };
 
 export const getCleanedSlug = (slug: string[]) => {
-  return slug[1]
-    .replace(/-(\d+)$/, (_, num) => ` (Part ${num})`)
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  return (
+    slug[1]
+      // .replace(/-(\d+)$/, (_, num) => ` (Part ${num})`)
+      .replace(/-1/, "")
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ")
+      .replace("Gips", "GIPS")
+  );
 };

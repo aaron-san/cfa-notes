@@ -13,7 +13,7 @@ const PageHeader = () => {
             <Link href="/study">Study</Link>
           </li> */}
           <li className="mt-0 hover:text-slate-400">
-            <Link href="../About">About</Link>
+            <Link href="../about">About</Link>
           </li>
         </ul>
       </nav>

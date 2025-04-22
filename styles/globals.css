@@ -31,7 +31,7 @@ h2 {
   font-size: 1.2rem;
   /* margin-top: 4rem; */
   margin: 20px 20px 0 20px;
-  color: rgb(80, 120, 220);
+  color: rgb(80, 200, 300);
 }
 
 h3 {
@@ -56,14 +56,18 @@ li {
   margin: 0.5rem 0 0 0;
 }
 
+ul,
+ol {
+  /* list-style: inside; //optional, controls bullet/number position */
+  padding-left: 1.8rem;
+}
+
 ul {
   list-style-type: square;
-  padding-left: 2rem;
 }
 
 ol {
-  list-style-type: lower-roman;
-  padding-left: 2rem;
+  /* list-style-type: lower-roman; */
 }
 
 /* .note {
@@ -93,7 +97,7 @@ ol {
 /* Code snippets */
 .katex-html {
   padding: 1rem;
-  background: white;
+  /* background: white; */
   /* width: fit-content; */
   margin: 0 auto;
   overflow: auto;
@@ -101,8 +105,9 @@ ol {
   border-radius: 4px;
   z-index: -10;
   color: lightgray;
-  background-color: rgb(100, 116, 139);
+  background-color: rgb(50, 50, 80);
   width: fit-content;
+  font: "sans serif";
 }
 
 .katex-display {

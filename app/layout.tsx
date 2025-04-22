@@ -24,7 +24,7 @@ export default function RootLayout({
       </Head> */}
       <body className="dark:bg-slate-800 min-h-screen dark:text-slate-100">
         <PageHeader />
-        <div className="mx-auto px-1 sm:px-6 pt-20 max-w-3xl min-h-[calc(100vh-3rem)]">
+        <div className="mx-auto px-2 sm:px-6 pt-20 max-w-3xl min-h-[calc(100vh-3rem)]">
           {children}
         </div>
         <PageFooter />
