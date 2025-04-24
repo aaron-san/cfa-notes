@@ -1,5 +1,5 @@
-1:HL["/cfa-notes/_next/static/css/9d6ba97623e64c9c.css","style",{"crossOrigin":""}]
-0:["Vyy0sSfCWJ7ApEYr46xe7",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/economics-2","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"economics-2\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9d6ba97623e64c9c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/cfa-notes/_next/static/css/4dd5ab0980199f10.css","style",{"crossOrigin":""}]
+0:["FUonUxhP2UG5V0ZSGhnKE",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/economics-2","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"economics-2\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/4dd5ab0980199f10.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-473bf7bba74ef91d.js","797","static/chunks/app/blog/%5B...slug%5D/page-fe5a8575442a3811.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
