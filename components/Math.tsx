@@ -3,10 +3,18 @@ import katex from "katex";
 import React from "react";
 
 export default function Math({ children }: { children: string }) {
-  const html = katex.renderToString(children, {
-    throwOnError: false,
-    displayMode: true,
-  });
+  const html = katex.renderToString(
+    "\\mathrm {\\small { \\text {" + children + "}}}",
+    {
+      throwOnError: false,
+      displayMode: true,
+    }
+  );
 
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <div
+      className="katex-container"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
 }

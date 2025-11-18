@@ -45,13 +45,17 @@ export default async function BogPost({
         <h1>{frontmatter.title ?? "Untitled"}</h1>
         <div className="flex gap-2 pb-3">
           {frontmatter.tags.map((tag: string) => (
-            <div className="bg-slate-600 px-2 py-1 rounded-full text-slate-300 text-xs">
+            <div
+              className="bg-slate-600 px-2 py-1 rounded-full text-slate-300 text-xs"
+              key={tag}
+            >
               {tag}
             </div>
           ))}
         </div>
       </div>
       {MDXContent}
+      <div className="my-8"></div>
       <hr />
       <div className="flex justify-around items-center gap-4 my-4">
         {frontmatter.backUrl && (
@@ -66,7 +70,7 @@ export default async function BogPost({
         {frontmatter.nextUrl && (
           <Link
             href={`/${frontmatter.nextUrl}`}
-            className="bg-slate-300 hover:bg-slate-200 shadow py-1 pr-6 pl-4 rounded-r-[20px] rounded-l-md font-bold text-slate-800"
+            className="bg-slate-300 hover:bg-slate-200 shadow mt-4 py-1 pr-6 pl-4 rounded-r-[20px] rounded-l-md font-bold text-slate-800"
           >
             Next
           </Link>

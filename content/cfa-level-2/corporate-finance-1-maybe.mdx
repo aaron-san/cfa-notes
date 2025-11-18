@@ -1,0 +1,182 @@
+---
+title: "Corporate Finance (Part 1, maybe)"
+date: "November 18, 2025"
+author: ""
+excerpt: ""
+cover_image: ""
+categories: ["CFA Level 2"]
+tags: [""]
+slug: "corporate-finance-1-maybe"
+nextUrl: "blog/cfa-level-2/corporate-finance-2-maybe"
+---
+
+## Capital Budgeting
+
+### Principles
+
+1. Use cash flows
+   - Incremental cash flows
+   - Include externality cannibalization effects
+   - Adjust for changes in working capital
+2. Use cash flows based on opportunity costs
+3. Timing is important (time value of money)
+4. Adjust for tax effects
+5. Financing costs are accounted for in required return
+
+### Purposes
+
+1. Expansion - investment for business growth
+2. Replacement - investment to replace existing assets
+
+### Depreciation
+
+- Accelerated methods (e.g., MACRS) provide higher tax savings in earlier years compared to straight-line
+
+### Projects with Unequal Lives
+
+- Least common multiple of lives approach (look at NPVs over a common life)
+- Equivalent Annual Annuity (EAA) (find the annuity (PMT) that equates the NPVs at the cost of capital)
+
+### Discounting Cash Flows
+
+- Discount nominal cash flows at nominal rate, or discount real cash flows at real rate
+- Unexpected changes in inflation affect profitability
+- Inflation affects revenues and expenses differently
+- Unexpectedly high inflation affects the value of fixed payments received (e.g., by bondholders)
+
+### 1. Expansion Projects
+
+#### Initial Cash Outflow
+
+<Math>
+  {"Initial cash outflow = FC$_{\\text {INV}}$ + WC$_{\\text {INV}}$"}
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>
+      FC<sub>INV</sub> = Fixed capital investment
+    </div>
+    <div>
+      WC<sub>INV</sub> = Working capital investments
+    </div>
+  </div>
+</div>
+
+#### Operating Cash Flows
+
+<Math>
+  {"Operating cash flow = (Cash Sales - Cash OpEx - Dep)(1 - T) + Dep"}
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>Cash OpEx = Cash operating expenses</div>
+    <div>T = Marginal tax rate</div>
+    <div>Dep = Depreciation expense</div>
+  </div>
+</div>
+<Math>
+  {"Operating cash flow = (Sales - Cash OpEx)(1 - T) + Dep$\\times$T"}
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>Cash OpEx = Cash operating expenses</div>
+    <div>T = Marginal tax rate</div>
+    <div>Dep = Depreciation expense</div>
+  </div>
+</div>
+
+#### Terminal Cash Flow
+
+<Math>
+  {
+    "Terminal year cash flow = Sales proceeds$_{\\text {BT}}$ + $\\Delta$ WC - T $\\times$(Sales proceeds$_{\\text {BT}}$ - BV)"
+  }
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>
+      Sales proceeds<sub>BT</sub> = Pre-tax sale proceeds from fixed asset
+    </div>
+    <div>
+      &#916;WC = Change in net working capital investment (i.e., Net working
+      capital investment)
+    </div>
+    <div>T = Marginal tax rate</div>
+    <div>BV =Book value of fixed capital asset sold</div>
+  </div>
+</div>
+
+### 2. Replacement Projects
+
+#### Initial Cash Outflow
+
+<Math>
+  {
+    "Initial cash outflow = FC$_{\\text { INV}}$ + $\\Delta$WC - Proceeds$_{\\text { BT}}$ + T$\\times$(Proceeds$_{\\text { BT}}$ - BV)"
+  }
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>
+      FC <sub>INV</sub> = Fixed capital investment in new asset
+    </div>
+    <div>
+      Proceeds <sub>BT</sub> = Pre-tax sale proceeds from sale of existing fixed
+      capital asset
+    </div>
+    <div>
+      &#916;WC = Change in net working capital investment (i.e., Net working
+      capital investment)
+    </div>
+    <div>T = Marginal tax rate</div>
+    <div>BV = Book value of existing asset</div>
+  </div>
+</div>
+
+#### Operating Cash Flows
+
+<Math>
+  {
+    "Operating cash flows = ($\\Delta$Sales - $\\Delta$Cash OpEx)(1 - T) + $\\Delta$Dep$\\times$T"
+  }
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>&#916;Sales = Incremental increase in sales from new machine</div>
+    <div>
+      &#916;Cash OpEx = Incremental change in cash operating expenses from new
+      machine
+    </div>
+    <div>&#916;Dep = Change in depreciation expense</div>
+    <div>T = Marginal tax rate</div>
+  </div>
+</div>
+
+#### Terminal Cash Flow
+
+<Math>
+  {
+    "Terminal year non-operating cash flow = $\\Delta$Proceeds$_{\\text {BT}}$ + $\\Delta$WC - T $\\times$ ($\\Delta$Proceeds$_{\\text {BT}}$ - $\\Delta$BV)"
+  }
+</Math>
+<div className="math-var-keys">
+  <div>where:</div>
+  <div>
+    <div>
+      &#916;Proceeds<sub> BT</sub> = Difference in pre-tax sale proceeds from
+      sale of fixed capital asset
+    </div>
+    <div>
+      &#916;WC = Change in net working capital investment (i.e., Net working
+      capital investment)
+    </div>
+    <div>T = Marginal tax rate</div>
+    <div>&#916;BV = Difference in book value of asset sold</div>
+  </div>
+</div>

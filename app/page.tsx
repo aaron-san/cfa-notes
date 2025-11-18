@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             quantitative analysis on company data and how to understand the
             trends in the economy.
           </div>
-          <TopicsLink />
+          <TopicsLink href={"/cfa-level-1-topics"} />
         </div>
       </div>
       <div className="flex flex-wrap gap-4 dark:bg-slate-600 my-4 p-4 border dark:border-slate-100/50 rounded">
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
             The CFA level two exam covers more advanced topics in finance
             including regression, ...
           </div>
-          <TopicsLink />
+          <TopicsLink href={"/cfa-level-2-topics"} />
         </div>
       </div>
       <div className="flex flex-wrap gap-4 dark:bg-slate-600 my-4 p-4 border dark:border-slate-100/50 rounded">
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             planning. It is the final exam in the CFA program and covers
             advanced topics in finance and investment management.
           </div>
-          <TopicsLink />
+          <TopicsLink href={"/cfa-level-3-topics"} />
         </div>
       </div>
     </div>

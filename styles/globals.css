@@ -5,7 +5,7 @@
 body {
   /* color: var(--foreground); */
   /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -36,7 +36,13 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 h1,
@@ -44,7 +50,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 4px 0;
+  /* margin: 4px 0; */
   /* color: rgb(82, 82, 104); */
   letter-spacing: 0.1em;
   font-weight: bolder;
@@ -59,11 +65,12 @@ li {
 ul,
 ol {
   /* list-style: inside; //optional, controls bullet/number position */
+  list-style-type: decimal;
   padding-left: 1.8rem;
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: "▸ "; /* square; */
 }
 
 ol {
@@ -95,27 +102,36 @@ ol {
 } */
 
 /* Code snippets */
+
+.katex-container {
+  /* border: 1px solid dodgerblue; */
+}
+
 .katex-html {
   padding: 1rem;
   /* background: white; */
   /* width: fit-content; */
-  margin: 0 auto;
+  margin: 0.5rem;
   overflow: auto;
-  border: 1px solid rgba(20, 20, 20, 0.5) !important;
-  border-radius: 4px;
+  /* border: 1px solid rgbawhite !important; */
+  border-radius: 10px;
+  box-shadow: 0 0 14px rgba(100, 100, 100, 0.5);
   z-index: -10;
   color: lightgray;
-  background-color: rgb(50, 50, 80);
-  width: fit-content;
-  font: "sans serif";
+  /* background-color: rgb(50, 50, 80); */
+  /* width: fit-content; */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* border: 1px solid indigo; */
 }
 
 .katex-display {
+  /* border: 1px solid orange; */
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-
+  display: flex;
   /* Hide scrollbar for Webkit browsers */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer and Edge */
@@ -126,8 +142,15 @@ ol {
 }
 
 .hljs.language-js {
-  border: 1px solid rgba(20, 20, 20, 0.5);
-  border-radius: 4px;
-  width: fit-content;
+  /* width: fit-content; */
   margin-left: 1rem;
+}
+
+.math-var-keys {
+  padding-left: 10px;
+}
+
+.math-var-keys div div {
+  padding-left: 40px;
+  font-weight: light;
 }
