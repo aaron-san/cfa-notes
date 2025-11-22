@@ -1,0 +1,118 @@
+---
+title: "Ecnomics (Part 1)"
+date: "December 9, 2025"
+author: ""
+excerpt: ""
+cover_image: ""
+categories: ["CFA Level 2"]
+tags: [""]
+slug: "economics-1"
+nextUrl: "blog/cfa-level-2/economics-1"
+---
+
+## Economics
+
+### Capital Market expectations
+
+- Benefits:
+  1.  Helps decide stategic asset allocation (SAA)
+  2.  Helps detect short-term mispricings through tactical asset allocation (TAA)
+  3.  Used in equity/bond valuation (beta research)
+
+#### Process
+
+- Assess drivers of past performance
+- Choose valuation model
+- Evaluate data to be used
+- Formulate expectations using Black-Litterman, DCF, etc.
+- Monitor performance and refine process
+
+#### Weaknesses
+
+- Data measurement errors and bias
+- Use of ex-post data
+- Non-repeating patterns
+- Failure to incorporate conditioning information
+- Misinterpretation of correlations
+- Psychological traps
+- Model and input uncertainty
+
+### Forecasting Tools
+
+1. Statistical tools
+2. DCF Models
+3. Financial Equilibrium Models (e.g., ICAPM)
+4. Risk Premium Appoach
+
+#### Statistical Tools
+
+1.  Project historical data
+2.  Shrinkage Estimators
+3.  Time series analysis
+4.  Multifactor models
+
+##### Volatility clustering
+
+<Math>
+  {
+    "$\\sigma_{t}^{2} = \\theta\\sigma_{t-1}^2 + (1-\\theta)\\varepsilon_{t}^{2}$"
+  }
+</Math>
+
+##### Varance of Market
+
+- The variance of market i, given a covariance of factor returns:
+
+<Math>
+  {
+    "$\\sigma_{i}^2 = \\beta_{i,1}^2\\sigma_{F,1}^2 + \\beta_{i,2}^2\\sigma_{F,2}^2 + 2\\beta_{i,1}\\beta_{i,2}Cov(F_{1},F_{2}) + \\sigma_{\\varepsilon,i}^2$"
+  }
+</Math>
+
+- The covariance between two markets i and j:
+
+<Math>
+  {
+    "$Cov(i,j) = \\beta_{i,1}\\beta_{j,1}\\sigma_{F,1}^2 + \\beta_{i,2}\\beta_{j,2}\\sigma_{F,2}^2 + (\\beta_{i,1}\\beta_{j,2} + \\beta_{i,2}\\beta_{j,1})Cov(F_{1},F_{2})$"
+  }
+</Math>
+
+#### DCF Models
+
+##### Grinold-Kroner Model
+
+<Math>
+  {
+    "$R_i = \\frac{Div_1}{P_0} + i + g - \\Delta S + \\Delta\\left(\\frac{P}{E}\\right)$"
+  }
+</Math>
+
+##### Fed Model
+
+<Math>{"$\\frac{E}{P}$ vs. T-Bond yield"}</Math>
+
+##### Financial Equilibrium Models (e.g., ICAPM)
+
+<Math>{"$\\hat{R}_i = R_F + \\beta_i(\\hat{R}_m-R_F)$"}</Math>
+<Math>
+  {
+    "$\\hat{R}_i = R_F + \\frac{\\rho_{i,M}\\sigma_i}{\\sigma_M}\\left(\\hat{R}_m-R_F\\right)$"
+  }
+</Math>
+<Math>
+  {
+    "$\\hat{R}_i - R_F = ERP_i = \\rho_{i,M}\\sigma_i\\left(\\frac{\\hat{R}_M-R_F}{\\sigma_M}\\right)$"
+  }
+</Math>
+
+<Note>
+  Don't forget to adjust ERP for degree of integration and illiquidity
+</Note>
+
+##### Risk Premium Approach
+
+<Math>{"Expected equities return = T-Bond YTM + Equity Risk Premium"}</Math>
+
+### Relative Equity Market Valuation
+
+- E

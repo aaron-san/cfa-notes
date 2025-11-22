@@ -48,6 +48,20 @@ const Home: React.FC = () => {
           <TopicsLink href={"/cfa-level-3-topics"} />
         </div>
       </div>
+      <div className="flex flex-wrap gap-4 dark:bg-slate-600 my-4 p-4 border dark:border-slate-100/50 rounded">
+        <div className="relative">
+          <Title>CAIA Level 1</Title>
+
+          <TopicsLink href={"/caia-level-1-topics"} />
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-4 dark:bg-slate-600 my-4 p-4 border dark:border-slate-100/50 rounded">
+        <div className="relative">
+          <Title>CAIA Level 2</Title>
+
+          <TopicsLink href={"/caia-level-2-topics"} />
+        </div>
+      </div>
     </div>
   );
 };
