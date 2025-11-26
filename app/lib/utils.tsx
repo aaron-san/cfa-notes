@@ -1,24 +1,30 @@
 import fs from "fs";
 import path from "path";
 
-const blogDir = path.join(process.cwd(), "content");
+const contentDir = path.join(process.cwd(), "content");
 
-export const getSlugs = (dir: string): { slug: string[] }[] => {
+// Recursive function to get all slugs
+export function getSlugs(dir: string): { slug: string[] }[] {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
+
   return entries.flatMap((entry) => {
     const fullPath = path.join(dir, entry.name);
 
-    if (entry.isDirectory()) return getSlugs(fullPath);
+    if (entry.isDirectory()) {
+      // Recurse into subdirectories
+      return getSlugs(fullPath);
+    }
 
     if (entry.isFile() && entry.name.endsWith(".mdx")) {
-      const relativePath = path.relative(blogDir, fullPath);
+      // For .mdx files, generate the slug path (relative to `content` folder)
+      const relativePath = path.relative("content", fullPath);
       const slug = relativePath.replace(/\.mdx$/, "").split(path.sep);
       return [{ slug }];
     }
 
     return [];
   });
-};
+}
 
 export const getCleanedSlug = (slug: string[]) => {
   return (
@@ -31,3 +37,20 @@ export const getCleanedSlug = (slug: string[]) => {
       .replace("Gips", "GIPS")
   );
 };
+
+// Recursive function to get all slugs
+export function getTopicDirs(dir: string): { slug: string[] }[] {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const topicPaths: { slug: string[] }[] = [];
+
+  entries.forEach((entry) => {
+    // const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      // && entry.name.includes("-topics")) {
+      // Recurse into subdirectories
+      topicPaths.push({ slug: [entry.name] });
+    }
+  });
+  return topicPaths;
+}

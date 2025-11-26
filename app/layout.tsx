@@ -4,8 +4,8 @@ import PageHeader from "@/components/PageHeader";
 import PageFooter from "@/components/PageFooter";
 
 // export const metadata = {
-//   title: `CFA Notes`,
-//   description: `Learn more about the CFA Exam`,
+//   title: `CFA&reg; Notes`,
+//   description: `Learn more about the CFA&reg; Exam`,
 // };
 
 export default function RootLayout({

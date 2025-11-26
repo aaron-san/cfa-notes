@@ -5,6 +5,7 @@ date: "2022-11-28"
 description: "CAIA level 1 real estate topics"
 categories: "CAIA Level 1"
 tags: ["CAIA Level 1", "Real Estate"]
+backUrl: "/topics/caia-level-1"
 nextUrl: "blog/caia-level-1/real-estate-2"
 ---
 
@@ -101,7 +102,7 @@ nextUrl: "blog/caia-level-1/real-estate-2"
 <table>
   <thead>
     <tr>
-      <th colspan="5">Annual Performance (1997-2008)</th>
+      <th colSpan="5">Annual Performance (1997-2008)</th>
     </tr>
     <tr>
       <th>Asset Class</th>
@@ -167,7 +168,7 @@ nextUrl: "blog/caia-level-1/real-estate-2"
 <table>
   <thead>
     <tr>
-      <th colspan="5">Monthly Performance (1997-2009)</th>
+      <th colSpan="5">Monthly Performance (1997-2009)</th>
     </tr>
     <tr>
       <th>Asset Class</th>
@@ -184,6 +185,98 @@ nextUrl: "blog/caia-level-1/real-estate-2"
       <td>5.58%</td>
       <td>-1.91</td>
       <td>8.89</td>
+    </tr>
+  </tbody>
+</table>
+
+<table className="correlation-table">
+  <thead>
+    <tr>
+      <th colSpan="8" className="bg-white">
+        Correlation Matrix (1997-2008)
+      </th>
+    </tr>
+    <tr>
+      <th> </th>
+      <th>REITs</th>
+      <th>Large-Cap Stocks</th>
+      <th>Small-Cap Stocks</th>
+      <th>High Yield Bonds</th>
+      <th>10-Year T-Bond</th>
+      <th>1-Year T-Bill</th>
+      <th>Inflation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>REITs</td>
+      <td>1.00</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Large-Cap Stocks</td>
+      <td>0.38</td>
+      <td>1.00</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Small-Cap Stocks</td>
+      <td>0.68</td>
+      <td>0.84</td>
+      <td>1.00</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>High Yield Bonds</td>
+      <td>0.72</td>
+      <td>0.77</td>
+      <td>0.90</td>
+      <td>1.00</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10-Year T-Bond</td>
+      <td>-0.32</td>
+      <td>-0.53</td>
+      <td>-0.68</td>
+      <td>-0.52</td>
+      <td>1.00</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1-Year T-Bill</td>
+      <td>0.03</td>
+      <td>0.45</td>
+      <td>0.19</td>
+      <td>-0.07</td>
+      <td>-0.23</td>
+      <td>1.00</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Inflation</td>
+      <td>0.38</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.24</td>
+      <td>-0.30</td>
+      <td>0.26</td>
+      <td>1.00</td>
     </tr>
   </tbody>
 </table>

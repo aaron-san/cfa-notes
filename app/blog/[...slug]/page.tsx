@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   return getSlugs(blogDir);
 }
 
-export default async function BogPost({
+export default async function BlogPost({
   params,
 }: {
   params: { slug: string[] };
@@ -41,38 +41,50 @@ export default async function BogPost({
 
   return (
     <article className="mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100">
+      {frontmatter.backUrl && (
+        <Link
+          href={frontmatter.backUrl}
+          className="flex gap-1 dark:hover:text-slate-300 dark:text-slate-400"
+        >
+          <div className="text-xl">⇽</div>
+          <div className="py-[5px] text-sm">Back</div>
+        </Link>
+      )}
       <div className="mb-4 border-slate-100/20 border-b w-fit">
         <h1>{frontmatter.title ?? "Untitled"}</h1>
         <div className="flex gap-2 pb-3">
-          {frontmatter.tags.map((tag: string) => (
-            <div
-              className="bg-slate-600 px-2 py-1 rounded-full text-slate-300 text-xs"
-              key={tag}
-            >
-              {tag}
-            </div>
-          ))}
+          {frontmatter.tags &&
+            frontmatter.tags.map((tag: string) => (
+              <div
+                className="bg-slate-600 px-2 py-1 rounded-full text-slate-300 text-xs"
+                key={tag}
+              >
+                {tag}
+              </div>
+            ))}
         </div>
       </div>
       {MDXContent}
       <div className="my-8"></div>
-      <hr />
+      <hr className="text-slate-300" />
       <div className="flex justify-around items-center gap-4 my-4">
         {frontmatter.backUrl && (
           <Link
-            href={`/${frontmatter.backUrl}`}
-            className="bg-slate-300 hover:bg-slate-200 shadow py-1 pr-4 pl-6 rounded-r-md rounded-l-[20px] font-bold text-slate-800"
+            href={frontmatter.backUrl}
+            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded dark:hover:text-slate-200 dark:text-slate-300"
           >
-            Back
+            <div className="text-xl">⇽</div>
+            <div className="py-[5px] text-sm">Back</div>
           </Link>
         )}
 
         {frontmatter.nextUrl && (
           <Link
-            href={`/${frontmatter.nextUrl}`}
-            className="bg-slate-300 hover:bg-slate-200 shadow mt-4 py-1 pr-6 pl-4 rounded-r-[20px] rounded-l-md font-bold text-slate-800"
+            href={frontmatter.nextUrl}
+            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded dark:hover:text-slate-200 dark:text-slate-300"
           >
-            Next
+            <div className="py-[5px] text-sm">Next</div>
+            <div className="text-xl">⇾</div>
           </Link>
         )}
       </div>
