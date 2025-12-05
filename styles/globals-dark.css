@@ -1,0 +1,103 @@
+@layer base {
+  :root {
+    --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h1 {
+      color: rgb(150, 220, 220);
+    }
+    h2 {
+      color: rgb(80, 200, 255);
+    }
+    h3 {
+      color: rgb(20, 200, 255);
+    }
+    h4 {
+      color: rgb(20, 255, 255);
+    }
+
+    h3 ul {
+      padding: 20px 0 0 1rem;
+    }
+    .katex-html {
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.5) !important;
+      border-radius: 4px;
+      color: lightgray;
+    }
+
+    td .katex-html {
+      border: none !important;
+    }
+
+    ol,
+    ul {
+      list-style-position: outside;
+      padding-left: 1.8rem;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul li::marker {
+      content: "▸ ";
+    }
+
+    table {
+      margin: 1rem 0 1rem 1.2rem;
+    }
+
+    .table-container {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
+    tbody tr td:nth-of-type(1) {
+      background-color: rgba(20, 70, 70, 0.6);
+      color: white;
+    }
+    
+    .table-conflicts-of-interest td:not(.col1) {
+      background-color: inherit;
+
+    }
+    .table-monetary-fiscal-policy table th {
+      background-color: rgba(50, 50, 50, 0.8);
+      color: white;
+    }
+
+    .table-alpha-beta-drivers th,
+    .table-alpha-beta-drivers td {
+      border: 1px solid #ddd;
+    }
+
+    .table-alpha-beta-drivers td.col1,
+    .table-alpha-beta-drivers td.col2 {
+      background-color: rgba(20, 70, 70, 0.6);
+      color: white;
+    }
+
+    .table-alpha-beta-drivers th {
+      background-color: rgba(50, 50, 50, 0.8);
+      color: white;
+    }
+
+    .correlation-table th {
+      background-color: var(--TABLE_HEADER_BG);
+      vertical-align: bottom;
+    }
+
+    /* First cell (title column) */
+    /* .correlation-table th:nth-child(1),
+    .correlation-table td:nth-child(1) {
+      background-color: transparent;
+    } */
+
+    .table-monetary-fiscal-policy tbody tr > td:nth-of-type(2) {
+      background-color: rgba(20, 70, 70, 0.6);
+      color: white;
+    }
+  }
+}

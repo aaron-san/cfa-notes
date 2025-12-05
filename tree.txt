@@ -59,7 +59,7 @@
 |-- package.json
 |-- postcss.config.cjs
 |-- private
-|   |-- 2023 CFA&reg; Content
+|   |-- 2023 CFA® Content
 |   |   |-- 2023-l1-topics-combined.pdf
 |   |   |-- 2023-l2-topics-combined.pdf
 |   |   |-- 2023-l3-studysessions-combined.pdf
@@ -67,7 +67,7 @@
 |   |   |-- 2024-l2-topics-combined.pdf
 |   |   `-- 2024-l3-topics-combined.pdf
 |   |-- Business Process - Free Analyst Notes.txt
-|   |-- backup CFA&reg; data
+|   |-- backup CFA® data
 |   |   |-- 2015-07-23-r-rmarkdown
 |   |   |-- 2020-07-30-cfa-level-2-fixed-income-part-1.md
 |   |   |-- basic-elements

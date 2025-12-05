@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 
+
 const contentDir = path.join(process.cwd(), "content");
 
 // Recursive function to get all slugs
@@ -54,3 +55,17 @@ export function getTopicDirs(dir: string): { slug: string[] }[] {
   });
   return topicPaths;
 }
+
+
+
+// export async function wrapTables(html: string) {
+//   const { load } = await import("cheerio"); // safe for Next.js
+//   const $ = load(html);
+
+//   $("table").each(function () {
+//     $(this).wrap('<div class="table-container"></div>');
+//   });
+
+//   return $.html();
+// }
+

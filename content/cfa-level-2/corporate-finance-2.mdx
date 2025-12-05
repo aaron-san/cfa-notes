@@ -1,12 +1,8 @@
 ---
 title: "Corporate Finance (Part 2)"
-date: "November 18, 2025"
-author: ""
-excerpt: ""
 cover_image: ""
-categories: ["CFA&reg; Level 2"]
+categories: ["CFA® Level 2"]
 tags: [""]
-slug: "corporate-finance-1"
 backUrl: "blog/cfa-level-2/corporate-finance-1"
 nextUrl: "blog/cfa-level-2/corporate-finance-3"
 ---
@@ -23,20 +19,129 @@ nextUrl: "blog/cfa-level-2/corporate-finance-3"
 
 ### Capital Rationing
 
-- Hard = funds cannot be increased
-- Soft = funds can be increased with justification
+- Hard capital rationing: the maximum capital budget cannot be exceeded
+- Soft capital rationing: the maximum capital budget is regarded as flexible
 - Budget constraints set by managers
 - Goal is to optimize NPV within the capital budget
 
-### Discount rate
+### Project Cost of Capital (Discount rate)
 
-- Can use the SML in capital budgeting (Rreq = Rrf + Beta_project(Rmkt - Rrf))
-- Discount rate should reflect risk of project, not risk of company (which is a basket of projects)
+- Can use the Securities Market Line (SML) to calculate required return on equity
+- The cost of debt is the yield to maturity on existing debt or new debt issuance
+- Weighted-average cost of capital is the weighted average of cost of equity and after-tax cost of debt
+- WACC should reflect risk of project, not risk of company (which is a basket of projects), but can use WACC if project has similar risk to overall firm
+- Discount nominal expected future cash flows at the nominal required return; discount real expected future cash flows at the real required return
+
+
+<Math>{"$R_{eq} = R_{rf} + \\beta_{project}(R_m - R_{rf})$"}</Math>
+
+###
+- For dividend paying firms, can use the Dividend Discount Model (Gordon Growth Model)
+<Math>
+  {
+    "$R_{eq} = \\frac{D_1}{P_0} + g$"
+  }
+</Math>
+
+
+<Math>
+  {
+    "$R_{debt} = YTM$"
+  }
+</Math>
+
+<Math>
+  {
+    "$WACC = \\frac{E}{V}R_{eq} + \\frac{D}{V}R_{debt}(1-T)$"
+  }
+</Math>
+
+### Factors management considers when setting their minimum rate of return.
+
+1. Risk level of the division's business
+2. Interest rates on the company's debt
+3. Investors' expectations
+4. Competitors' rate of return
+5. Return being serviced by other divisions
+6. General economic conditions
+
+- Once a firm has established a desirable target capital structure, it should make financing decisions that are consistent with that target structure
+- The return that investors want to earn on a project is the same as the one they would get form an alternative investment with the same risk characteristics
+- Lender's set interest rates (costs of debt) to reflect a firm's ability to pay debt costs that reflect the earning ability of the firm's total assets, not just the project's assets, as a guarantee of principal and interest repayment
+- Each project has its own cost of capital, and the firm's cost of capital is simply the weighted average of the capital costs of the various projects that the firm has undertaken
+- Projects that offer diversification benefits to the overall firm have effects that are irrelevant to shareholders, because shareholders can easily diversify their portfolios without the help of managers by buying shares of other stock
+
+### Investment Opportunity Set (IOS)
+
+<img src="/images/cfa1-investment-opportunity-set.svg" />
+
+- Assumptions
+  - Project risk is held constant
+  - Capital Structure is held constant
+
+### Pure-Play Method: Project Cost of Capital
+
+- Step 1: Estimate the project's relative proportions of debt (D) and equity (E) financing:
+  - Use the average of the proxies' capital structure (D/A and E/A), since the proxies are expected to operate in similar lines of business, with the same risk, and whose investors are likely to require a similar degree of financial leverage.
+  - MV Equity = Share Price \* No. shares outstanding
+  - MV Debt = PV of coupons and principal
+- Step 2: Estimate the project's after-tax cost of debt (kd(1-tc)):
+  - Use the average of the proxies' borrowing rates
+  - Use the firm's marginal tax rate
+- Step 3: Estimate the project's cost of equity: ke
+  - Unlever the proxies' equity beta to get the average proxy's asset beta
+  - Relever the average of the proxies' asset beta at the project's target D/E value to get the project's equity beta
+  - Use the CAPM
+  - Rf is the rate on government bonds
+  - MRP is 5% (historical average)
+- Step 4: Calculate the project's WACC
 
 ### Real Options
 
-- Options that allow managers to make decisions at later dates and are dependent on future events or information
-- Examples: timing options, abandonment option, expansion option, flexibility options, and fundamental options
+- The right to do something without an obligation to do it (related to capital budgeting projects)
+
+<div className="table-container">
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Real Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Timing (Postponement) Option</td>
+      <td>The option to delay beginning a project until market or economic conditions improve.</td>
+    </tr>
+    <tr>
+      <td>Abandonment Option</td>
+      <td>The option to shut down, sell, or scrap a project if it becomes unprofitable.</td>
+    </tr>
+    <tr>
+      <td>Expansion Option</td>
+      <td>The option to scale up operations, increase capacity, or expand into larger markets.</td>
+    </tr>
+    <tr>
+      <td>Contraction Option</td>
+      <td>The option to reduce the scale of operations or decrease capacity.</td>
+    </tr>
+    <tr>
+      <td>Growth Option</td>
+      <td>The option created by a project that allows future investments or new product/market opportunities.</td>
+    </tr>
+    <tr>
+      <td>Flexibility (Switching) Option</td>
+      <td>The option to adapt operations, such as switching inputs, outputs, or production processes.</td>
+    </tr>
+    <tr>
+      <td>Replacement (Renewal) Option</td>
+      <td>The option to replace or upgrade assets when it becomes economically optimal.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 ### Real Options Analysis
 

@@ -1,14 +1,11 @@
 ---
-title: "CFA&reg; Level 1: Quantitative Methods (part 3)"
+title: "CFA® Level 1: Quantitative Methods (part 3)"
 slug: "quantitative-methods-part-3"
 description: ""
 categories:
-  - CFA&reg; Level 1
+  - CFA® Level 1
 tags:
   - Quantitative Methods
-output:
-  blogdown::html_page:
-    toc: true
 summary: "Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more."
 thumbnail: ""
 backUrl: "blog/cfa-level-1/quantitative-methods-2"
@@ -71,23 +68,21 @@ nextUrl: "blog/cfa-level-1/quantitative-methods-4"
 ## Confidence Interval
 
 - Probabilistic interpretation:
-  - _"\_\_% of the resulting confidence intervals will, in the long run, contain the population parameter."_
+  - "% of the resulting confidence intervals will, in the long run, contain the population parameter."
 - Practical interpretation:
-  - _"We are \_\_% confident the given confidence interval contains the population parameter."_
+  - _"We are % confident the given confidence interval contains the population parameter."_
 
 ## Total Probability Rule
 
-<Math>
-  {"\\mathrm {\\small {P(A) = P(A|B) \\cdot P(B) + P(A|C) \\cdot P(C) }}"}
-</Math>
+<Math>{"P(A) = $P(A|B) \\cdot P(B) + P(A|C) \\cdot P(C)$"}</Math>
 
 ## Addition Rule of Probability
 
-<Math>{"\\mathrm {\\small {P(A \\cup B) = P(A) + P(B) - P(A \\cap B)}}"}</Math>
+<Math>{"P(A $\\cup B) = P(A) + P(B) - P(A \\cap B)$"}</Math>
 
 ## Multiplication Rule of Probability
 
-<Math>{"\\mathrm {\\small {P(A \\cap B) = P(A) \\cdot P(B)}}"}</Math>
+<Math>{"P(A $\\cap B) = P(A) \\cdot P(B)$"}</Math>
 
 ## Steps in Hypothesis Testing
 
@@ -104,9 +99,7 @@ nextUrl: "blog/cfa-level-1/quantitative-methods-4"
 - If the null hypothesis is false and is rejected, then a correct decision was made. If the null hypothesis is false but is not rejected, an error was made and the probability of making this error is the **power** of a test.
 - In other words, the **power** is the probability of rejecting a false null hypothesis
 
-<Math>
-  {"\\mathrm {\\small {Power = 1 - \\beta = 1 - P(\\text {Type II error}) }}"}
-</Math>
+<Math>{"Power = 1 - $\\beta = 1 - P(\\text {Type II error})$"}</Math>
 
 ## Labeling
 
@@ -115,7 +108,7 @@ nextUrl: "blog/cfa-level-1/quantitative-methods-4"
 
 <Math>
   {
-    "\\mathrm {\\small {\\frac{n!} {n_1! \\space \\cdot \\space n_2! \\space \\cdot \\space ... \\space \\cdot \\space n_k!}}}"
+    "$\\frac{n!} {n_1! \\space \\cdot \\space n_2! \\space \\cdot \\space ... \\space \\cdot \\space n_k!}$"
   }
 </Math>
 
@@ -150,16 +143,14 @@ nextUrl: "blog/cfa-level-1/quantitative-methods-4"
 
 <Math>
   {
-    "mathrm {\\small {t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_p^2}{n_1}+\\frac{s_p^2}{n_2} \\right)} } }}"
+    "$t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_p^2}{n_1}+\\frac{s_p^2}{n_2} \\right)} }$"
   }
 </Math>
 
-<Math>{"\\mathrm {\\small {df = n1 + n2 - 2}}"}</Math>
+<Math>{"$df = n1 + n2 - 2$"}</Math>
 
 <Math>
-  {
-    "\\mathrm {\\small {s_p^2 = \\frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 } { n_1 + n_2 - 2} } }"
-  }
+  {"$s_p^2 = \\frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 } { n_1 + n_2 - 2}$"}
 </Math>
 
 ### Method 2
@@ -171,13 +162,13 @@ nextUrl: "blog/cfa-level-1/quantitative-methods-4"
 
 <Math>
   {
-    "\\mathrm {\\small {t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2} \\right)} } }}"
+    "$t = \\frac{ (x_1 - x_2) - (\\mu_1 - \\mu_2) } {\\sqrt{\\left( \\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2} \\right)} }$"
   }
 </Math>
 
 <Math>
   {
-    "\\mathrm {\\small {df = \\frac{\\left( \\frac{ s_1^2 } {n_1} + \frac{ s_2^2 } {n_2}\right)^2} {\frac{left(s_1^2 / n_1 \right)^2} {n_1} + \\frac{\\left(s_2^2 / n_2 \\right)^2} {n_2} }}}"
+    "$df = \\frac{\\left( \\frac{s_1^2 }{n_1} + \\frac{s_2^2}{n_2}\\right)^2} {\\frac{\\left(s_1^2 / n_1\\right)^2}{n_1-1} + \\frac{\\left(s_2^2 / n_2\\right)^2}{n_2-1}}$"
   }
 </Math>
 
@@ -189,25 +180,28 @@ In majority of cases, the T-test is used!
   - Normally distributed populations
   - Dependent populations
 
-<Math>
-  {
-    "\\mathrm {\\small {t = \\frac{ \\bar d - d_{zs} } { s_{\\bar d} / \\sqrt n }}}"
-  }
-</Math>
+<Math>{"$t = \\frac{ \\bar d - d_{zs} } { s_{\\bar d} / \\sqrt n }$"}</Math>
 
-Note: Stocks are generally considered to be dependent (both rely on market returns)
-Test Statistic
+<Note>
+  Note: Stocks are generally considered to be dependent (both rely on market
+  returns)
+</Note>
+
+### Test Statistic
+
 When sampling from a: Small Sample Large Sample
 {/* n<30 n>30 */}
 Normal distribution, known variance z z
 Normal distribution, unknown variance t t or z
 Nonnormal distribution, known variance not available z Central Limit Theorem
 Nonnormal distribution, unknown variance not available t or z Central Limit Theorem
-Types of Risk
-Default risk - risk that a security will lose value due to a firm's default
-Liquidity risk - risk of receiving less than the fair value for an asset if it must be sold quickly
-Maturity risk - risk of higher volatility of longer maturity instruments (particularly with bonds)
-RRORbond = real risk-free rate + inflation premium + default risk premium + liquidity premium + maturity premium
+
+### Types of Risk
+
+- Default risk - risk that a security will lose value due to a firm's default
+- Liquidity risk - risk of receiving less than the fair value for an asset if it must be sold quickly
+- Maturity risk - risk of higher volatility of longer maturity instruments (particularly with bonds)
+- RRORbond = real risk-free rate + inflation premium + default risk premium + liquidity premium + maturity premium
 
 ## Test for Variance (1 population - $??^2$)
 
@@ -224,4 +218,4 @@ RRORbond = real risk-free rate + inflation premium + default risk premium + liqu
 
 ## Power of a Test
 
-<Math>{"\\mathrm {\\small {1-P(Type II Error)}}"}</Math>
+<Math>{"$1-P(Type II Error)$"}</Math>

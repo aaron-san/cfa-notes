@@ -28,10 +28,18 @@ export default async function BlogPost({
         className="flex gap-1 dark:hover:text-slate-300 dark:text-slate-400"
       >
         <div className="text-xl">⇽</div>
-        <div className="py-[5px] text-sm">Back</div>
+        <div className="py-[5px] text-sm">Topics</div>
       </Link>
-      <h1 className="mb-4 font-bold text-2xl">{slug.join(" / ")}</h1>
-      <div className="flex flex-wrap justify-start gap-2">
+      <h1 className="mb-4 font-bold text-2xl">
+        {slug
+          .join(" / ")
+          .replace("cfa", "CFA")
+          .replace("caia", "CAIA")
+          .replace("-", " ")
+          .replace("-", " ")
+          .replace("level", "Level")}
+      </h1>
+      <div className="flex flex-wrap justify-start gap-2 ml-4">
         {slugs.map(({ slug }) => {
           const href = `/blog/${slug.join("/")}`;
           return (
@@ -39,7 +47,7 @@ export default async function BlogPost({
               <Link
                 key={href}
                 href={href}
-                className="dark:bg-slate-700 dark:hover:bg-slate-600 px-4 py-2 rounded dark:text-slate-100"
+                className="hover:bg-slate-100 dark:bg-gray-700 dark:hover:bg-slate-600 px-4 py-2 border border-slate-500 rounded dark:text-slate-100"
               >
                 {getCleanedSlug(slug)}
               </Link>

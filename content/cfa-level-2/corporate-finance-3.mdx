@@ -1,66 +1,134 @@
 ---
 title: "Corporate Finance (Part 3)"
-date: "November 18, 2025"
-author: ""
 excerpt: ""
 cover_image: ""
-categories: ["CFA&reg; Level 2"]
-tags: [""]
-slug: "corporate-finance-1"
+tags: ["CFA® Level 2"]
 backUrl: "blog/cfa-level-2/corporate-finance-2"
 nextUrl: "blog/cfa-level-2/corporate-finance-4"
 ---
 
-## Mergers and Acquisitions
+<a id="capital-structure"/>
 
-...
-...
+## Capital Structure
 
-### Valuing a Target Company
+- Firms using debt financing must generate sufficient income from operations to claim the interest deductions 
+- A firm that does not pay income taxes and does not expect to become a taxpayer has less incentive to incur additional debt
+- A firm can carry tax losses forward
+- Additional Debt is beneficial when…
+  - Expected PV(tax shields) > Expected PV(costs of financial distress) + Expected PV(increase in agency costs)
+- A firm's capital structure should probably contain no more debt than its future tax position will let it use. For example, firms in industries with other substantial tax shelter opportunities should have lower leverage ratios than firms in other industries.
 
-1. Discounted cash flow method
+### MM Proposition I (No Taxes): Capital Structure Irrelevance Proposition
+- Assumptions
+  1. Capital markets are perfectly competitive
+  2. Investors have homogenous expectations
+  3. Riskless borrowing and lending
+  4. Agency costs
+  5. Investment decisions are unaffected by financing decisions
+  VL = VU
+  
+### MM Proposition II (No Taxes): Cost of Equity and Leverage Proposition
+- The cost of equity increases linearly as a company increases its proportion of debt financing
+  <Math>{"$r_e = r_0 + \\frac{D}{E}(r_0 - r_d)$"}</Math>
+  As leverage increases, the cost of equity increases, but WACC and the cost of debt are unchanged.
+  MM Proposition I (With Taxes): Value is Maximized at 100% Debt
+  VL = VU + (t\*Debt)
 
-- Determine FCFF
-- Determine discount rate (target company WACC adjusted for merger effects)
-- Discount cash flows to present
-- Determine terminal value (constant growth or market multiple)
+### MM Proposition II (With Taxes): WACC is Minimized at 100% Debt
+  
+  <Math>{"$r_e = r_0 + \\frac{D}{E}(r_0 - r_d)(1-t)$"}</Math>
+  
+#### Cost of Financial Distress (expected)
+1. Cost of financial distress and bankruptcy - bankruptcy, legal fees, lost trust of customers, foregone investment opportunities
+2. Probability of financial distress - operating and financial leverage, and management expertise
 
-- Advantages:
+#### Agency Costs of Equity
+1. Monitoring Costs - supervision of management, corporate governance administration costs
+2. Bonding Costs - insurance costs for management performance, implied costs of non-compete agreements
+3. Residual Losses - all other costs
+  
+#### Costs of Assymetric Information 
+- higher required returns on debt and equity capital
+  
+#### Signaling
+- Acquiring debt tells investors that a firm is confident in its ability to make future interest payments
+- Issuing equity tells investors that managers think their firm's stock is undervalued
+- The cost of assymetric information increases as the proportion of equity in the capital structure increases
 
-  - Easy to model changes in cash flows from synergies
-  - Might avoid biases in current market data
-  - Easy to customize
+#### Pecking Order Theory
+- Managers prefer to make financing choices that are least likely to send signals to investors
 
-- Disadvantages:
-  - Difficult to model when cash flows are negative
-  - Estimation error of the terminal value
-  - Can be highly sensitive to the discount rate
+#### Preferred Financing Hierarchy
 
-2. Comparable Company Analysis
+1. Retained Earnings (internal financing)
+2. Debt
+3. External Equity (newly issued shares)
 
-- Look at similar firms that were aquired
-- Add a takeover premium to target's value to determine fair price
+### Static Trade-Off Theory
+- There is a balance between the costs of financial distress and the tax shield benefits from using debt
+<Math>{"$V_L = V_U + (t*Debt) - PV(costs of financial distress)$"}</Math>
 
-- Advantages:
-  - Easy access to data
-  - Value estimates come from the market (lower estimation error)
-- Disadvantages:
-  - The market might be valueing comparable firms incorrectly
-  - Must determine takeover premium separately
-  - Difficult to incorporate synerges or changes in capital structures
-  - Historical takeover premium data might be outdated
+###
+- The optimal proportion of debt is reached at the point when the marginal benefit provided by the tax shield of taking on additional debt is equal to the marginal costs of financial distress incurred from the additional debt
 
-3. Comparables Transaction Analysis
+### Fluctuation of Capital Structure Around its Target
+1. Management may choose to exploit opportunities ina specific financing source
+2. Market value fluctuations will occur
+###
+- Companies in developed countries tend to use more debt with longer maturities than firms in emerging markets
+- In presenting the "Law of the Conservation of Investment Value" (The Theory of Investment Value, pg. 72), John Burr Williams argued that since the value of an enterprise is the "present worth" of all its future distributions - whether interest or dividends - it "in no [way] depends on what the company’s capitalization is".
 
-- Look at values of recent takeover transactions, not just comparable firms
-- No need to calculate separate takeover premium
+### Effect of Personal Taxes
 
-- Advantages:
+### Business Risk
+- The volatility of cash flows and earnings that arise from the particular business firm in which a firm operates
 
-  - No need to estimate a takeover premium
-  - Estimates of value are directly derived from recent deal prices
+### Financial Risk
+- The magnification of EPS arising from the use of debt (leverage)
 
-- Disadvantages:
-  - Past M&A transactions might be mispriced
-  - Possibly not enough comparable transaction data
-  - Difficult to incorporate synergies or changing capital structures
+### Dilution Effect
+- Fresh equity, supplied by new investors, reduces the percentage of the firm's equity capital controlled by the original owners
+
+### Capital Structure Effects
+- The value of the firm's (not project's) expected future operating cash flows are the basis for lending and investing decisions.
+
+There are 2 cases where it is important to adjust explicitly for capital structure effects:
+1. When the repayment of a loan is tied to one or more specifi assets (use APV)
+2. When firms adjust their capital structures to conicide with their target capital structures
+
+### Adjusted Present Value (APV)
+- Adjusted Present Value is used to account for financing side-effects in special situations where the financing is based on the asset's capital structure (not the firm's)
+1. Base-case NPV
+2. Financing side-effects
+APV = Base-case NPV + Financing Side-effects
+VL = VU + T*D = ATCF/r + T*rd*D/rd
+…Implies that…
+WACC = r(1-T*L) L = leverage ratio???
+
+### Leveraged Buyouts
+- Leveraged Buyouts involves and asset-specific capital structure. - By design, the leverage will decrease over time. 
+- Cash flows from asset sales and operations are dedicated to repay debt. 
+- The owners of the firm intend to restore its capital structure to one that is more normal, typically within 5 to 7 years.
+Firms normally treat their preferred stock payment obligations as though they were fixed. If a firm issues a significant amount of preferred stock particularly if it contains a sinking fund, these payment obligations can impair the credit standing of the firm's debt securities.
+The rating agencies give greater equity weight to preferred stock the longer its remaining maturity. Mandatory convertibles (into common stock) are given more equity weight than standard convertibles, which are given more weight than nonconvertible preferred stock.
+
+### Changing Capital Structure
+- Two ways to change capital structure:
+1. A firm can alter its capital structure slowly by adjusting its future financing mix appropriately.
+2. The firm could change its capital structure quickly through one of the following:
+    a. Exchange offer
+    b. Recapitalization offer
+    c. Debt or share repurchase
+    d. Stock for debt swap
+
+- Changing a capital structure can elicit high transaction costs and signaling effects (positive and negative).
+- If the distance of a firm's capital structure from its target corresponds to at least one full rating category, some type of one-time transactions to make an immediate change in capital structure is probably warranted. A leverage increase for a significantly underleveraged firm is likely to increase the firm's share price. If the firm is less than one full category away from its rating objective, altering its retention ratio and its external financing mix is probably more cost effective.
+- Determining an Optimal Capital Structure
+1. Ability to service debt
+2. Ability to use interest tax shields fully
+3. Ability of assets to support det (protection against illiquidity)
+4. Desired degree of access to capital markets
+5. Dynamic factors and debt management over time
+
+
+

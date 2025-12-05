@@ -1,117 +1,102 @@
 ---
-title: "Fixed Income (Part 1)"
-date: "December 9, 2024"
-author: ""
-excerpt: "Fixed income covers the topic of bonds and other coupon-like investment securities."
+title: "Quantitative Methods (Part 1)"
+excerpt: ""
 cover_image: ""
-categories: ["CFA&reg; Level 2"]
-tags: ["Fixed income"]
-slug: "fixed-income-1"
+tags: ["CFA® Level 2", "Quantitative Methods"]
 backUrl: "/topics/cfa-level-2"
-nextUrl: "blog/cfa-level-2/fixed-income-2"
+nextUrl: "blog/cfa-level-1/quantitative-methods-2"
 ---
 
-## Credit Analysis
+## Quantitative Methods
 
-### Credit Risk
+1. [Covariance and Correlation](#covariance-and-correlation)
+2. [Linear Regression](/blog/cfa-level-2/quantitative-methods-2#linear-regression)
+2. [Multiple Regression and Issues in Regression Analysis](/blog/cfa-level-2/quantitative-methods-3#multiple-regression-and-issues-in-regression-analysis)
+4. [Time Series Analysis](/blog/cfa-level-2/quantitative-methods-4#time-series-analysis)
 
-1. Default Risk
-2. Credit Spread Risk
-3. Downgrade Risk
+<a id="covariance-and-correlation"/>
 
-- Credit ratings by the nationally recognized rating agencies assess **default** risk only.
+## Covariance and Correlation
 
-### Releases by Rating Agencies
+### Covariance
+- A nonstandardized measure of the linear relationship between two variables that ranges from negative infinity to positive infinity
+- Positive (+) covariance means the variables tend to move in the same direction and vice versa
+- Calculated as the expected value of the product of the deviations of each variable from their respective means
+- Units are squared units of the variables being measured and are not standardized so are less meaningful
 
-- Credit Rating - reflects the probability of default (short- and long-term debt) and the rate of loss (long-term debt)
-- Rating Watch - announcement that the rating agency is reviewing a particular issue in advance of a potential rating change
+<Math>
+  {
+    "$Cov_{1,2} = E[(X_1 - \\mu_1)(Y_2 - \\mu_2)]$"
+  }
+  </Math>
 
-* Rating Outlook
+  <Math>
+{"$Cov_{1,2} = \\frac {\\sum\\limits_{i=1}^{n}[(R_{t,1}-\\hat{R}_1((R_{t,1}-\\hat{R}_1))]}{n-1}$"}
+  </Math>
+  
+### Correlation
+- A standardized measure of the linear relationship between two variables that ranges from -1 to +1
+- Positive (+) correlation means the variables tend to move in the same direction and vice versa
+- Calculated as the covariance of the two variables divided by the product of their standard deviations
+<Math>
+  {
+    "$\\rho_{1,2} = \\frac {Cov_{1,2}}{\\sigma_1 \\sigma_2}$"
+  }
+</Math>
 
-<Note>Total Debt = Current Liabilities + Long-Term Debt</Note>
+#### Significance of Correlation Coefficient
 
-### High-Yield Issuers
+- Null Hypothesis: ρ = 0 (no linear relationship between X and Y)
+- Alternative Hypothesis: p not equal to 0 (there is a non-zero correlation with X% confidence level)
+- Two-tailed test
+- Degrees of freedom = n - 2
 
-1. Bank debt
-   - Loans acquired from banks
-2. Reset notes
-   - Bonds whose coupon rates are adjusted periodically
-3. Senior and Subordinated debt
+<Math>{"$t = \\frac{r\\sqrt{n-2}}{\\sqrt{1=r^2}}$"}</Math>
 
-- High-yield borrowers typically rely on short-term, floating-rate, senior bank debt.
-- "Senior Bank Debt" has a higher claim on assets than "Senior Debt."
+<Math>{"$t = \\sqrt{\\frac{r^2}{1-r^2}\\times(n-2)}$"}</Math>
 
-## Liquidity
+#### Limitations to Correlation Analysis
+- Outliers distort the correlations
+- Spurious correlation (linear relationship without economic rationale)
+- Nonlinear relationships cannot be captured with correlation
 
-### Liquidity Factors
+### Components of Variation
 
-1. Money Supply (traditional guage of liquidity)
-2. Appetite for Risk
 
-Traditional Banks (Commercial Banks)
 
-- Heavily regulated
-- In return for regulation, banks receive (1) deposit insurance (FDIC) and (2) access to the Fed's discount window (guaranteed source of liquidity)
 
-### Shadow Banking System
 
-- The group of non-bank institutions that offer liquidity to the market
-- The commercial bank's most important economic role is to accept funds from depositors and lend those funds to borrowers.
-- Shadow banks raise money from individual investors and provide it directly or indirectly to firms and households, a function that was once exclusively the domain of commercial banks.
-- Examples of Shadow Banks + Hedge funds + Private Equity Funds + Trading houses + Conduits + Structured investments + REITs + Collateralized debt obligations (CDOs) + Collateralized loan obligations (CLOs)
 
-### Funding Sources of the Shadow Banking System
 
-1. Reverse repos
-2. Asset-backed Commercial Paper
+<div className="table-container">
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sum of Squared Totals (SST = Total variation = actual - predicted)</td>
+<td><Math>{"$SST = (Y_i - \\bar{Y})^2$"}</Math></td>
+</tr>
+<tr>
+<td>Regression Sum of Squares (RSS = Explained variation = predicted - expected)</td>
+<td><Math>{"$RSS = (\\hat{Y}_i - \\bar{Y})^2$"}</Math></td>
+</tr>
+<tr>
+<td>Sum of Squared Errors (SSE = Unexplained variation = actual - expected)</td>
+<td><Math>{"$SSE = (Y_i - \\hat{Y}_i)^2$"}</Math></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-### Minsky Framework
 
-1. Hedge Unit (borrower can afford interest and principal payments)
 
-2. Speculative Unit (borrower can afford interest payments only)
-3. Ponzi Unit (borrower can't afford interest or principal payments)
 
-- In 2006, mortgage lenders were effectively granting at-the-money call options on the value of their properties.
 
-## Term Structure and Volatility of Interest Rates
-
-- Yield Curve Shifts 1. Parallel shifts 2. Nonparallel shifts: Twists + Flattening of curve (lower slope) + Steepening of curve (higher slope) 3. Nonparallel shifts: Butterfly + Positive butterfly shift (less curvature) + Negative butterfly shift (more curvature)
-
-Factors Contributing to the Returns on Zero-Coupon Treasury Securities
-
-1. Parallel shifts in yield curve (90%)
-2. Twists, change in yield curve slope (8.5%)
-3. Butterfly shifts, changes in curvature of yield curve (1.5%)
-
-## Yields for Yield Curve
-
-1. Treasury Coupon Strips
-2. On-the-run Treasury issues
-3. On-the-run Treasury issues and selected off-the-run Treasury issues
-4. All Treasury coupon securities and bills
-
-- The liquidity of the strips market is not as great as that of the Treasury coupon market.
-- A problem with just using on-the-run issues is the large gap between maturities, especially after 5 years.
-
-## Swap Curve (LIBOR curve)
-
-- Advantages of Using the Swap Curve
-- Pure Expectations Theory of the Term Structure of Interest Rates
-- Liquidity Preference Theory of the Term Structure of Interest Rates
-- Preferred Habitat Theory of the Term Structure of Interest Rates
-- Valuing Bonds with Embedded Options
-- Mortgage-Backed Sector of the Bond Market
-- Agency Passthrough Securities issued in U.S.
-
-1. Ginnie Mae - Issued by the Government National Mortgage Association (GNMA) and possess no credit risk
-2. Freddie Mac - Issued by the Federal Home Loan Mortgage Corporation (FHLMC)
-3. Fannie Mae - Issued by the Federal National Mortgage Association (FNMA)
-
-- The most important characteristic of passthrough securities is their prepayment speed.
-
-### Factors Affecting Prepayment Speeds
-
-1. Prevailing mortage rates
-2. Housing Turnover (interest rate path)
-3. Characteristics of the underlying mortgages
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>

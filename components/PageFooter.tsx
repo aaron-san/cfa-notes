@@ -1,7 +1,7 @@
 const PageFooter = () => {
   return (
-    <div className="w-screen h-12 bg-slate-800 dark:bg-slate-500 border-t-2 border-slate-100/50">
-      <div className="flex justify-center items-center h-full py-1">
+    <div className="bg-slate-400 dark:bg-slate-900 border-slate-100/50 border-t-2 w-screen h-12">
+      <div className="flex justify-center items-center py-1 h-full">
         &copy; {new Date().getFullYear()} Free Analyst Notes. All rights
         reserved.
       </div>

@@ -1,14 +1,9 @@
 ---
 title: "Economics (Part 1)"
-date: "December 9, 2025"
-author: ""
-excerpt: ""
+date: ""
 cover_image: ""
-categories: ["CFA&reg; Level 2"]
-tags: [""]
-slug: "economics-1"
+tags: ["CFA® Level 2", "Economics"]
 backUrl: "/topics/cfa-level-2"
-nextUrl: "blog/cfa-level-2/economics-1"
 ---
 
 ## Economics
@@ -60,7 +55,7 @@ nextUrl: "blog/cfa-level-2/economics-1"
   }
 </Math>
 
-##### Varance of Market
+##### Variance of Market
 
 - The variance of market i, given a covariance of factor returns:
 
@@ -131,8 +126,191 @@ nextUrl: "blog/cfa-level-2/economics-1"
 #### Cyclical (short-term)
 
 1. Inventory cycle
+  - Fluctuations in the stock of goods a company holds driven by demand and production
+  - Can influence the business cycle
 2. Business cycle
+  - Overall ecenomic expansions and contractions that are often magnified by inventory cycle effects
+  - Encompasses total output, GDP, empoyment, etc.
+  - Driven by aggregate demand and supply, technological advancements and government policy
+
+### Business Cycle, Inflation, and Asset Returns
+- An economic cycle has four stages: expansion, peak, contraction, and trough
+
+<div className="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Business confidence</th>
+        <th>Interest rates</th>
+        <th>Inflation</th>
+        <th>Bond yiels</th>
+        <th>Stock prices</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initial recovery</td>
+        <td>Rising</td>
+        <td>Low or falling</td>
+        <td>Falling</td>
+        <td>Minimum</td>
+        <td>Rising</td>
+      </tr>
+      <tr>
+        <td>Early expansion</td>
+        <td>Rising</td>
+        <td>Rising</td>
+        <td>Low</td>
+        <td>Flat or rising - credit spreads narrowing</td>
+        <td>Rising</td>
+      </tr>
+      <tr>
+        <td>Late expansion</td>
+        <td>High</td>
+        <td>Rising</td>
+        <td>Rising</td>
+        <td>Rising</td>
+        <td>Rising along with risk</td>
+      </tr>
+      <tr>
+        <td>Slowdown</td>
+        <td>Falling</td>
+        <td>Rising</td>
+        <td>Rising</td>
+        <td>Maximized or falling</td>
+        <td>Falling</td>
+      </tr>
+      <tr>
+        <td>Recession</td>
+        <td>Falling</td>
+        <td>Fallng (demand for loanable funds falling)</td>
+        <td>Maximum</td>
+        <td>Falling and credit spreads widening</td>
+        <td>Rising during later stage</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Impacts of Business Cycle
+
+1. Inflation
+2. Consumer spending
+3. Business spending
+4. Monetary policy
+5. Fiscal policy
+
+#### Inflation and Asset Returns
+
+<div className="table-container">
+<table style={{ maxWidth: "400px" }}>
+  <thead>
+    <tr>
+      <th style={{ minWidth: "100px" }}>Asset</th>
+      <th style={{ width: "200px" }}>Correlation of Returns and Inflation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bonds</td>
+      <td style={{ maxWidth: "100px" }}>Negative (-)</td>
+    </tr>
+    <tr>
+      <td>Equities</td>
+      <td>Positive (+)</td>
+    </tr>
+    <tr>
+      <td>Real Estate</td>
+      <td>
+        Can be negative (-), but deflation reduces value of leveraged real
+        estate
+      </td>
+    </tr>
+    <tr>
+      <td>Cash</td>
+      <td>Positive (+)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+### Taylor Rule
+
+<Math>
+  {
+    "$r_{target} = r_{neutral} + [0.5 (GDP_{expected} - GDP_{trend}) + 0.5 (i_{expected} - i_{target})]$"
+  }
+</Math>
+
+<div className="table-container">
+
+<table className="table-monetary-fiscal-policy">
+  <thead>
+    <tr>
+      <th>Monetary Policy</th>
+      <th>Fiscal Policy</th>
+      <th>Yield Curve Shape</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expansive</td>
+      <td>Expansive</td>
+      <td>Upward sloping and economy likely to expand</td>
+    </tr>
+    <tr>
+      <td>Restrictive</td>
+      <td>Restrictive</td>
+      <td>Downward sloping and economy likely to contract</td>
+    </tr>
+    <tr>
+      <td>Expansive</td>
+      <td>Restrictive</td>
+      <td>Lightly upward sloping</td>
+    </tr>
+    <tr>
+      <td>Restrictive</td>
+      <td>Expansive</td>
+      <td>Almost flat</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<Note>Note: Monetary policy appears to have a stronger effect than fiscal policy on the yield curve in the short run.</Note>
 
 ### Relative Equity Market Valuation
 
-- E
+#### Earnings-based
+
+1. The Fed Model
+2. The Yardeni Model
+3. P/10-year MA(E)
+
+##### The Fed Model
+
+<Math>
+  {
+    "$Ratio = \\frac {\\text {\\normalsize {S\\&P Current Earnings Yield}}}{\\text {\\normalsize {Long-term T-bond yield}}} = \\frac {\\text {\\normalsize {CEY}}}{\\text {\\normalsize {TBY}}}$"
+  }
+</Math>
+
+<div className="math-var-keys" style={{marginLeft: "50px"}}>
+  <div>where:</div>
+  <div>CEY = 1 / leading P/E</div>
+</div>
+
+<Math>
+  {
+    "$CEY = \\frac {\\text {\\normalsize {Aggregate 12-month forward earnings}}}{\\text {\\normalsize {Current S\\&P level}}} = \\frac {\\text {\\normalsize {E$_1$}}}{\\text {\\normalsize {P$_0$}}}$"
+  }
+</Math>
+
+#####
+- CEY should equal TBY, but if:
+  - Ratio > 1, equities are undervalued and should rise
+  - Ratio < 1, equities are overvalued and should fall
+
+##### Problems with the Fed model
+
+- Ignores the equity risk premium

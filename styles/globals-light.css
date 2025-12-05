@@ -1,0 +1,274 @@
+@layer base {
+  :root {
+    --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-weight: 200;
+    color: black;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: rgb(220, 20, 20);
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 20px 0 8px 0.5rem;
+    color: rgb(20, 100, 100);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0 1rem;
+    color: rgb(20, 220, 80);
+  }
+
+  h4 {
+    margin-top: 1rem;
+    font-style: italic;
+    color: rgb(20, 300, 300);
+    margin-left: 1.5rem;
+  }
+  h5 {
+    margin-top: 1rem;
+    font-style: italic;
+    /* color: rgb(20, 300, 300); */
+    margin-left: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    letter-spacing: 0.1em;
+  }
+
+  h2 + ul,
+  h2 + ol {
+    margin: 0.5rem 0 0 1rem;
+  }
+
+  h3 + ul,
+  h3 + ol {
+    margin: 0.5rem 0 0 1.5rem;
+  }
+
+  h4 + ul,
+  h4 + ol {
+    margin: 0.5rem 0 0 2rem;
+  }
+
+  h5 + ul,
+  h5 + ol {
+    margin: 0.5rem 0 0 2rem;
+  }
+
+  ol,
+  ul {
+    list-style-position: outside;
+    padding-left: 1.8rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul li::marker {
+    content: "▸ ";
+  }
+
+  nav > ul li::marker {
+    content: "";
+  }
+  /* .note {
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  background: lightblue;
+  padding: 10px 20px;
+  width: fit-content;
+  margin-bottom: 10px;
+} */
+
+  /* .noteWord {
+  font-weight: bolder;
+} */
+
+  /* .caution {
+  color: firebrick;
+  font-weight: bolder;
+  border: 1px solid firebrick;
+  border-radius: 5px;
+  background: rgba(250, 42, 42, 0.1);
+  padding: 10px 20px;
+  width: fit-content;
+} */
+
+  article a {
+    color: rgb(140, 240, 140);
+    font-weight: 400;
+    text-decoration: underline;
+    scroll-margin-top: 60px; /* height of your fixed header */
+  }
+
+
+  .katex-container {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .katex-html {
+    /* background: white; */
+    /* width: fit-content; */
+    margin: 0.5rem;
+    padding: 8px;
+    border-radius: 4px;
+    overflow: auto;
+    /* border: 1px solid rgba(255, 255, 255, 0.5) !important; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 14px rgba(100, 100, 100, 0.5); */
+    z-index: -10;
+    /* background-color: rgb(50, 50, 80); */
+    /* width: fit-content; */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: 1px solid purple;
+  }
+
+  td .katex-html {
+    border: none !important;
+  }
+
+  .katex-display {
+    border: 1px solid pink;
+    /* border: 1px solid orange; */
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    /* Hide scrollbar for Webkit browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+
+  .katex-display::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hljs.language-js {
+    /* width: fit-content; */
+    margin-left: 1rem;
+    padding: 4px;
+    border: 1px solid purple;
+  }
+
+  .math-var-keys {
+    padding-left: 10px;
+  }
+
+  .math-var-keys div div {
+    padding-left: 40px;
+    font-weight: lighter;
+  }
+
+  .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    margin: 1rem 0 1rem 1.2rem;
+    border-collapse: collapse;
+    max-width: max-content;
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    min-width: 60px;
+  }
+
+  table thead tr th {
+    background-color: var(--TABLE_HEADER_BG);
+  }
+
+  /* First column of tbody */
+  tbody tr > td:nth-of-type(1) {
+    background-color: var(--TABLE_HEADER_BG);
+  }
+  
+  table-monetary-fiscal-policy table th {
+    background-color: rgba(50, 50, 50, 0.8);
+  }
+
+  .table-alpha-beta-drivers {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .table-alpha-beta-drivers th,
+  .table-alpha-beta-drivers td {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    min-width: 60px;
+  }
+
+  .table-alpha-beta-drivers td.col1,
+  .table-alpha-beta-drivers td.col2 {
+    background-color: var(--GREENISHBUE);
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  /* header */
+  .table-alpha-beta-drivers th {
+    background-color: rgba(50, 50, 50, 0.8);
+  }
+
+  .table-alpha-beta-drivers th,
+  .table-alpha-beta-drivers td {
+    min-width: 120px;
+  }
+
+  .correlation-table th:not(:first-child) {
+    font-weight: normal;
+    background-color: transparent;
+    background-color: var(--TABLE_HEADER_BG);
+  }
+
+  /* table title (first row) */
+  .correlation-table th:nth-child(1),
+  .correlation-table td:nth-child(1) {
+    background-color: var(--TABLE_HEADER_BG);
+    border: none;
+  }
+
+  .rotated {
+    transform: rotate(270deg);
+    transform-origin: center;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 -20px;
+  }
+
+  .table-monetary-fiscal-policy tbody tr > td:nth-of-type(2) {
+    background-color: rgba(20, 70, 70, 0.6);
+  }
+}
