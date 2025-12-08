@@ -1,6 +1,6 @@
 import withMDX from "@next/mdx";
 
-const isProd = process.env.NODE_ENV === "production";
+// const isProd = process.env.NODE_ENV === "production";
 // console.log(isProd);
 // console.log("✅ Using next.config (ESM)");
 // throw new Error("🧪 Testing config load");
