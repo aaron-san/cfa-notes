@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/bc158c6763e0cd0a.css","style",{"crossOrigin":""}]
-0:["Va4vPcL78IUw3uvbzYJbW",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/portfolio-management-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"portfolio-management-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bc158c6763e0cd0a.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["dkUL5pNbTOj1fSzHruIPb",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/portfolio-management-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"portfolio-management-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bc158c6763e0cd0a.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-0a5b985d7507e584.js","797","static/chunks/app/blog/%5B...slug%5D/page-3ecb12083a9d5156.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
