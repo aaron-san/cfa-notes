@@ -1,5 +1,5 @@
 1:HL["/cfa-notes/_next/static/css/0b158b6512f3297f.css","style",{"crossOrigin":""}]
-0:["IJCOMjdBD4D82r_cLvpyo",[[["",{"children":["blog",{"children":[["slug","cfa-level-3/behavioral-finance-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-3\",\"behavioral-finance-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/0b158b6512f3297f.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["8I8f9v6-v94B5v9kUzLqV",[[["",{"children":["blog",{"children":[["slug","cfa-level-3/behavioral-finance-1","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-3\",\"behavioral-finance-1\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/0b158b6512f3297f.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-473bf7bba74ef91d.js","797","static/chunks/app/blog/%5B...slug%5D/page-3ecb12083a9d5156.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
