@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/bc158c6763e0cd0a.css","style",{"crossOrigin":""}]
-0:["5NuR267rDDx5ERN5rYwxM",[[["",{"children":["topics",{"children":[["slug","caia-level-2","c"],{"children":["__PAGE__?{\"slug\":[\"caia-level-2\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bc158c6763e0cd0a.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["Va4vPcL78IUw3uvbzYJbW",[[["",{"children":["topics",{"children":[["slug","caia-level-2","c"],{"children":["__PAGE__?{\"slug\":[\"caia-level-2\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bc158c6763e0cd0a.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-0a5b985d7507e584.js","230","static/chunks/app/topics/%5B...slug%5D/page-8dcc57619f4c3c10.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
