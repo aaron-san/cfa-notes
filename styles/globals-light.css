@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 @layer base {
   :root {
     --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
@@ -8,8 +10,9 @@
   }
 
   body {
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: black;
+    color: rgb(47, 79, 79);
   }
 
   h1 {
