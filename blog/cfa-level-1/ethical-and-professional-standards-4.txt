@@ -1,5 +1,5 @@
-1:HL["/cfa-notes/_next/static/css/9c0bef6abd9857f4.css","style",{"crossOrigin":""}]
-0:["Dggj68Dt4EmSjEOTdjcpZ",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/ethical-and-professional-standards-4","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"ethical-and-professional-standards-4\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9c0bef6abd9857f4.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/cfa-notes/_next/static/css/b050f902ebe019c4.css","style",{"crossOrigin":""}]
+0:["pN9WnsnvVtu8bTSKPFhg1",[[["",{"children":["blog",{"children":[["slug","cfa-level-1/ethical-and-professional-standards-4","c"],{"children":["__PAGE__?{\"slug\":[\"cfa-level-1\",\"ethical-and-professional-standards-4\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/b050f902ebe019c4.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-473bf7bba74ef91d.js","797","static/chunks/app/blog/%5B...slug%5D/page-3ecb12083a9d5156.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
