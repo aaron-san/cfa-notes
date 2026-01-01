@@ -9,12 +9,12 @@
     "clean": "rimraf .next out pnpm-lock.yaml node_modules",
     "dev": "next dev -p 3023",
     "serve": "node server/serve.js",
-    "clean-dev": "riraf .next && next dev",
+    "clean-dev": "rimraf .next && next dev",
     "nojekyll-1": "echo. > ./out/.nojekyll && echo 'https://aaron-san.github.io/cfa-notes > ./out/CNAME'",
     "nojekyll": "echo. > ./out/.nojekyll",
     "build": "next build",
     "clean-build": "rimraf .next out pnpm-lock.yaml && npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

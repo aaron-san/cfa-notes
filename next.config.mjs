@@ -1,9 +1,8 @@
 import withMDX from "@next/mdx";
 
 const isProd = process.env.NODE_ENV === "production";
+// console.log(process.env.NODE_ENV);
 // console.log(isProd);
-// console.log("✅ Using next.config (ESM)");
-// throw new Error("🧪 Testing config load");
 
 const config = {
   pageExtensions: ["js", "mjs", "ts", "tsx", "mdx"],
@@ -13,7 +12,7 @@ const config = {
     unoptimized: true,
   },
   experimental: {
-    mdxRs: false,
+    mdxRs: false, 
   },
   basePath: isProd ? "/cfa-notes" : "",
   assetPrefix: isProd ? "/cfa-notes/" : "",

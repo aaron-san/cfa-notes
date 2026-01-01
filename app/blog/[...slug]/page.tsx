@@ -59,24 +59,26 @@ export default async function BlogPost({
       {frontmatter.backUrl && (
         <Link
           href="/"
-          className="flex gap-1 dark:hover:text-slate-300 dark:text-slate-400 no-underline"
+          className="flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline"
         >
           <div className="text-xl">⇽</div>
           <div className="py-[5px] text-sm">Topics</div>
         </Link>
       )}
-      <div className="mb-4 border-slate-100/20 border-b w-fit">
+      <div className="mt-2 mb-4 border-slate-100/20 border-b">
+        <div className="px-4 border border-slate-300 rounded">
         <h1>{frontmatter.title ?? "Untitled"}</h1>
         <div className="flex gap-2 mt-1 pb-2">
           {frontmatter.tags &&
             frontmatter.tags.map((tag: string) => (
               <div
-                className="bg-slate-600 px-2 py-1 rounded-full font-bold text-slate-300 text-xs"
+                className="bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs"
                 key={tag}
               >
                 {tag}
               </div>
             ))}
+        </div>
         </div>
       </div>
       {MDXContent}
@@ -86,7 +88,7 @@ export default async function BlogPost({
         {frontmatter.backUrl && (
           <Link
             href={cleanedBackUrl}
-            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded dark:hover:text-slate-200 dark:text-slate-300 no-underline"
+            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline"
           >
             <div className="text-xl">⇽</div>
             <div className="py-[5px] text-sm">Back</div>
@@ -96,7 +98,7 @@ export default async function BlogPost({
         {frontmatter.nextUrl && (
           <Link
             href={cleanedNextUrl}
-            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded dark:hover:text-slate-200 dark:text-slate-300 no-underline"
+            className="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline"
           >
             <div className="py-[5px] text-sm">Next</div>
             <div className="text-xl">⇾</div>

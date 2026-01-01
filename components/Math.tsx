@@ -15,7 +15,7 @@ export default function Math({ children }: { children: string }) {
 
   return (
     <div
-      className="katex-container"
+      className="font-['Poppins'] katex-container"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

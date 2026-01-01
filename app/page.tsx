@@ -3,11 +3,11 @@ import TopicCard from "@/components/TopicCard";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <h1>Welcome to Free Analyst Notes!</h1>
       <p>Start learning today for the next exam.</p>
       <p>Choose a topic to get started:</p>
-      <div className="flex flex-wrap gap-2 mt-4">
+      <div className="flex flex-wrap justify-center gap-2 mt-4">
         <TopicCard title={"CFA® Level 1"} href={"/topics/cfa-level-1"}>
           {/* The CFA® level one exam covers a wide array of topics including
         statistics, economics, finance, and more. Learn how to do basic
@@ -34,6 +34,10 @@ const Home: React.FC = () => {
         <TopicCard
           title={"CAIA Level 2"}
           href={"/topics/caia-level-2"}
+        ></TopicCard>
+        <TopicCard
+          title={"Valuation"}
+          href={"/topics/valuation"}
         ></TopicCard>
       </div>
     </div>

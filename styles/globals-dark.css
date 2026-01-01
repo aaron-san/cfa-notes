@@ -1,9 +1,9 @@
 @layer base {
-  :root {
-    --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
-  }
-
   @media (prefers-color-scheme: dark) {
+    :root {
+      --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
+    }
+
     h1 {
       color: rgb(150, 220, 220);
     }
@@ -20,11 +20,39 @@
     h3 ul {
       padding: 20px 0 0 1rem;
     }
+
+.katex-container {
+    width: fit-content;
+    /* border: 1px solid rgba(5, 5, 5, 0.2); */
+    padding: 0 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    max-width: 80vw;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 4px;
+  }
+
+
     .katex-html {
       padding: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.5) !important;
       border-radius: 4px;
       color: lightgray;
+      max-width: 80vw;
+      overflow-x: auto;
+    }
+
+    .katex-display {
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      display: flex;
+      /* Hide scrollbar for Webkit browsers */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer and Edge */
     }
 
     td .katex-html {
@@ -58,10 +86,9 @@
       background-color: rgba(20, 70, 70, 0.6);
       color: white;
     }
-    
+
     .table-conflicts-of-interest td:not(.col1) {
       background-color: inherit;
-
     }
     .table-monetary-fiscal-policy table th {
       background-color: rgba(50, 50, 50, 0.8);

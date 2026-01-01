@@ -11,7 +11,7 @@ const PageHeader = () => {
         <ul className="flex gap-2 font-bold text-slate-500 list-none">
           <li className="hover:text-slate-400">{/* Study */}</li>
           <li className="mt-0 hover:text-slate-400 list-none">
-            <Link className="list-none" href="../about">About</Link>
+            <Link className="list-none" href="/about">About</Link>
           </li>
         </ul>
       </nav>
