@@ -3,40 +3,175 @@ title: "Valuation (Part 1)"
 date: ""
 excerpt: ""
 cover_image: ""
-tags: [""]
-backUrl: "/topics/cfa-level-2"
+tags: ["Valuation"]
+backUrl: "/topics/valuation"
+nextUrl: "/blog/valuation/valuation-2"
 ---
 
+p. 43
+## Risk-free rate
+-	Usually a 10- or 30-year government bonds rates are used to proxy the risk-free rates (assumes the government won't default)
+-	10-year Treasury bond rate
+
+## Equity risk premium
+-	the premium that investors demand on an annual basis for investing in stocks instead of risk-free investments
+-	should be a function of how much risk is perceived in stocks and how concerned they are about that risk
+-	Between 1928 and 2010, stocks generated 4.31% more on an annual basis than treasury bonds.
+-	An alternative is to back out a forward-looking premium (called an implied equity risk premium) from current stock price levels and expected future cash flows.
+
+## Relative risk or beta
+-	Generally estimate beta based on historical movement relative to the market (the slope of a regression of returns on the stock against a market index)
+-	These betas are always backward-looking and noisy (since they are estimated with error)
+-	One solution is to replace the regression beta with a sector-average beta, if the firm operates in only one business or a weighted average if it operates in several businesses.
+The sector beta is more precise than an individual regression beta because averaging across many betas results in averaging out your mistakes.
+
+p. 45
+
+## Kinds of Expenses
+1. Operating Expenses 
+    - labor, material
+    - Expected to generate benefits only in current period
+2. Capital Expenses 
+    - land, buildings, equipment
+    - Expected to generate benefits over multiple periods
+3. Financial Expenses 
+    - interest, principal payments, other nonequity financing costs
+
+
+## Free Cash Flow to Equity (FCFE)
+- FCFE is the cash flow available to equity shareholders after all expenses, reinvestment, and debt repayments
+- FCFE can be used to value equity directly using a discounted cash flow (DCF) model
+
+<Math>
+  {
+    "FCFE = Net Income - (Capital Expenditures - Depreciation) - $\\Delta$ Noncash WC + (New Debt - Debt Repayments)"
+  }
+</Math>
+
+## Free Cash Flow to the Firm (FCFF)
+- FCFF is the cash flow available to all capital providers (both debt and equity holders) after all expenses and reinvestment
+- FCFF can be used to value the entire firm using a DCF model
+
+<Math>
+  {
+    "FCFF = Operating Income (1 - Tax Rate) - (Capital Expenditures - Depreciation) - $\\Delta$ Noncash Working Capital"
+  }
+</Math>
 
 ## Goodwill
 - "Goodwill is a result of acquisitions. It is the most useless intangible asset. It is a plug variable. Don’t pay for a plug variable." (Damodaran)
-
 - Goodwill is an intangible asset that arises when a company acquires another company for a price higher than the fair value of its net identifiable assets.
 - Goodwill is recorded on the balance sheet as an asset and represents the premium paid for factors such as brand reputation, customer relationships, and intellectual property.
 - Goodwill is not amortized but is tested annually for impairment. If the carrying value of goodwill exceeds its fair value, an impairment loss is recognized in the income statement.
 
+
 ## Research and Development (R&D) Costs
+- R&D expenses are often treated as operating expenses, but they should often be treated as capital expenditures, capitalized and depreciated for valuation purposes.
 - R&D costs are expenses incurred in the process of discovering new knowledge, products, or processes.
-- According to accounting standards, R&D costs are typically expensed as incurred, meaning they are recorded as expenses in the income statement in the period they are incurred.
+- According to accounting standards, R&D costs are typically expensed as incurred, meaning they are expensed as incurred
 - However, certain development costs may be capitalized if they meet specific criteria, such as technical feasibility and the intention to complete and use or sell the asset.
 - Capitalized R&D costs are recorded as intangible assets on the balance sheet and amortized over their useful life.
-- R&D costs whose benefits can be reasonably estimated to extend beyond the current period may be capitalized, while those that do not meet these criteria should be expensed immediately.
+- For valuation purposes, R&D costs whose benefits can be reasonably estimated to extend beyond the current period may be capitalized, while those that do not meet these criteria should be expensed immediately.
 
 <Math>{"Value of research asset = $\\sum\\limits_{n-1}^{t}$"}</Math>
 
 
 ## Operating Leases
-- An operating lease is a lease agreement where the lessee (the party using the asset) does not assume the risks and rewards of ownership of the leased asset.
-- Operating leases are treated as off-balance-sheet financing, meaning the leased asset and corresponding liability are not recorded on the lessee's balance sheet.
-- Lease payments made by the lessee are recorded as operating expenses in the income statement over the lease term.
-- Operating leases are typically used for short-term leases or when the lessee does not intend to purchase the asset at the end of the lease term.
-- Under new accounting standards (e.g., IFRS 16 and ASC 842), lessees are required to recognize a right-of-use asset and a lease liability on the balance sheet for most leases, including operating leases, which increases transparency regarding lease obligations.
-
+- Operating leases are often treated as operating expenses, but should be treated as financial expenses, capitalized, and added to debt for valuation purposes.
+- Under new accounting standards (e.g., IFRS 16 and ASC 842), lessees are required to recognize a right-of-use asset and a lease liability on the balance sheet for most leases, including operating leases.
 - The debt value of an operating lease can be estimated by calculating the present value of future lease payments using the lessee's incremental borrowing rate or the rate implicit in the lease, if known.
-<Math>{"Debt value of operating lease = $\\sum\\limits_{n=1}^{t} \\frac{Lease\\ Payment_n}{(1 + r)^n}$"}</Math>
+
+<Math>{"Debt value of operating lease = $\\sum\\limits_{n=1}^{t} \\dfrac{Lease\\ Payment_n}{(1 + r)^n}$"}</Math>
 
 <Math>{"Adjusted debt = Total debt + Present value of lease commitments"}</Math>
 
 <a href="https://raw.githubusercontent.com/aaron-san/cfa-notes/main/app/excel/capitalize_operating_leases.xlsx" download="capitalize_operating_leases.xlsx">
   Download
 </a>
+
+## Reinvestment
+- Firms must reinvest to maintain their growth
+
+
+## Employee Stock Options (ESOs)
+- Stock options outstanding that are held by employees and managers are reported in annual reports but not in quarterly reports, so assumptions must be made
+- Employee stock options (ESOs) are a form of compensation that gives employees the right to purchase company stock at a predetermined price (exercise price) after a specified vesting period.
+- ESOs can dilute existing shareholders' ownership when exercised, as new shares are issued to employees
+
+## Trailing Twelve Months (TTM)
+- TTM refers to the financial performance of a company over the most recent 12-month period, regardless of the fiscal year-end.
+
+<Math>{"$Example:$ TTM = Annual December 2025 + Six months June 2026 - Six months June 2025"}</Math>
+
+
+# Relative Valuation
+
+- When comparing multiples across companies, it is important to ensure that the companies are comparable in terms of risk, cash flows, and growth prospects.
+
+- Every multiple is a function of three variables:
+    1. Risk
+    2. Cash flows
+    3. Growth
+
+<Math>{"Value of equity = $\\dfrac{E(D_1)}{r - g}$"}</Math>
+
+<Math>{"P/E = $\\dfrac{\\text{Dividend payout ratio}}{r - g}$"}</Math>
+
+where g = expected growth rate in EPS
+
+
+<Math>{"P/BV = $\\dfrac{ROE * Payout ratio}{r - g}$"}</Math>
+where ROE = NI/BV_equity
+
+<Math>{"Enterprise Value = $\\dfrac{\\text{E(FCFF$_1$)}}{\\mathrm{WACC} - g}$"}</Math>
+
+where FCFF = After-tax operating income - reinvestment (capex + <InlineMath>{"$\\Delta$WC$ - $depreciation"}</InlineMath>)
+
+
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+<Math>{"$$"}</Math>
+
+
+
+
+
+
+
+Enterprise value = (EBIT)(1 - t)(1 - b) / (WACC - g)
+where b = reinvestment rate 
+
+EV/Sales = After-tax Operating margin * (1 - reinvestment rate) / (WACC - g)
+
+- Each multiple has a single variable (companion variable) that dominates its value:
+    - P/E: payout ratio
+    - P/BV: ROE
+    - EV/EBITDA: operating margin
+    - EV/Sales: operating margin
+
+
+### Multiples and Drivers
+1. PE ratio - E(g), payout, risk
+2. P/BV_equity - E(g), payout, risk, ROE
+3. P/Sales - E(g), payout, risk, net margin
+4. EV/FCFF - cost of capital, growth rate
+5. EV/EBITDA - E(g), reinvestment rate, risk, ROIC, tax rate
+6. EV/capital - E(g), reinvestment rate, risk, ROIC
+7. EV/Sales - E(g), reinvestment rate, risk, operating margin
+
+### Multiples - Companion Variable - Mismatch Indicator
+1. PE ratio - E(g) - Low PE with high E(g) in EPS
+2. P/BV_equity - ROE - Low P/BV with high ROE
+3. P/Sales - Net margin - Low P/S with high net profit margin
+4. EV/FCFF - ?? (not included in original table)
+5. EV/EBITDA - Reinvestment rate - Low EV/EBITDA with low reinvestment needs
+6. EV/capital - ROC - Low EV/Capital with high ROC
+7. EV/Sales - After-tax operating margin - Low EV/Sales with high after-tax operating margin
+
+- Multiples should be used with comparable firms (firms with similar cash flows, growth potential, and risk)
+- Analysts often compare companies in sectors, industries, or businesses and assume they are similar in respect to cash flows, growth and risk
+- Average or medians of multiples are compared to those of the sector or other benchmark
+p. 74\\
