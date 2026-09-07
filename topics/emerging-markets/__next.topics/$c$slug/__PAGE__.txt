@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","649","static/chunks/app/topics/%5B...slug%5D/page-a5c638718795b9a7.js"],""]
+3:I[484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[484,[],"ViewportBoundary"]
+9:I[484,[],"MetadataBoundary"]
+b:I[7121,[],""]
+c:I[4581,[],""]
+10:I[8616,[],"ClientSegmentRoot"]
+11:I[8185,["500","static/chunks/500-b13bb91f5a6311b6.js","177","static/chunks/app/layout-66c8a05c76557a2f.js"],"default"]
+:HL["/cfa-notes/_next/static/css/36df62ccea7e8e15.css","style"]
+:HL["/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","style"]
+7:X
+e:X
+e:C
+0:{"buildId":"eMFxGp8Zji3ZYQYJwpe_R","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"p-6","children":[["$","$L2",null,{"href":"/","className":"flex gap-1 dark:hover:text-slate-300 dark:text-slate-400","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Topics"}]]}],["$","h1",null,{"className":"mb-4 font-bold text-2xl","children":"emerging markets"}],["$","div",null,{"className":"flex flex-wrap justify-start gap-2 ml-4","children":[["$","$L2","/blog/emerging-markets/emerging-markets-1",{"href":"/blog/emerging-markets/emerging-markets-1","className":"hover:bg-slate-100 dark:bg-gray-700 dark:hover:bg-slate-600 px-4 py-2 border border-slate-500 rounded dark:text-slate-100","children":"Emerging Markets"}]]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[]}]}]}],null]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@d","staleTime":"$7","varyParams":"$e"},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@f","staleTime":"$7","varyParams":"$e"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/36df62ccea7e8e15.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","precedence":"next"}]],["$","$L10",null,{"Component":"$11","slots":{"children":["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]},"serverProvidedParams":{"params":{},"promises":["$@12"]}}]]}],"isPartial":"$@13","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+5:null
+12:"$0:data:4:rsc:props:children:1:props:serverProvidedParams:params"
+7:300
+15:true
+7:C
+14:0
+a:"$undefined"
+d:"$undefined"
+f:"$undefined"
+6:"$undefined"
+13:"$undefined"

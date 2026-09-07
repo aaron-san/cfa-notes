@@ -1,0 +1,85 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","909","static/chunks/app/blog/%5B...slug%5D/page-94c9dd63a4205077.js"],""]
+3a:X
+3f:X
+3f:C
+0:{"buildId":"eMFxGp8Zji3ZYQYJwpe_R","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100","children":[["$","$L2",null,{"href":"/","className":"flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Topics"}]]}],["$","div",null,{"className":"mt-2 mb-4 border-slate-100/20 border-b","children":["$","div",null,{"className":"px-4 border border-slate-300 rounded","children":[["$","h1",null,{"children":"Business Law (Part 4)"}],["$","div",null,{"className":"flex gap-2 mt-1 pb-2","children":[["$","div","Business Law",{"className":"bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs","children":"Business Law"}]]}]]}]}],[["$","h2",null,{"children":"Business Law"}],"\n",["$","p",null,{"children":["A ",["$","strong",null,{"children":"Private Placement Memorandum (PPM)"}]," is essentially the “full disclosure” document for a private investment deal (real estate, hedge fund, private equity, startup, etc.). It’s designed to ",["$","strong",null,{"children":"protect the issuer legally"}]," and ",["$","strong",null,{"children":"inform investors thoroughly"}]," before they commit capital."]}],"\n",["$","p",null,{"children":["Here are the ",["$","strong",null,{"children":"main parts of a PPM"}],", explained in a practical, underwriting-style way:"]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"1. Executive Summary (Deal Snapshot)"}],"\n",["$","p",null,{"children":"This is the quick overview of the investment."}],"\n",["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Business/project description"}],"\n",["$","li",null,{"children":"Investment structure (debt vs. equity)"}],"\n",["$","li",null,{"children":"Target returns (IRR, equity multiple)"}],"\n",["$","li",null,{"children":"Timeline"}],"\n",["$","li",null,{"children":"Capital raise amount"}],"\n"]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"How to think about it:"}],"\r\nThis is the “pitch.” If this section is weak or unclear, investors often don’t read further."]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"2. Risk Factors (Most Important Legally)"}],"\n",["$","p",null,{"children":"This is one of the longest and most critical sections."}],"\n",["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Market risks (e.g., real estate downturn)"}],"\n",["$","li",null,{"children":"Sponsor/operator risk"}],"\n",["$","li",null,{"children":"Liquidity risk (can’t easily sell investment)"}],"\n",["$","li",null,{"children":"Regulatory/legal risk"}],"\n",["$","li",null,{"children":"Project-specific risks"}],"\n"]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"Key insight:"}],"\r\nThis section is written defensively—often worst-case heavy—to ",["$","strong",null,{"children":"limit liability"}],".\r\nAs an analyst/underwriter, you should read this carefully to identify ",["$","em",null,{"children":"real"}]," risks vs. boilerplate."]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"3. Offering Terms (Deal Mechanics)"}],"\n",["$","p",null,{"children":["This explains exactly ",["$","strong",null,{"children":"how the investment works"}],"."]}],"\n",["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Minimum investment amount"}],"\n",["$","li",null,{"children":"Total raise size"}],"\n",["$","li",null,{"children":"Investor eligibility (accredited investors)"}],"\n",["$","li",null,{"children":"Fees (management, acquisition, promote/carry)"}],"\n",["$","li",null,{"children":"Distribution structure (cash flow payouts)"}],"\n"]}],"\n",["$","p",null,{"children":["$","strong",null,{"children":"Example:"}]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"8% preferred return"}],"\n",["$","li",null,{"children":"70/30 split after pref"}],"\n"]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"Why it matters:"}],"\r\nThis determines how money flows between investors and the sponsor."]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"4. Use of Proceeds"}],"\n","$L3","\n","$L4","\n","$L5","\n","$L6","\n","$L7","\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n","$L20","\n","$L21","\n","$L22","\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34"],"$L35","$L36","$L37"]}],null,"$L38"]}],"isPartial":"$@39","staleTime":"$3a","varyParams":null},{"rsc":"$L3b","isPartial":"$@3c","staleTime":"$3a","varyParams":null},{"rsc":"$L3d","isPartial":"$@3e","staleTime":"$3a","varyParams":"$3f"},{"rsc":"$L40","isPartial":"$@41","staleTime":"$3a","varyParams":"$3f"},{"rsc":"$L42","isPartial":"$@43","staleTime":"$3a","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@44","rootVaryParams":null,"needsRuntimeRequest":"$@45"}
+46:I[484,[],"OutletBoundary"]
+47:"$Sreact.suspense"
+49:I[484,[],"ViewportBoundary"]
+4a:I[484,[],"MetadataBoundary"]
+4b:I[7121,[],""]
+4c:I[4581,[],""]
+4d:I[8616,[],"ClientSegmentRoot"]
+4e:I[8185,["500","static/chunks/500-b13bb91f5a6311b6.js","177","static/chunks/app/layout-66c8a05c76557a2f.js"],"default"]
+:HL["/cfa-notes/_next/static/css/36df62ccea7e8e15.css","style"]
+:HL["/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","style"]
+3:["$","p",null,{"children":"Where the raised money is going."}]
+4:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+5:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Acquisition costs"}],"\n",["$","li",null,{"children":"Development or renovation costs"}],"\n",["$","li",null,{"children":"Debt payoff/refinancing"}],"\n",["$","li",null,{"children":"Fees and reserves"}],"\n"]}]
+6:["$","p",null,{"children":["$","strong",null,{"children":"What to look for:"}]}]
+7:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Are fees too high?"}],"\n",["$","li",null,{"children":"Is enough capital going into the actual asset?"}],"\n"]}]
+8:["$","hr",null,{}]
+9:["$","h2",null,{"children":"5. Business Plan / Investment Strategy"}]
+a:["$","p",null,{"children":["This is the ",["$","strong",null,{"children":"“how we make money”"}]," section."]}]
+b:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+c:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Strategy (value-add, development, core, etc.)"}],"\n",["$","li",null,{"children":"Timeline and milestones"}],"\n",["$","li",null,{"children":"Exit strategy (sale, refinance, IPO)"}],"\n"]}]
+d:["$","p",null,{"children":["$","strong",null,{"children":"Example (real estate):"}]}]
+e:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Buy underperforming asset"}],"\n",["$","li",null,{"children":"Renovate units"}],"\n",["$","li",null,{"children":"Increase rents"}],"\n",["$","li",null,{"children":"Sell in 3–5 years"}],"\n"]}]
+f:["$","hr",null,{}]
+10:["$","h2",null,{"children":"6. Sponsor / Management Team"}]
+11:["$","p",null,{"children":"Who is running the deal."}]
+12:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+13:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Background of principals"}],"\n",["$","li",null,{"children":"Track record"}],"\n",["$","li",null,{"children":"Past deals and performance"}],"\n",["$","li",null,{"children":"Roles and responsibilities"}],"\n"]}]
+14:["$","p",null,{"children":[["$","strong",null,{"children":"How to analyze:"}],"\r\nA strong sponsor can offset a mediocre deal. A weak sponsor can ruin a great one."]}]
+15:["$","hr",null,{}]
+16:["$","h2",null,{"children":"7. Financial Projections"}]
+17:["$","p",null,{"children":"The numbers behind the deal."}]
+18:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+19:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Revenue and expense forecasts"}],"\n",["$","li",null,{"children":"Cash flow projections"}],"\n",["$","li",null,{"children":"IRR, NPV, equity multiple"}],"\n",["$","li",null,{"children":"Sensitivity analysis (sometimes)"}],"\n"]}]
+1a:["$","p",null,{"children":["$","strong",null,{"children":"What to watch:"}]}]
+1b:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Aggressive assumptions (rent growth, exit cap rates)"}],"\n",["$","li",null,{"children":"Whether projections align with market reality"}],"\n"]}]
+1c:["$","hr",null,{}]
+1d:["$","h2",null,{"children":"8. Legal Structure"}]
+1e:["$","p",null,{"children":"How the entity is set up."}]
+1f:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+20:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Entity type (LLC, LP)"}],"\n",["$","li",null,{"children":"Investor ownership structure"}],"\n",["$","li",null,{"children":"Rights and voting provisions"}],"\n"]}]
+21:["$","p",null,{"children":"Usually tied closely to:"}]
+22:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Operating Agreement"}],"\n",["$","li",null,{"children":"Subscription Agreement"}],"\n"]}]
+23:["$","hr",null,{}]
+24:["$","h2",null,{"children":"9. Subscription Process"}]
+25:["$","p",null,{"children":"How investors actually invest."}]
+26:["$","p",null,{"children":["$","strong",null,{"children":"What it includes:"}]}]
+27:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Subscription agreement"}],"\n",["$","li",null,{"children":"Investor representations (accredited status)"}],"\n",["$","li",null,{"children":"Funding instructions"}],"\n"]}]
+28:["$","hr",null,{}]
+29:["$","h2",null,{"children":"10. Appendices / Exhibits"}]
+2a:["$","p",null,{"children":"Supporting documents."}]
+2b:["$","p",null,{"children":["$","strong",null,{"children":"What it may include:"}]}]
+2c:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Market studies"}],"\n",["$","li",null,{"children":"Property details"}],"\n",["$","li",null,{"children":"Financial models"}],"\n",["$","li",null,{"children":"Legal disclosures"}],"\n"]}]
+2d:["$","hr",null,{}]
+2e:["$","h1",null,{"children":"How to Think About a PPM (Career Insight)"}]
+2f:["$","p",null,{"children":"Since you’re interested in underwriting/finance:"}]
+30:["$","p",null,{"children":"When reviewing a PPM, think like this:"}]
+31:["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Is the story logical?"}]," (Business plan)"]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Do the numbers support the story?"}]," (Financials)"]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Are risks clearly acknowledged?"}]," (Risk factors)"]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Is the sponsor credible?"}]," (Track record)"]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Is compensation fair?"}]," (Fees & structure)"]}],"\n"]}]
+32:["$","hr",null,{}]
+33:["$","p",null,{"children":"If you want, I can:"}]
+34:["$","ul",null,{"children":["\n",["$","li",null,{"children":["Walk through a ",["$","strong",null,{"children":"real estate PPM example line-by-line"}]]}],"\n",["$","li",null,{"children":["Or turn this into a ",["$","strong",null,{"children":"resume-ready underwriting project (very strong for jobs)"}]]}],"\n"]}]
+35:["$","div",null,{"className":"my-8"}]
+36:["$","hr",null,{"className":"text-slate-300"}]
+37:["$","div",null,{"className":"flex justify-around items-center gap-4 my-4","children":[["$","$L2",null,{"href":"/topics/business=law/business-law-2","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Back"}]]}],["$","$L2",null,{"href":"/topics","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":[["$","div",null,{"className":"py-[5px] text-sm","children":"Next"}],["$","div",null,{"className":"text-xl","children":"⇾"}]]}]]}]
+38:["$","$L46",null,{"children":["$","$47",null,{"name":"Next.MetadataOutlet","children":"$@48"}]}]
+3b:["$","$1","h",{"children":[null,["$","$L49",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L4a",null,{"children":["$","$47",null,{"name":"Next.Metadata","children":[]}]}]}],null]}]
+3d:["$","$1","c",{"children":[null,["$","$L4b",null,{"parallelRouterKey":"children","template":["$","$L4c",null,{}]}]]}]
+40:["$","$1","c",{"children":[null,["$","$L4b",null,{"parallelRouterKey":"children","template":["$","$L4c",null,{}]}]]}]
+42:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/36df62ccea7e8e15.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","precedence":"next"}]],["$","$L4d",null,{"Component":"$4e","slots":{"children":["$","$L4b",null,{"parallelRouterKey":"children","template":["$","$L4c",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]},"serverProvidedParams":{"params":{},"promises":["$@4f"]}}]]}]
+48:null
+4f:"$42:props:children:1:props:serverProvidedParams:params"
+45:true
+3a:300
+3a:C
+44:0
+3c:"$undefined"
+3e:"$undefined"
+41:"$undefined"
+43:"$undefined"
+39:"$undefined"

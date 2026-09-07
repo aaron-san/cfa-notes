@@ -1,0 +1,59 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","909","static/chunks/app/blog/%5B...slug%5D/page-94c9dd63a4205077.js"],""]
+3:T800,Dividend Irrelevance
+Merton Miller and Franco Modigliani (MM) maintain that dividend policy is irrelevent.
+→If dividends are too small, simply sell some of the stock to make homemade dividends.
+→If dividends are too high, simply reinvest dividends into more shares of the stock.
+Bird-in-Hand Argument for Dividend Policy
+Myron Gordon and John Lintner argue that investors place a higher value on current dividends than expected capital gains.
+(i.e. the dividend yield component of total return, D1/P0 has less risk than the growth component, g)
+A company that initiates a new dividend policy will reduce the required rate of return on its equity, increasing the value of its equity
+Tax Aversion
+Different tax rates on capital gains and dividend income can influence investors' preferences.
+Share Repurchase
+A transaction in which a company buys back shares of its own stock with cash
+The cash nature of share repurchase is considered similar to a cash dividend, and therefore a close substitute to a cash dividend
+Rationales for Share Repurchases
+(1) Potential Tax Advantages (differential tax rates on capital gains and dividends)
+(2) Share Price Support/Signaling (management signals to investors that its stock is udervalued)
+(3) Added Flexibility (unlike dividends, share repurchases are not a long-term commitment)
+(4) Offsetting Dilution from Employee Stock Options (repurchases offset EPS dilution caused from the exercise of employee stock options)
+(5) Increasing Financial Leverage (share repurchases reduce equity (increase leverage))
+Stable Dividend Policy
+Focuses on a stable dividend payout, even though earnings may be unstable
+Companies look at long-term expected earnings to determine their stable dividend policy
+Target Payout Adjustment Model
+If Current Payout Ratio < Target Payout Ratio
+Expected Dividend = Previous Dividend + (Expected increase in EPS)*(Target Payout Ratio)*(Adjustment Factor)
+…where Adjustment Factor = 1/(number of years over which the adjustment in dividends will take place)8:X
+d:X
+d:C
+0:{"buildId":"eMFxGp8Zji3ZYQYJwpe_R","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100","children":[["$","$L2",null,{"href":"/","className":"flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Topics"}]]}],["$","div",null,{"className":"mt-2 mb-4 border-slate-100/20 border-b","children":["$","div",null,{"className":"px-4 border border-slate-300 rounded","children":[["$","h1",null,{"children":"Corporate Finance (Part 4)"}],["$","div",null,{"className":"flex gap-2 mt-1 pb-2","children":[["$","div","CFA® Level 2",{"className":"bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs","children":"CFA® Level 2"}]]}]]}]}],[["$","a",null,{"id":"dividends-and-share-repurchases"}],"\n",["$","h2",null,{"children":"Dividends and Share Repurchases"}],"\n",["$","p",null,{"children":"$3"}]],["$","div",null,{"className":"my-8"}],["$","hr",null,{"className":"text-slate-300"}],["$","div",null,{"className":"flex justify-around items-center gap-4 my-4","children":[["$","$L2",null,{"href":"/blog/cfa-level-2/corporate-finance-3","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Back"}]]}],["$","$L2",null,{"href":"/blog/cfa-level-2/corporate-finance-5","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":["$L4","$L5"]}]]}]]}],null,"$L6"]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$8","varyParams":null},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$8","varyParams":"$d"},{"rsc":"$Le","isPartial":"$@f","staleTime":"$8","varyParams":"$d"},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@12","rootVaryParams":null,"needsRuntimeRequest":"$@13"}
+14:I[484,[],"OutletBoundary"]
+15:"$Sreact.suspense"
+17:I[484,[],"ViewportBoundary"]
+18:I[484,[],"MetadataBoundary"]
+19:I[7121,[],""]
+1a:I[4581,[],""]
+1b:I[8616,[],"ClientSegmentRoot"]
+1c:I[8185,["500","static/chunks/500-b13bb91f5a6311b6.js","177","static/chunks/app/layout-66c8a05c76557a2f.js"],"default"]
+:HL["/cfa-notes/_next/static/css/36df62ccea7e8e15.css","style"]
+:HL["/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","style"]
+4:["$","div",null,{"className":"py-[5px] text-sm","children":"Next"}]
+5:["$","div",null,{"className":"text-xl","children":"⇾"}]
+6:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+9:["$","$1","h",{"children":[null,["$","$L17",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$15",null,{"name":"Next.Metadata","children":[]}]}]}],null]}]
+b:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+e:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+10:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/36df62ccea7e8e15.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","precedence":"next"}]],["$","$L1b",null,{"Component":"$1c","slots":{"children":["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]},"serverProvidedParams":{"params":{},"promises":["$@1d"]}}]]}]
+16:null
+1d:"$10:props:children:1:props:serverProvidedParams:params"
+13:true
+8:300
+8:C
+12:0
+a:"$undefined"
+c:"$undefined"
+f:"$undefined"
+11:"$undefined"
+7:"$undefined"

@@ -1,0 +1,87 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","909","static/chunks/app/blog/%5B...slug%5D/page-94c9dd63a4205077.js"],""]
+3c:X
+41:X
+41:C
+0:{"buildId":"eMFxGp8Zji3ZYQYJwpe_R","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100","children":[["$","$L2",null,{"href":"/","className":"flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Topics"}]]}],["$","div",null,{"className":"mt-2 mb-4 border-slate-100/20 border-b","children":["$","div",null,{"className":"px-4 border border-slate-300 rounded","children":[["$","h1",null,{"children":"Business Law (Part 4)"}],["$","div",null,{"className":"flex gap-2 mt-1 pb-2","children":[["$","div","Business Law",{"className":"bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs","children":"Business Law"}]]}]]}]}],[["$","h2",null,{"children":"Business Law"}],"\n",["$","p",null,{"children":["Got it—let's turn this into something you could actually ",["$","em",null,{"children":"use on the job"}],"."]}],"\n",["$","hr",null,{}],"\n",["$","h1",null,{"children":"1) Excel-Style Underwriting Template (Step-by-Step)"}],"\n",["$","p",null,{"children":["This mirrors how analysts rebuild a deal from a ",["$","strong",null,{"children":"Private Placement Memorandum"}],"."]}],"\n",["$","p",null,{"children":"You can set this up in Excel exactly as shown."}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"🧱 Sheet 1: Assumptions (Inputs)"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"Purchase Price:        20,000,000\r\nUnits:                 100\r\nAvg Rent / Month:      1,200\r\nVacancy Rate:          8%\r\nOther Income %:        5%\r\nExpense Ratio:         45%\r\n\r\nRent Growth:           3%\r\nExpense Growth:        2.5%\r\n\r\nLoan LTV:              65%\r\nInterest Rate:         6.5%\r\nAmortization:          30 years\r\n\r\nHold Period:           5\r\nExit Cap Rate:         6.75%\r\nSelling Costs:         2%\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"📊 Sheet 2: Operating Model (Year 1 Example)"}],"\n",["$","h3",null,{"children":"Revenue"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"Gross Potential Rent = Units * Rent * 12\r\n= 100 * 1,200 * 12 = 1,440,000\r\n\r\nOther Income = 5% * GPR = 72,000\r\n\r\nEffective Gross Income (EGI):\r\n= (GPR + Other Income) * (1 - Vacancy)\r\n= (1,440,000 + 72,000) * 0.92 = 1,389,120\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h3",null,{"children":"Expenses"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"Expenses = 45% * EGI\r\n= 625,104\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h3",null,{"children":"NOI"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"NOI = EGI - Expenses\r\n= 764,016\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"💰 Sheet 3: Debt Model"}],"\n",["$","p",null,{"children":"Loan Amount:"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"= Purchase Price * LTV = 13,000,000\n"}]}],"\n",["$","p",null,{"children":"Annual Debt Service (use mortgage formula in Excel):"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"=PMT(rate, periods, loan amount)\r\n\r\n= PMT(6.5%/12, 360, -13,000,000) * 12\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"📉 Sheet 4: Cash Flow"}],"\n",["$","pre",null,{"children":["$","code",null,{"children":"Cash Flow Before Tax = NOI - Debt Service\n"}]}],"\n",["$","hr",null,{}],"\n",["$","h2",null,{"children":"📈 Sheet 5: Exit Calculation"}],"\n",["$","p",null,{"children":"At sale:"}],"\n",["$","div",null,{"className":"katex-container","dangerouslySetInnerHTML":{"__html":"<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mstyle mathsize=\"0.9em\"><mtext>undefined</mtext></mstyle></mrow><annotation encoding=\"application/x-tex\">\\mathrm {\\small { \\text {undefined}}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;\"></span><span class=\"mord sizing reset-size6 size5\"><span class=\"mord text\"><span class=\"mord\">undefined</span></span></span></span></span></span></span>"}}],"\n","$L3","\n","$L4","\n","$L5","\n","$L6","\n","$L7","\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n","$L20","\n","$L21","\n","$L22","\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36"],"$L37","$L38","$L39"]}],null,"$L3a"]}],"isPartial":"$@3b","staleTime":"$3c","varyParams":null},{"rsc":"$L3d","isPartial":"$@3e","staleTime":"$3c","varyParams":null},{"rsc":"$L3f","isPartial":"$@40","staleTime":"$3c","varyParams":"$41"},{"rsc":"$L42","isPartial":"$@43","staleTime":"$3c","varyParams":"$41"},{"rsc":"$L44","isPartial":"$@45","staleTime":"$3c","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@46","rootVaryParams":null,"needsRuntimeRequest":"$@47"}
+48:I[484,[],"OutletBoundary"]
+49:"$Sreact.suspense"
+4b:I[484,[],"ViewportBoundary"]
+4c:I[484,[],"MetadataBoundary"]
+4d:I[7121,[],""]
+4e:I[4581,[],""]
+4f:I[8616,[],"ClientSegmentRoot"]
+50:I[8185,["500","static/chunks/500-b13bb91f5a6311b6.js","177","static/chunks/app/layout-66c8a05c76557a2f.js"],"default"]
+:HL["/cfa-notes/_next/static/css/36df62ccea7e8e15.css","style"]
+:HL["/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","style"]
+3:["$","pre",null,{"children":["$","code",null,{"children":"Exit NOI (Year 5 projected)\r\n\r\nExit Value = NOI / Exit Cap\r\n\r\nLess:\r\n- Selling costs (2%)\r\n- Loan payoff\r\n\r\n= Net Sales Proceeds\n"}]}]
+4:["$","hr",null,{}]
+5:["$","h2",null,{"children":"Sheet 6: Returns"}]
+6:["$","p",null,{"children":"Use Excel formulas:"}]
+7:["$","pre",null,{"children":["$","code",null,{"children":"IRR = IRR(cash flow range)\r\nEquity Multiple = Total Cash Inflows / Initial Equity\n"}]}]
+8:["$","hr",null,{}]
+9:["$","h2",null,{"children":"Pro Tip (What real analysts do)"}]
+a:["$","p",null,{"children":"Don't trust the PPM:"}]
+b:["$","ul",null,{"children":["\n",["$","li",null,{"children":["Build ",["$","strong",null,{"children":"Base Case"}]]}],"\n",["$","li",null,{"children":["Build ",["$","strong",null,{"children":"Downside Case"}]]}],"\n",["$","li",null,{"children":["Build ",["$","strong",null,{"children":"Upside Case"}]]}],"\n"]}]
+c:["$","p",null,{"children":"Example:"}]
+d:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Rent growth: 3% → test 1%"}],"\n",["$","li",null,{"children":"Exit cap: 6.75% → test 7.75%"}],"\n"]}]
+e:["$","hr",null,{}]
+f:["$","h1",null,{"children":"2. Technical Interview Questions + Answers (CRE / Credit / IB)"}]
+10:["$","p",null,{"children":["These are ",["$","em",null,{"children":"exactly"}]," what you'll get asked."]}]
+11:["$","hr",null,{}]
+12:["$","h2",null,{"children":"🔹 Q1: Walk me through how you underwrite a deal"}]
+13:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"I start with revenue by analyzing rents, vacancy, and other income, then estimate expenses to derive NOI. From there I layer in the capital structure, calculate debt service and DSCR, and project cash flows over the hold period. I then estimate exit value using a cap rate and calculate IRR and equity multiple. Finally, I stress key assumptions like rent growth and exit cap rate to evaluate downside risk.\""}],"\n"]}]
+14:["$","hr",null,{}]
+15:["$","h2",null,{"children":"🔹 Q2: What is NOI and why does it matter?"}]
+16:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"NOI, or Net Operating Income, is revenue minus operating expenses before debt. It's critical because it determines both cash flow and property value through capitalization.\""}],"\n"]}]
+17:["$","hr",null,{}]
+18:["$","h2",null,{"children":"🔹 Q3: How do you value a property?"}]
+19:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"Primarily using the income approach by capitalizing NOI.\""}],"\n"]}]
+1a:["$","p",null,{"children":"(then reference:)"}]
+1b:["$","div",null,{"className":"katex-container","dangerouslySetInnerHTML":{"__html":"<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mstyle mathsize=\"0.9em\"><mtext>undefined</mtext></mstyle></mrow><annotation encoding=\"application/x-tex\">\\mathrm {\\small { \\text {undefined}}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;\"></span><span class=\"mord sizing reset-size6 size5\"><span class=\"mord text\"><span class=\"mord\">undefined</span></span></span></span></span></span></span>"}}]
+1c:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"I also cross-check with comparable sales.\""}],"\n"]}]
+1d:["$","hr",null,{}]
+1e:["$","h2",null,{"children":"🔹 Q4: What is DSCR?"}]
+1f:["$","div",null,{"className":"katex-container","dangerouslySetInnerHTML":{"__html":"<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mstyle mathsize=\"0.9em\"><mtext>undefined</mtext></mstyle></mrow><annotation encoding=\"application/x-tex\">\\mathrm {\\small { \\text {undefined}}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;\"></span><span class=\"mord sizing reset-size6 size5\"><span class=\"mord text\"><span class=\"mord\">undefined</span></span></span></span></span></span></span>"}}]
+20:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"It measures the property's ability to cover debt payments. Lenders typically want at least 1.2-1.3x.\""}],"\n"]}]
+21:["$","hr",null,{}]
+22:["$","h2",null,{"children":"🔹 Q5: What are the biggest risks in a deal?"}]
+23:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Rent overestimation"}],"\n",["$","li",null,{"children":"Expense underestimation"}],"\n",["$","li",null,{"children":"Interest rate increases"}],"\n",["$","li",null,{"children":"Exit cap expansion"}],"\n"]}]
+24:["$","p",null,{"children":"👉 Strong closer:"}]
+25:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"Most deals fail due to overly optimistic assumptions rather than execution.\""}],"\n"]}]
+26:["$","hr",null,{}]
+27:["$","h2",null,{"children":"🔹 Q6: What drives IRR?"}]
+28:["$","ul",null,{"children":["\n",["$","li",null,{"children":"NOI growth"}],"\n",["$","li",null,{"children":"Leverage"}],"\n",["$","li",null,{"children":"Exit price"}],"\n"]}]
+29:["$","p",null,{"children":"👉 Bonus:"}]
+2a:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"IRR is very sensitive to exit assumptions.\""}],"\n"]}]
+2b:["$","hr",null,{}]
+2c:["$","h2",null,{"children":"🔹 Q7: What's a red flag in a PPM?"}]
+2d:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Aggressive rent growth (5%+)"}],"\n",["$","li",null,{"children":"Low expense ratio"}],"\n",["$","li",null,{"children":"Exit cap lower than market"}],"\n",["$","li",null,{"children":"No sponsor co-invest"}],"\n"]}]
+2e:["$","hr",null,{}]
+2f:["$","h2",null,{"children":"🔹 Q8: Difference between in-place vs pro forma?"}]
+30:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"In-place reflects current performance, while pro forma reflects projected performance after improvements. I always anchor to in-place to avoid overpaying.\""}],"\n"]}]
+31:["$","hr",null,{}]
+32:["$","h2",null,{"children":"🔹 Q9: How do interest rates affect value?"}]
+33:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"Higher rates increase cap rates and reduce property values, while also increasing debt costs and lowering cash flow.\""}],"\n"]}]
+34:["$","hr",null,{}]
+35:["$","h2",null,{"children":"🔹 Q10: What's more important—IRR or equity multiple?"}]
+36:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"\"IRR measures time-adjusted returns, while equity multiple shows total profit. I look at both depending on investment horizon.\""}],"\n"]}]
+37:["$","div",null,{"className":"my-8"}]
+38:["$","hr",null,{"className":"text-slate-300"}]
+39:["$","div",null,{"className":"flex justify-around items-center gap-4 my-4","children":[["$","$L2",null,{"href":"/topics/business=law/business-law-2","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":[["$","div",null,{"className":"text-xl","children":"⇽"}],["$","div",null,{"className":"py-[5px] text-sm","children":"Back"}]]}],["$","$L2",null,{"href":"/topics","className":"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline","children":[["$","div",null,{"className":"py-[5px] text-sm","children":"Next"}],["$","div",null,{"className":"text-xl","children":"⇾"}]]}]]}]
+3a:["$","$L48",null,{"children":["$","$49",null,{"name":"Next.MetadataOutlet","children":"$@4a"}]}]
+3d:["$","$1","h",{"children":[null,["$","$L4b",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L4c",null,{"children":["$","$49",null,{"name":"Next.Metadata","children":[]}]}]}],null]}]
+3f:["$","$1","c",{"children":[null,["$","$L4d",null,{"parallelRouterKey":"children","template":["$","$L4e",null,{}]}]]}]
+42:["$","$1","c",{"children":[null,["$","$L4d",null,{"parallelRouterKey":"children","template":["$","$L4e",null,{}]}]]}]
+44:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/36df62ccea7e8e15.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css","precedence":"next"}]],["$","$L4f",null,{"Component":"$50","slots":{"children":["$","$L4d",null,{"parallelRouterKey":"children","template":["$","$L4e",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]},"serverProvidedParams":{"params":{},"promises":["$@51"]}}]]}]
+4a:null
+51:"$44:props:children:1:props:serverProvidedParams:params"
+47:true
+3c:300
+3c:C
+46:0
+3e:"$undefined"
+40:"$undefined"
+43:"$undefined"
+45:"$undefined"
+3b:"$undefined"

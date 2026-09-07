@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/cfa-notes/_next/static/css/36df62ccea7e8e15.css" data-precedence="next"/><link rel="stylesheet" href="/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/cfa-notes/_next/static/chunks/webpack-8548760330c16fcd.js"/><script src="/cfa-notes/_next/static/chunks/4bd1b696-92152b0f5947070d.js" async=""></script><script src="/cfa-notes/_next/static/chunks/794-6564ea7e002a7893.js" async=""></script><script src="/cfa-notes/_next/static/chunks/main-app-4c48cc4e94cdbe4c.js" async=""></script><script src="/cfa-notes/_next/static/chunks/500-b13bb91f5a6311b6.js" async=""></script><script src="/cfa-notes/_next/static/chunks/app/layout-66c8a05c76557a2f.js" async=""></script><script src="/cfa-notes/_next/static/chunks/app/blog/%5B...slug%5D/page-94c9dd63a4205077.js" async=""></script><link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/><script src="/cfa-notes/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_e578df dark:bg-slate-800 min-h-screen dark:text-slate-100"><div hidden=""><!--$--><!--/$--></div><header class="z-20 fixed flex items-center bg-slate-900 border-slate-100/50 border-b-2 w-full h-12"><nav class="flex justify-between items-center mx-auto px-4 md:px-8 container"><div class="flex items-center bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200 font-bolder font-extrabold text-transparent md:text-2xl hover:underline text"><a href="/cfa-notes">Free Analyst Notes</a></div><ul class="flex gap-2 font-bold text-slate-500 list-none"><li class="hover:text-slate-400"></li><li class="mt-0 hover:text-slate-400 list-none"><a class="list-none" href="/cfa-notes/about">About</a></li></ul></nav></header><div class="mx-auto px-2 sm:px-6 pt-20 max-w-3xl min-h-[calc(100vh-3rem)]"><article class="mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100"><a class="flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline" href="/cfa-notes"><div class="text-xl">⇽</div><div class="py-[5px] text-sm">Topics</div></a><div class="mt-2 mb-4 border-slate-100/20 border-b"><div class="px-4 border border-slate-300 rounded"><h1>Business Law (Part 4)</h1><div class="flex gap-2 mt-1 pb-2"><div class="bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs">Business Law</div></div></div></div><h2>Business Law</h2>
+<p>Got it—let&#x27;s turn this into something you could actually <em>use on the job</em>.</p>
+<hr/>
+<h1>1) Excel-Style Underwriting Template (Step-by-Step)</h1>
+<p>This mirrors how analysts rebuild a deal from a <strong>Private Placement Memorandum</strong>.</p>
+<p>You can set this up in Excel exactly as shown.</p>
+<hr/>
+<h2>🧱 Sheet 1: Assumptions (Inputs)</h2>
+<pre><code>Purchase Price:        20,000,000
+Units:                 100
+Avg Rent / Month:      1,200
+Vacancy Rate:          8%
+Other Income %:        5%
+Expense Ratio:         45%
+
+Rent Growth:           3%
+Expense Growth:        2.5%
+
+Loan LTV:              65%
+Interest Rate:         6.5%
+Amortization:          30 years
+
+Hold Period:           5
+Exit Cap Rate:         6.75%
+Selling Costs:         2%
+</code></pre>
+<hr/>
+<h2>📊 Sheet 2: Operating Model (Year 1 Example)</h2>
+<h3>Revenue</h3>
+<pre><code>Gross Potential Rent = Units * Rent * 12
+= 100 * 1,200 * 12 = 1,440,000
+
+Other Income = 5% * GPR = 72,000
+
+Effective Gross Income (EGI):
+= (GPR + Other Income) * (1 - Vacancy)
+= (1,440,000 + 72,000) * 0.92 = 1,389,120
+</code></pre>
+<hr/>
+<h3>Expenses</h3>
+<pre><code>Expenses = 45% * EGI
+= 625,104
+</code></pre>
+<hr/>
+<h3>NOI</h3>
+<pre><code>NOI = EGI - Expenses
+= 764,016
+</code></pre>
+<hr/>
+<h2>💰 Sheet 3: Debt Model</h2>
+<p>Loan Amount:</p>
+<pre><code>= Purchase Price * LTV = 13,000,000
+</code></pre>
+<p>Annual Debt Service (use mortgage formula in Excel):</p>
+<pre><code>=PMT(rate, periods, loan amount)
+
+= PMT(6.5%/12, 360, -13,000,000) * 12
+</code></pre>
+<hr/>
+<h2>📉 Sheet 4: Cash Flow</h2>
+<pre><code>Cash Flow Before Tax = NOI - Debt Service
+</code></pre>
+<hr/>
+<h2>📈 Sheet 5: Exit Calculation</h2>
+<p>At sale:</p>
+<div class="katex-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle mathsize="0.9em"><mtext>undefined</mtext></mstyle></mrow><annotation encoding="application/x-tex">\mathrm {\small { \text {undefined}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;"></span><span class="mord sizing reset-size6 size5"><span class="mord text"><span class="mord">undefined</span></span></span></span></span></span></span></div>
+<pre><code>Exit NOI (Year 5 projected)
+
+Exit Value = NOI / Exit Cap
+
+Less:
+- Selling costs (2%)
+- Loan payoff
+
+= Net Sales Proceeds
+</code></pre>
+<hr/>
+<h2>Sheet 6: Returns</h2>
+<p>Use Excel formulas:</p>
+<pre><code>IRR = IRR(cash flow range)
+Equity Multiple = Total Cash Inflows / Initial Equity
+</code></pre>
+<hr/>
+<h2>Pro Tip (What real analysts do)</h2>
+<p>Don&#x27;t trust the PPM:</p>
+<ul>
+<li>Build <strong>Base Case</strong></li>
+<li>Build <strong>Downside Case</strong></li>
+<li>Build <strong>Upside Case</strong></li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>Rent growth: 3% → test 1%</li>
+<li>Exit cap: 6.75% → test 7.75%</li>
+</ul>
+<hr/>
+<h1>2. Technical Interview Questions + Answers (CRE / Credit / IB)</h1>
+<p>These are <em>exactly</em> what you&#x27;ll get asked.</p>
+<hr/>
+<h2>🔹 Q1: Walk me through how you underwrite a deal</h2>
+<blockquote>
+<p>&quot;I start with revenue by analyzing rents, vacancy, and other income, then estimate expenses to derive NOI. From there I layer in the capital structure, calculate debt service and DSCR, and project cash flows over the hold period. I then estimate exit value using a cap rate and calculate IRR and equity multiple. Finally, I stress key assumptions like rent growth and exit cap rate to evaluate downside risk.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q2: What is NOI and why does it matter?</h2>
+<blockquote>
+<p>&quot;NOI, or Net Operating Income, is revenue minus operating expenses before debt. It&#x27;s critical because it determines both cash flow and property value through capitalization.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q3: How do you value a property?</h2>
+<blockquote>
+<p>&quot;Primarily using the income approach by capitalizing NOI.&quot;</p>
+</blockquote>
+<p>(then reference:)</p>
+<div class="katex-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle mathsize="0.9em"><mtext>undefined</mtext></mstyle></mrow><annotation encoding="application/x-tex">\mathrm {\small { \text {undefined}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;"></span><span class="mord sizing reset-size6 size5"><span class="mord text"><span class="mord">undefined</span></span></span></span></span></span></span></div>
+<blockquote>
+<p>&quot;I also cross-check with comparable sales.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q4: What is DSCR?</h2>
+<div class="katex-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle mathsize="0.9em"><mtext>undefined</mtext></mstyle></mrow><annotation encoding="application/x-tex">\mathrm {\small { \text {undefined}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;"></span><span class="mord sizing reset-size6 size5"><span class="mord text"><span class="mord">undefined</span></span></span></span></span></span></span></div>
+<blockquote>
+<p>&quot;It measures the property&#x27;s ability to cover debt payments. Lenders typically want at least 1.2-1.3x.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q5: What are the biggest risks in a deal?</h2>
+<ul>
+<li>Rent overestimation</li>
+<li>Expense underestimation</li>
+<li>Interest rate increases</li>
+<li>Exit cap expansion</li>
+</ul>
+<p>👉 Strong closer:</p>
+<blockquote>
+<p>&quot;Most deals fail due to overly optimistic assumptions rather than execution.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q6: What drives IRR?</h2>
+<ul>
+<li>NOI growth</li>
+<li>Leverage</li>
+<li>Exit price</li>
+</ul>
+<p>👉 Bonus:</p>
+<blockquote>
+<p>&quot;IRR is very sensitive to exit assumptions.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q7: What&#x27;s a red flag in a PPM?</h2>
+<ul>
+<li>Aggressive rent growth (5%+)</li>
+<li>Low expense ratio</li>
+<li>Exit cap lower than market</li>
+<li>No sponsor co-invest</li>
+</ul>
+<hr/>
+<h2>🔹 Q8: Difference between in-place vs pro forma?</h2>
+<blockquote>
+<p>&quot;In-place reflects current performance, while pro forma reflects projected performance after improvements. I always anchor to in-place to avoid overpaying.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q9: How do interest rates affect value?</h2>
+<blockquote>
+<p>&quot;Higher rates increase cap rates and reduce property values, while also increasing debt costs and lowering cash flow.&quot;</p>
+</blockquote>
+<hr/>
+<h2>🔹 Q10: What&#x27;s more important—IRR or equity multiple?</h2>
+<blockquote>
+<p>&quot;IRR measures time-adjusted returns, while equity multiple shows total profit. I look at both depending on investment horizon.&quot;</p>
+</blockquote><div class="my-8"></div><hr class="text-slate-300"/><div class="flex justify-around items-center gap-4 my-4"><a class="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline" href="/cfa-notes/topics/business=law/business-law-2"><div class="text-xl">⇽</div><div class="py-[5px] text-sm">Back</div></a><a class="flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline" href="/cfa-notes/topics"><div class="py-[5px] text-sm">Next</div><div class="text-xl">⇾</div></a></div></article><!--$--><!--/$--></div><div class="bg-slate-700 dark:bg-slate-900 border-slate-100/50 border-t-2 w-screen h-12 text-slate-400"><div class="flex justify-center items-center py-1 h-full text-sm">© <!-- -->2026<!-- --> Free Analyst Notes. All rights reserved.</div></div><script src="/cfa-notes/_next/static/chunks/webpack-8548760330c16fcd.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[8616,[],\"ClientSegmentRoot\"]\n3:I[8185,[\"500\",\"static/chunks/500-b13bb91f5a6311b6.js\",\"177\",\"static/chunks/app/layout-66c8a05c76557a2f.js\"],\"default\"]\n4:I[7121,[],\"\"]\n5:I[4581,[],\"\"]\n8:I[484,[],\"OutletBoundary\"]\n9:\"$Sreact.suspense\"\nc:I[484,[],\"ViewportBoundary\"]\ne:I[484,[],\"MetadataBoundary\"]\n10:I[7123,[],\"default\",1]\n:HL[\"/cfa-notes/_next/static/css/36df62ccea7e8e15.css\",\"style\"]\n:HL[\"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css\",\"style\"]\nb:X\n0:{\"P\":null,\"c\":[\"\",\"blog\",\"business-law\",\"business-law-5\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"business-law/business-law-5\",\"c\",[]],{\"children\":[\"__PAGE__\",{},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4624],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/cfa-notes/_next/static/css/36df62ccea7e8e15.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/cfa-notes/_next/static/css/9c5ce09789b0ff2e.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"$L2\",null,{\"Component\":\"$3\",\"slots\":{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]},\"serverProvidedParams\":{\"params\":{},\"promises\":[\"$@6\"]}}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[\"$L7\",null,[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@a\"}]}]]}],{},null,false,null]},null,false,\"$b\"]},null,false,\"$b\"]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"children\":\"$Ld\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Lf\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$10\",[]],\"S\":true,\"h\":null,\"r\":\"$undefined\",\"s\":\"$undefined\",\"a\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"eMFxGp8Zji3ZYQYJwpe_R\"}\nb:C\n6:\"$0:f:0:1:0:props:children:1:props:serverProvidedParams:params\"\n11:I[8500,[\"500\",\"static/chunks/500-b13bb91f5a6311b6.js\",\"909\",\"static/chunks/app/blog/%5B...slug%5D/page-94c9dd63a4205077.js\"],\"\"]\n7:[\"$\",\"article\",null,{\"className\":\"mx-auto px-2 sm:px-6 max-w-3xl dark:text-slate-100\",\"children\":[[\"$\",\"$L11\",null,{\"href\":\"/\",\"className\":\"flex gap-1 text-slate-600 dark:hover:text-slate-300 dark:text-slate-400 no-underline\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-xl\",\"children\":\"⇽\"}],[\"$\",\"div\",null,{\"className\":\"py-[5px] text-sm\",\"children\":\"Topics\"}]]}],[\"$\",\"div\",null,{\"className\":\"mt-2 mb-4 border-slate-100/20 border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"px-4 border border-slate-300 rounded\",\"children\":[[\"$\",\"h1\",null,{\"children\":\"Business Law (Part 4)\"}],[\"$\",\"div\",null,{\"className\":\"flex gap-2 mt-1 pb-2\",\"children\":[[\"$\",\"div\",\"Business Law\",{\"className\":\"bg-slate-600 px-2 py-1 rounded-full text-slate-100 text-xs\",\"children\":\"Business Law\"}]]}]]}]}],[[\"$\",\"h2\",null,{\"children\":\"Business Law\"}],\"\\n\",[\"$\",\"p\",null,{\"children\":[\"Got it—let's turn this into something you could actually \",[\"$\",\"em\",null,{\"children\":\"use on the job\"}],\".\"]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h1\",null,{\"children\":\"1) Excel-Style Underwriting Template (Step-by-Step)\"}],\"\\n\",[\"$\",\"p\",null,{\"children\":[\"This mirrors how analysts rebuild a deal from a \",[\"$\",\"strong\",null,{\"children\":\"Private Placement Memorandum\"}],\".\"]}],\"\\n\",[\"$\",\"p\",null,{\"children\":\"You can set this up in Excel exactly as shown.\"}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h2\",null,{\"children\":\"🧱 Sheet 1: Assumptions (Inputs)\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"Purchase Price:        20,000,000\\r\\nUnits:                 100\\r\\nAvg Rent / Month:      1,200\\r\\nVacancy Rate:          8%\\r\\nOther Income %:        5%\\r\\nExpense Ratio:         45%\\r\\n\\r\\nRent Growth:           3%\\r\\nExpense Growth:        2.5%\\r\\n\\r\\nLoan LTV:              65%\\r\\nInterest Rate:         6.5%\\r\\nAmortization:          30 years\\r\\n\\r\\nHold Period:           5\\r\\nExit Cap Rate:         6.75%\\r\\nSelling Costs:         2%\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h2\",null,{\"children\":\"📊 Sheet 2: Operating Model (Year 1 Example)\"}],\"\\n\",[\"$\",\"h3\",null,{\"children\":\"Revenue\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"Gross Potential Rent = Units * Rent * 12\\r\\n= 100 * 1,200 * 12 = 1,440,000\\r\\n\\r\\nOther Income = 5% * GPR = 72,000\\r\\n\\r\\nEffective Gross Income (EGI):\\r\\n= (GPR + Other Income) * (1 - Vacancy)\\r\\n= (1,440,000 + 72,000) * 0.92 = 1,389,120\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h3\",null,{\"children\":\"Expenses\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"Expenses = 45% * EGI\\r\\n= 625,104\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h3\",null,{\"children\":\"NOI\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"NOI = EGI - Expenses\\r\\n= 764,016\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h2\",null,{\"children\":\"💰 Sheet 3: Debt Model\"}],\"\\n\",[\"$\",\"p\",null,{\"children\":\"Loan Amount:\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"= Purchase Price * LTV = 13,000,000\\n\"}]}],\"\\n\",[\"$\",\"p\",null,{\"children\":\"Annual Debt Service (use mortgage formula in Excel):\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"=PMT(rate, periods, loan amount)\\r\\n\\r\\n= PMT(6.5%/12, 360, -13,000,000) * 12\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h2\",null,{\"children\":\"📉 Sheet 4: Cash Flow\"}],\"\\n\",[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"Cash Flow Before Tax = NOI - Debt Service\\n\"}]}],\"\\n\",[\"$\",\"hr\",null,{}],\"\\n\",[\"$\",\"h2\",null,{\"children\":\"📈 Sheet 5: Exit Calculation\"}],\"\\n\",[\"$\",\"p\",null,{\"children\":\"At sale:\"}],\"\\n\",[\"$\",\"div\",null,{\"className\":\"katex-container\",\"dangerouslySetInnerHTML\":{\"__html\":\"\u003cspan class=\\\"katex-display\\\"\u003e\u003cspan class=\\\"katex\\\"\u003e\u003cspan class=\\\"katex-mathml\\\"\u003e\u003cmath xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"block\\\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmstyle mathsize=\\\"0.9em\\\"\u003e\u003cmtext\u003eundefined\u003c/mtext\u003e\u003c/mstyle\u003e\u003c/mrow\u003e\u003cannotation encoding=\\\"application/x-tex\\\"\u003e\\\\mathrm {\\\\small { \\\\text {undefined}}}\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\\\"katex-html\\\" aria-hidden=\\\"true\\\"\u003e\u003cspan class=\\\"base\\\"\u003e\u003cspan class=\\\"strut\\\" style=\\\"height:0.625em;\\\"\u003e\u003c/span\u003e\u003cspan class=\\\"mord sizing reset-size6 size5\\\"\u003e\u003cspan class=\\\"mord text\\\"\u003e\u003cspan class=\\\"mord\\\"\u003eundefined\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\"}}],\"\\n\",\"$L12\",\"\\n\",\"$L13\",\"\\n\",\"$L14\",\"\\n\",\"$L15\",\"\\n\",\"$L16\",\"\\n\",\"$L17\",\"\\n\",\"$L18\",\"\\n\",\"$L19\",\"\\n\",\"$L1a\",\"\\n\",\"$L1b\",\"\\n\",\"$L1c\",\"\\n\",\"$L1d\",\"\\n\",\"$L1e\",\"\\n\",\"$L1f\",\"\\n\",\"$L20\",\"\\n\",\"$L21\",\"\\n\",\"$L22\",\"\\n\",\"$L23\",\"\\n\",\"$L24\",\"\\n\",\"$L25\",\"\\n\",\"$L26\",\"\\n\",\"$L27\",\"\\n\",\"$L28\",\"\\n\",\"$L29\",\"\\n\",\"$L2a\",\"\\n\",\"$L2b\",\"\\n\",\"$L2c\",\"\\n\",\"$L2d\",\"\\n\",\"$L2e\",\"\\n\",\"$L2f\",\"\\n\",\"$L30\",\"\\n\",\"$L31\",\"\\n\",\"$L32\",\"\\n\",\"$L33\",\"\\n\",\"$L34\",\"\\n\",\"$L35\",\"\\n\",\"$L36\",\"\\n\",\"$L37\",\"\\n\",\"$L38\",\"\\n\",\"$L39\",\"\\n\",\"$L3a\",\"\\n\",\"$L3b\",\"\\n\",\"$L3c\",\"\\n\",\"$L3d\",\"\\n\",\"$L3e\",\"\\n\",\"$L3f\",\"\\n\",\"$L40\",\"\\n\",\"$L41\",\"\\n\",\"$L42\",\"\\n\",\"$L43\",\"\\n\",\"$L44\",\"\\n\",\"$L45\"],\"$L46\",\"$L47\",\"$L48\"]}]\n12:[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"Exit NOI (Year 5 projected)\\r\\n\\r\\nExit Value = NOI / Exit Cap\\r\\n\\r\\nLess:\\r\\n- Selling costs (2%)\\r\\n- Loan payoff\\r\\n\\r\\n= Net Sales Proceeds\\n\"}]}]\n13:[\"$\",\"hr\",null,{}]\n14:[\"$\",\"h2\",null,{\"children\":\"Sheet 6: Returns\"}]\n15:[\"$\",\"p\",null,{\"children\":\"Use Excel formulas:\"}]\n16:[\"$\",\"pre\",null,{\"children\":[\"$\",\"code\",null,{\"children\":\"IRR = IRR(cash flow range)\\r\\nEquity Multiple = Total Cash Inflows / Initial Equity\\n\"}]}]\n17:[\"$\",\"hr\",null,{}]\n18:[\"$\",\"h2\",null,{\"children\":\"Pro Tip (What real analysts do)\"}]\n19:[\"$\",\"p\",null,{\"children\":\"Don't trust the PPM:\"}]\n1a:[\"$\",\"ul\",null,{\"children\":[\"\\n\",[\"$\",\"li\",null,{\"children\":[\"Build \",[\"$\",\"strong\",null,{\"children\":\"Base Case\"}]]}],\"\\n\",[\"$\",\"li\",null,{\"children\":[\"Build \",[\"$\",\"strong\",null,{\"children\":\"Downside Case\"}]]}],\"\\n\",[\"$\",\"li\",null,{\"children\":[\"Build \",[\"$\",\"strong\",null,{\"children\":\"Upside Case\"}]]}],\"\\n\"]}]\n1b:[\"$\",\"p\",null,{\"children\":\"Example:\"}]\n1c:[\"$\",\"ul\",null,{\"children\":[\"\\n\",[\"$\",\"li\",null,{\"children\":\"Rent growth: 3% → test 1%\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Exit cap: 6.75% → test 7.75%\"}],\"\\n\"]}]\n1d:[\"$\",\"hr\",null,{}]\n1e:[\"$\",\"h1\",null,{\"children\":\"2. Technical Interview Questions + Answers (CRE / Credit / IB)\"}]\n1f:[\"$\",\"p\",null,{\"children\":[\"These are \",[\"$\",\"em\",null,{\"children\":\"exactly\"}],\" what you'll get asked.\"]}]\n20:[\"$\",\"hr\",null,{}]\n21:[\"$\",\"h2\",null,{\"children\":\"🔹 Q1: Walk me through how you underwrite a deal\"}]\n22:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"I start with revenue by analyzing rents, vacancy, and other income, then estimate expenses to derive NOI. From there I layer in the capital structure, calculate debt service and DSCR, and project cash flows over the hold period. I then estimate exit value using a cap rate and calculate IRR and equity multiple. Finally, I stress key assumptions like rent growth and exit cap rate to evaluate downside risk.\\\"\"}],\"\\n\"]}]\n23:[\"$\",\"hr\",null,{}]\n24:[\"$\",\"h2\",null,{\"children\":\"🔹 Q2: What is NOI and why does it matter?\"}]\n25:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"NOI, or Net Operating Income, is revenue minus operating expenses before debt. It's critical because it determines both cash flow and property value through capitalization.\\\"\"}],\"\\n\"]}]\n26:[\"$\",\"hr\",null,{}]\n27:[\"$\",\"h2\",null,{\"children\":\"🔹 Q3: How do you value a property?\"}]\n28:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"Primarily using the income approach by capitalizing NOI.\\\"\"}],\"\\n\"]}]\n29:[\"$\",\"p\",null,{\"children\":\"(then reference:)\"}]\n2a:[\"$\",\"div\",null,{\"className\":\"katex-container\",\"dangerouslySetInnerHTML\":{\"__html\":\"\u003cspan class=\\\"katex-display\\\"\u003e\u003cspan class=\\\"katex\\\"\u003e\u003cspan class=\\\"katex-mathml\\\"\u003e\u003cmath xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"block\\\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmstyle mathsize=\\\"0.9em\\\"\u003e\u003cmtext\u003eundefined\u003c/mtext\u003e\u003c/mstyle\u003e\u003c/mrow\u003e\u003cannotation encoding=\\\"application/x-tex\\\"\u003e\\\\mathrm {\\\\small { \\\\text {undefined}}}\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\\\"katex-html\\\" aria-hidden=\\\"true\\\"\u003e\u003cspan class=\\\"base\\\"\u003e\u003cspan class=\\\"strut\\\" style=\\\"height:0.625em;\\\"\u003e\u003c/span\u003e\u003cspan class=\\\"mord sizing reset-size6 size5\\\"\u003e\u003cspan class=\\\"mord text\\\"\u003e\u003cspan class=\\\"mord\\\"\u003eundefined\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\"}}]\n2b:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"I also cross-check with comparable sales.\\\"\"}],\"\\n\"]}]\n2c:[\"$\",\"hr\",null,{}]\n2d:[\"$\",\"h2\",null,{\"children\":\"🔹 Q4: What is DSCR?\"}]\n2e:[\"$\",\"div\",null,{\"className\":\"katex-container\",\"dangerouslySetInnerHTML\":{\"__html\":\"\u003cspan class=\\\"katex-display\\\"\u003e\u003cspan class=\\\"katex\\\"\u003e\u003cspan class=\\\"katex-mathml\\\"\u003e\u003cmath xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"block\\\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmstyle mathsize=\\\"0.9em\\\"\u003e\u003cmtext\u003eundefined\u003c/mtext\u003e\u003c/mstyle\u003e\u003c/mrow\u003e\u003cannotation encoding=\\\"application/x-tex\\\"\u003e\\\\mathrm {\\\\small { \\\\text {undefined}}}\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\\\"katex-html\\\" aria-hidden=\\\"true\\\"\u003e\u003cspan class=\\\"base\\\"\u003e\u003cspan class=\\\"strut\\\" style=\\\"height:0.625em;\\\"\u003e\u003c/span\u003e\u003cspan class=\\\"mord sizing reset-size6 size5\\\"\u003e\u003cspan class=\\\"mord text\\\"\u003e\u003cspan class=\\\"mord\\\"\u003eundefined\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\"}}]\n2f:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"It measures the property's ability to cover debt payments. Lenders typically want at least 1.2-1.3x.\\\"\"}],\"\\n\"]}]\n30:[\"$\",\"hr\",null,{}]\n31:[\"$\",\"h2\",null,{\"children\":\"🔹 Q5: What are the biggest risks in a deal?\"}]\n32:[\"$\",\"ul\",null,{\"children\":[\"\\n\",[\"$\",\"li\",null,{\"children\":\"Rent overestimation\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Expense underestimation\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Interest rate increases\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Exit cap expansion\"}],\"\\n\"]}]\n33:[\"$\",\"p\",null,{\"children\":\"👉 Strong closer:\"}]\n34:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"Most deals fail due to overly optimistic assumptions rather than execution.\\\"\"}],\"\\n\"]}]\n35:[\"$\",\"hr\",null,{}]\n36:[\"$\",\"h2\",null,{\"children\":\"🔹 Q6: What drives IRR?\"}]\n37:[\"$\",\"ul\",null,{\"children\":[\"\\n\",[\"$\",\"li\",null,{\"children\":\"NOI growth\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Leverage\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Exit price\"}],\"\\n\"]}]\n38:[\"$\",\"p\",null,{\"children\":\"👉 Bonus:\"}]\n39:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"IRR is very sensitive to exit assumptions.\\\"\"}],\"\\n\"]}]\n3a:[\"$\",\"hr\",null,{}]\n3b:[\"$\",\"h2\",null,{\"children\":\"🔹 Q7: What's a red flag in a PPM?\"}]\n3c:[\"$\",\"ul\",null,{\"children\":[\"\\n\",[\"$\",\"li\",null,{\"children\":\"Aggressive rent growth (5%+)\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Low expense ratio\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"Exit cap lower than market\"}],\"\\n\",[\"$\",\"li\",null,{\"children\":\"No sponsor co-invest\"}],\"\\n\"]}]\n3d:[\"$\",\"hr\",null,{}]\n3e:[\"$\",\"h2\",null,{\"children\":\"🔹 Q8: Difference between in-place vs pro forma?\"}]\n3f:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"In-place reflects current performance, while pro forma reflects projected performance after improvements. I always anchor to in-place to avoid overpaying.\\\"\"}],\"\\n\"]}]\n40:[\"$\",\"hr\",null,{}]\n41:[\"$\",\"h2\",null,{\"children\":\"🔹 Q9: How do interest rates affect value?\"}]\n42:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"Higher rates increase cap rates and reduce property values, while also increasing debt costs and lowering cash flow.\\\"\"}],\"\\n\"]}]\n43:[\"$\",\"hr\",null,{}]\n44:[\"$\",\"h2\",null,{\"children\":\"🔹 Q10: What's more important—IRR or equity multiple?\"}]\n45:[\"$\",\"blockquote\",null,{\"children\":[\"\\n\",[\"$\",\"p\",null,{\"children\":\"\\\"IRR measures time-adjusted returns, while equity multiple shows total profit. I look at both depending on investment horizon.\\\"\"}],\"\\n\"]}]\n46:[\"$\",\"div\",null,{\"className\":\"my-8\"}]\n47:[\"$\",\"hr\",null,{\"className\":\"text-slate-300\"}]\n48:[\"$\",\"div\",null,{\"className\":\"flex justify-around items-center gap-4 my-4\",\"children\":[[\"$\",\"$L11\",null,{\"href\":\"/topics/business=law/business-law-2\",\"className\":\"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-xl\",\"children\":\"⇽\"}],[\"$\",\"div\",null,{\"className\":\"py-[5px] text-sm\",\"children\":\"Back\"}]]}],[\"$\",\"$L11\",null,{\"href\":\"/topics\",\"className\":\"flex gap-1 px-4 border border-slate-300 dark:hover:border-slate-200 rounded text-slate-500 dark:hover:text-slate-200 dark:text-slate-300 no-underline\",\"children\":[[\"$\",\"div\",null,{\"className\":\"py-[5px] text-sm\",\"children\":\"Next\"}],[\"$\",\"div\",null,{\"className\":\"text-xl\",\"children\":\"⇾\"}]]}]]}]\nd:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\na:null\nf:[]\n"])</script></body></html>
