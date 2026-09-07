@@ -1,0 +1,243 @@
+---
+title: "Business Law (Part 4)"
+date: "2026-04-17"
+description: "Legal matters are an important consideration for investors. Learn about the basics here."
+categories: "Business Law"
+tags: ["Business Law"]
+slug: "business-law-3"
+backUrl: "/topics/business=law/business-law-2"
+nextUrl: "/topics"
+---
+
+## Business Law
+
+Got it—let's turn this into something you could actually _use on the job_.
+
+---
+
+# 1) Excel-Style Underwriting Template (Step-by-Step)
+
+This mirrors how analysts rebuild a deal from a **Private Placement Memorandum**.
+
+You can set this up in Excel exactly as shown.
+
+---
+
+## 🧱 Sheet 1: Assumptions (Inputs)
+
+```
+Purchase Price:        20,000,000
+Units:                 100
+Avg Rent / Month:      1,200
+Vacancy Rate:          8%
+Other Income %:        5%
+Expense Ratio:         45%
+
+Rent Growth:           3%
+Expense Growth:        2.5%
+
+Loan LTV:              65%
+Interest Rate:         6.5%
+Amortization:          30 years
+
+Hold Period:           5
+Exit Cap Rate:         6.75%
+Selling Costs:         2%
+```
+
+---
+
+## 📊 Sheet 2: Operating Model (Year 1 Example)
+
+### Revenue
+
+```
+Gross Potential Rent = Units * Rent * 12
+= 100 * 1,200 * 12 = 1,440,000
+
+Other Income = 5% * GPR = 72,000
+
+Effective Gross Income (EGI):
+= (GPR + Other Income) * (1 - Vacancy)
+= (1,440,000 + 72,000) * 0.92 = 1,389,120
+```
+
+---
+
+### Expenses
+
+```
+Expenses = 45% * EGI
+= 625,104
+```
+
+---
+
+### NOI
+
+```
+NOI = EGI - Expenses
+= 764,016
+```
+
+---
+
+## 💰 Sheet 3: Debt Model
+
+Loan Amount:
+
+```
+= Purchase Price * LTV = 13,000,000
+```
+
+Annual Debt Service (use mortgage formula in Excel):
+
+```
+=PMT(rate, periods, loan amount)
+
+= PMT(6.5%/12, 360, -13,000,000) * 12
+```
+
+---
+
+## 📉 Sheet 4: Cash Flow
+
+```
+Cash Flow Before Tax = NOI - Debt Service
+```
+
+---
+
+## 📈 Sheet 5: Exit Calculation
+
+At sale:
+
+<Math>{"\\text{Value} = \\frac{\\text{NOI}}{\\text{Cap Rate}}"}</Math>
+
+```
+Exit NOI (Year 5 projected)
+
+Exit Value = NOI / Exit Cap
+
+Less:
+- Selling costs (2%)
+- Loan payoff
+
+= Net Sales Proceeds
+```
+
+---
+
+## Sheet 6: Returns
+
+Use Excel formulas:
+
+```
+IRR = IRR(cash flow range)
+Equity Multiple = Total Cash Inflows / Initial Equity
+```
+
+---
+
+## Pro Tip (What real analysts do)
+
+Don't trust the PPM:
+
+- Build **Base Case**
+- Build **Downside Case**
+- Build **Upside Case**
+
+Example:
+
+- Rent growth: 3% → test 1%
+- Exit cap: 6.75% → test 7.75%
+
+---
+
+# 2. Technical Interview Questions + Answers (CRE / Credit / IB)
+
+These are _exactly_ what you'll get asked.
+
+---
+
+## 🔹 Q1: Walk me through how you underwrite a deal
+
+> "I start with revenue by analyzing rents, vacancy, and other income, then estimate expenses to derive NOI. From there I layer in the capital structure, calculate debt service and DSCR, and project cash flows over the hold period. I then estimate exit value using a cap rate and calculate IRR and equity multiple. Finally, I stress key assumptions like rent growth and exit cap rate to evaluate downside risk."
+
+---
+
+## 🔹 Q2: What is NOI and why does it matter?
+
+> "NOI, or Net Operating Income, is revenue minus operating expenses before debt. It's critical because it determines both cash flow and property value through capitalization."
+
+---
+
+## 🔹 Q3: How do you value a property?
+
+> "Primarily using the income approach by capitalizing NOI."
+
+(then reference:)
+
+<Math>{"\\text{Value} = \\frac{\\text{NOI}}{\\text{Cap Rate}}"}</Math>
+
+> "I also cross-check with comparable sales."
+
+---
+
+## 🔹 Q4: What is DSCR?
+
+<Math>{"\\text{DSCR} = \\frac{\\text{NOI}}{\\text{Debt Service}}"}</Math>
+
+> "It measures the property's ability to cover debt payments. Lenders typically want at least 1.2-1.3x."
+
+---
+
+## 🔹 Q5: What are the biggest risks in a deal?
+
+- Rent overestimation
+- Expense underestimation
+- Interest rate increases
+- Exit cap expansion
+
+👉 Strong closer:
+
+> "Most deals fail due to overly optimistic assumptions rather than execution."
+
+---
+
+## 🔹 Q6: What drives IRR?
+
+- NOI growth
+- Leverage
+- Exit price
+
+👉 Bonus:
+
+> "IRR is very sensitive to exit assumptions."
+
+---
+
+## 🔹 Q7: What's a red flag in a PPM?
+
+- Aggressive rent growth (5%+)
+- Low expense ratio
+- Exit cap lower than market
+- No sponsor co-invest
+
+---
+
+## 🔹 Q8: Difference between in-place vs pro forma?
+
+> "In-place reflects current performance, while pro forma reflects projected performance after improvements. I always anchor to in-place to avoid overpaying."
+
+---
+
+## 🔹 Q9: How do interest rates affect value?
+
+> "Higher rates increase cap rates and reduce property values, while also increasing debt costs and lowering cash flow."
+
+---
+
+## 🔹 Q10: What's more important—IRR or equity multiple?
+
+> "IRR measures time-adjusted returns, while equity multiple shows total profit. I look at both depending on investment horizon."

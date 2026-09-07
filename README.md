@@ -13,31 +13,10 @@ pnpm run deploy
 
 npm i --legacy-peer-deps
 
-
 🔧 1. Configure next.config.mjs for GitHub Pages
 Update your config like this:
 
-ts
-Copy
-Edit
-import withMDX from "@next/mdx";
-
 const isProd = process.env.NODE_ENV === "production";
-
-export default withMDX({
-extension: /\.mdx?$/,
-})({
-output: "export",
-images: {
-unoptimized: true,
-},
-basePath: isProd ? "/your-repo-name" : "",
-assetPrefix: isProd ? "/your-repo-name/" : "",
-pageExtensions: ["ts", "tsx", "js", "jsx", "mdx"],
-experimental: {
-mdxRs: false,
-},
-});
 
 🧱 2. Add a 404.tsx page
 GitHub Pages requires 404.html to fall back correctly for unknown routes.
@@ -52,7 +31,7 @@ export default function NotFound() {
 return <h1>404 - Page Not Found</h1>;
 }
 
-3. Build and export
+1. Build and export
    pnpm run build
 
 🚫 4. Ensure .nojekyll is added
